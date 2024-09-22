@@ -1,0 +1,16 @@
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\bin\Debug\net8.0-windows\PictureViewer.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\bin\Debug\net8.0-windows\PictureViewer.deps.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\bin\Debug\net8.0-windows\PictureViewer.runtimeconfig.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\bin\Debug\net8.0-windows\PictureViewer.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\bin\Debug\net8.0-windows\PictureViewer.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.Form1.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.csproj.GenerateResource.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.AssemblyInfoInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.AssemblyInfo.cs
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.csproj.CoreCompileInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\refint\PictureViewer.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\PictureViewer.genruntimeconfig.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\12 - 09 -2024\Picture Viewer\23521194_PictureViewer\PictureViewer\obj\Debug\net8.0-windows\ref\PictureViewer.dll
