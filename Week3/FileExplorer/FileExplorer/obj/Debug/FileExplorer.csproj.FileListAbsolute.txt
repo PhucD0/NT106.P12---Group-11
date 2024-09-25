@@ -1,0 +1,10 @@
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\bin\Debug\FileExplorer.exe.config
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\bin\Debug\FileExplorer.exe
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\bin\Debug\FileExplorer.pdb
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.csproj.AssemblyReference.cache
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.Form1.resources
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.Properties.Resources.resources
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.csproj.GenerateResource.cache
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.exe
+D:\kudo\NT106\FileExplorer1\FileExplorer\FileExplorer\FileExplorer\obj\Debug\FileExplorer.pdb
