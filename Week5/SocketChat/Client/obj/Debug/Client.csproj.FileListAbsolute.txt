@@ -1,0 +1,10 @@
+D:\kudo\NT106\SocketChat\SocketChat\Client\bin\Debug\Client.exe.config
+D:\kudo\NT106\SocketChat\SocketChat\Client\bin\Debug\Client.exe
+D:\kudo\NT106\SocketChat\SocketChat\Client\bin\Debug\Client.pdb
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.Properties.Resources.resources
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.exe
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.pdb
+D:\kudo\NT106\SocketChat\SocketChat\Client\obj\Debug\Client.Client.resources
