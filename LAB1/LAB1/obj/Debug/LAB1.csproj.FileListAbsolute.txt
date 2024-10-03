@@ -1,0 +1,15 @@
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\bin\Debug\LAB1.exe.config
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\bin\Debug\LAB1.exe
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\bin\Debug\LAB1.pdb
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.csproj.AssemblyReference.cache
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Form1.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Properties.Resources.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.csproj.GenerateResource.cache
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.exe
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.pdb
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai01.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai02.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai03.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai04.resources
+D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai05.resources
