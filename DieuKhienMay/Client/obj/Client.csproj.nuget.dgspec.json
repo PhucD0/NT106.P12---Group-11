@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\DieuKhienMay\\Client\\Client.csproj": {}
+    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\DieuKhienMay\\Client\\Client.csproj": {
+    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\DieuKhienMay\\Client\\Client.csproj",
+        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\DieuKhienMay\\Client\\Client.csproj",
+        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\DieuKhienMay\\Client\\obj\\",
+        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

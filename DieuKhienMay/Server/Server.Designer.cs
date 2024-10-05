@@ -42,28 +42,32 @@
             // TextboxPassword
             // 
             TextboxPassword.Font = new Font("Segoe UI", 15F);
-            TextboxPassword.Location = new Point(91, 87);
+            TextboxPassword.Location = new Point(130, 99);
+            TextboxPassword.Margin = new Padding(4, 3, 4, 3);
             TextboxPassword.Multiline = true;
             TextboxPassword.Name = "TextboxPassword";
-            TextboxPassword.Size = new Size(111, 28);
+            TextboxPassword.Size = new Size(157, 31);
             TextboxPassword.TabIndex = 9;
             // 
             // TextboxPort
             // 
             TextboxPort.Font = new Font("Segoe UI", 15F);
-            TextboxPort.Location = new Point(91, 43);
+            TextboxPort.Location = new Point(130, 49);
+            TextboxPort.Margin = new Padding(4, 3, 4, 3);
             TextboxPort.Multiline = true;
             TextboxPort.Name = "TextboxPort";
-            TextboxPort.Size = new Size(111, 28);
+            TextboxPort.Size = new Size(157, 31);
             TextboxPort.TabIndex = 8;
             // 
             // label_password
             // 
             label_password.AutoSize = true;
-            label_password.Font = new Font("Segoe UI", 12F);
-            label_password.Location = new Point(6, 91);
+            label_password.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_password.ForeColor = Color.Coral;
+            label_password.Location = new Point(18, 103);
+            label_password.Margin = new Padding(4, 0, 4, 0);
             label_password.Name = "label_password";
-            label_password.Size = new Size(79, 21);
+            label_password.Size = new Size(104, 22);
             label_password.TabIndex = 7;
             label_password.Text = "Password:";
             label_password.TextAlign = ContentAlignment.MiddleCenter;
@@ -71,69 +75,79 @@
             // label_port
             // 
             label_port.AutoSize = true;
-            label_port.Font = new Font("Segoe UI", 12F);
-            label_port.Location = new Point(44, 46);
+            label_port.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label_port.ForeColor = Color.Coral;
+            label_port.Location = new Point(43, 52);
+            label_port.Margin = new Padding(4, 0, 4, 0);
             label_port.Name = "label_port";
-            label_port.Size = new Size(41, 21);
+            label_port.Size = new Size(58, 22);
             label_port.TabIndex = 6;
             label_port.Text = "Port:";
             // 
             // ButtonStartServer
             // 
-            ButtonStartServer.Font = new Font("Segoe UI", 15F);
-            ButtonStartServer.Location = new Point(563, 36);
+            ButtonStartServer.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
+            ButtonStartServer.ForeColor = Color.Coral;
+            ButtonStartServer.Location = new Point(804, 41);
+            ButtonStartServer.Margin = new Padding(4, 3, 4, 3);
             ButtonStartServer.Name = "ButtonStartServer";
-            ButtonStartServer.Size = new Size(122, 38);
+            ButtonStartServer.Size = new Size(174, 43);
             ButtonStartServer.TabIndex = 10;
             ButtonStartServer.Text = "Start Server";
-            ButtonStartServer.TextAlign = ContentAlignment.TopRight;
             ButtonStartServer.UseVisualStyleBackColor = true;
             // 
             // ButtonStopServer
             // 
-            ButtonStopServer.Font = new Font("Segoe UI", 15F);
-            ButtonStopServer.Location = new Point(563, 119);
+            ButtonStopServer.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
+            ButtonStopServer.ForeColor = Color.Coral;
+            ButtonStopServer.Location = new Point(804, 135);
+            ButtonStopServer.Margin = new Padding(4, 3, 4, 3);
             ButtonStopServer.Name = "ButtonStopServer";
-            ButtonStopServer.Size = new Size(122, 38);
+            ButtonStopServer.Size = new Size(174, 43);
             ButtonStopServer.TabIndex = 11;
             ButtonStopServer.Text = "Stop Server";
-            ButtonStopServer.TextAlign = ContentAlignment.TopRight;
             ButtonStopServer.UseVisualStyleBackColor = true;
             // 
             // ButtonSaveSetting
             // 
-            ButtonSaveSetting.Font = new Font("Segoe UI", 12F);
-            ButtonSaveSetting.Location = new Point(91, 130);
+            ButtonSaveSetting.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ButtonSaveSetting.ForeColor = Color.Coral;
+            ButtonSaveSetting.Location = new Point(130, 147);
+            ButtonSaveSetting.Margin = new Padding(4, 3, 4, 3);
             ButtonSaveSetting.Name = "ButtonSaveSetting";
-            ButtonSaveSetting.Size = new Size(51, 27);
+            ButtonSaveSetting.Size = new Size(73, 31);
             ButtonSaveSetting.TabIndex = 12;
             ButtonSaveSetting.Text = "Save";
             ButtonSaveSetting.UseVisualStyleBackColor = true;
             // 
             // ButtonClear
             // 
-            ButtonClear.Font = new Font("Segoe UI", 12F);
-            ButtonClear.Location = new Point(148, 130);
+            ButtonClear.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ButtonClear.ForeColor = Color.Coral;
+            ButtonClear.Location = new Point(211, 147);
+            ButtonClear.Margin = new Padding(4, 3, 4, 3);
             ButtonClear.Name = "ButtonClear";
-            ButtonClear.Size = new Size(54, 27);
+            ButtonClear.Size = new Size(77, 31);
             ButtonClear.TabIndex = 13;
             ButtonClear.Text = "Clear";
             ButtonClear.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(246, 36);
+            textBox1.Location = new Point(351, 41);
+            textBox1.Margin = new Padding(4, 3, 4, 3);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ScrollBars = ScrollBars.Both;
-            textBox1.Size = new Size(311, 121);
+            textBox1.Size = new Size(443, 137);
             textBox1.TabIndex = 14;
             // 
             // Server
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(699, 212);
+            BackColor = Color.FromArgb(255, 224, 192);
+            ClientSize = new Size(999, 240);
             Controls.Add(textBox1);
             Controls.Add(ButtonClear);
             Controls.Add(ButtonSaveSetting);
@@ -143,6 +157,8 @@
             Controls.Add(TextboxPort);
             Controls.Add(label_password);
             Controls.Add(label_port);
+            Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Server";
             Text = "Server";
             ResumeLayout(false);
