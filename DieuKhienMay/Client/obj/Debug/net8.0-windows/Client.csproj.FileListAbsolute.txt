@@ -1,0 +1,16 @@
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.deps.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.runtimeconfig.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Client.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.GenerateResource.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfoInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfo.cs
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.CoreCompileInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\refint\Client.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.genruntimeconfig.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll
