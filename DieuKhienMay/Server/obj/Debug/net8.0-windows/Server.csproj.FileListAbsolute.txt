@@ -14,3 +14,20 @@ D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Server\ob
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.pdb
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.exe
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.deps.json
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.runtimeconfig.json
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.dll
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.pdb
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.Server.resources
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.GenerateResource.cache
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.dll
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\refint\Server.dll
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.pdb
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
