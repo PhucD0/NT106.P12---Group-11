@@ -41,75 +41,75 @@ namespace LAB1
             {
                 case 1:
                     if (day <= 20)
-                        res = "Cung Ma Kết";
+                        res = "Ma Kết";
                     else
-                        res = "Cung Bảo Bình";
+                        res = "Bảo Bình";
                     break;
                 case 2:
                     if (day <= 19)
-                        res = "Cung Bảo Bình";
+                        res = "Bảo Bình";
                     else
-                        res = "Cung Song Ngư";
+                        res = "Song Ngư";
                     break;
                 case 3:
                     if (day <= 20)
-                        res = "Cung Song Ngư";
+                        res = "Song Ngư";
                     else
-                        res = "Cung Bạch Dương";
+                        res = "Bạch Dương";
                     break;
                 case 4:
                     if (day <= 20)
-                        res = "Cung Bạch Dương";
+                        res = "Bạch Dương";
                     else
-                        res = "Cung Kim Ngưu";
+                        res = "Kim Ngưu";
                     break;
                 case 5:
                     if (day <= 21)
-                        res = "Cung Kim Ngưu";
+                        res = "Kim Ngưu";
                     else
-                        res = "Cung Song Tử";
+                        res = "Song Tử";
                     break;
                 case 6:
                     if (day <= 21)
-                        res = "Cung Song Tử";
+                        res = "Song Tử";
                     else
-                        res = "Cung Cự Giải";
+                        res = "Cự Giải";
                     break;
                 case 7:
                     if (day <= 22)
-                        res = "Cung Cự Giải";
+                        res = "Cự Giải";
                     else
-                        res = "Cung Sư Tử";
+                        res = "Sư Tử";
                     break;
                 case 8:
                     if (day <= 22)
-                        res = "Cung Sư Tử";
+                        res = "Sư Tử";
                     else
-                        res = "Cung Xử Nữ";
+                        res = "Xử Nữ";
                     break;
                 case 9:
                     if (day <= 23)
-                        res = "Cung Xử Nữ";
+                        res = "Xử Nữ";
                     else
-                        res = "Cung Thiên Bình";
+                        res = "Thiên Bình";
                     break;
                 case 10:
                     if (day <= 23)
-                        res = "Cung Thiên Bình";
+                        res = "Thiên Bình";
                     else
-                        res = "Cung Thần Nông";
+                        res = "Thần Nông";
                     break;
                 case 11:
                     if (day <= 22)
-                        res = "Cung Thần Nông";
+                        res = "Thần Nông";
                     else
-                        res = "Cung Nhân Mã";
+                        res = "Nhân Mã";
                     break;
                 default:
                     if (day <= 21)
-                        res = "Cung Nhân Mã";
+                        res = "Nhân Mã";
                     else
-                        res = "Cung Ma Kết";
+                        res = "Ma Kết";
                     break;
             }
             return res;

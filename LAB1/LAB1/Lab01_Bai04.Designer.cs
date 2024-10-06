@@ -87,11 +87,12 @@
             // 
             // txbOutput
             // 
-            this.txbOutput.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txbOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbOutput.ForeColor = System.Drawing.Color.Red;
             this.txbOutput.Location = new System.Drawing.Point(194, 252);
             this.txbOutput.Multiline = true;
             this.txbOutput.Name = "txbOutput";
-            this.txbOutput.Size = new System.Drawing.Size(387, 93);
+            this.txbOutput.Size = new System.Drawing.Size(436, 93);
             this.txbOutput.TabIndex = 5;
             // 
             // Lab01_Bai04
