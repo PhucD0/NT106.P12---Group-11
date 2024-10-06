@@ -31,14 +31,14 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.txbOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(651, 366);
+            this.btnExit.Location = new System.Drawing.Point(665, 379);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(83, 25);
             this.btnExit.TabIndex = 0;
@@ -60,47 +60,48 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(168, 138);
+            this.label2.Location = new System.Drawing.Point(190, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nhập ngày sinh: ";
             // 
-            // dateTimePicker1
+            // dtpBirthday
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(329, 138);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 23);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dtpBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.Location = new System.Drawing.Point(351, 132);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(230, 23);
+            this.dtpBirthday.TabIndex = 3;
             // 
-            // button1
+            // btnCheck
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(474, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Kiểm tra";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.Location = new System.Drawing.Point(496, 172);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(85, 34);
+            this.btnCheck.TabIndex = 4;
+            this.btnCheck.Text = "Kiểm tra";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
-            // textBox1
+            // txbOutput
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(172, 252);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(387, 93);
-            this.textBox1.TabIndex = 5;
+            this.txbOutput.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txbOutput.Location = new System.Drawing.Point(194, 252);
+            this.txbOutput.Multiline = true;
+            this.txbOutput.Name = "txbOutput";
+            this.txbOutput.Size = new System.Drawing.Size(387, 93);
+            this.txbOutput.TabIndex = 5;
             // 
             // Lab01_Bai04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txbOutput);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.dtpBirthday);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -117,8 +118,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.TextBox txbOutput;
     }
 }
