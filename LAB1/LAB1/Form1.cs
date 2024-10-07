@@ -56,5 +56,10 @@ namespace LAB1
             form6.Show(this);
             Hide();
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

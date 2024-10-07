@@ -38,9 +38,10 @@
             // btnBai1
             // 
             this.btnBai1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBai1.Location = new System.Drawing.Point(93, 64);
+            this.btnBai1.Location = new System.Drawing.Point(70, 52);
+            this.btnBai1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBai1.Name = "btnBai1";
-            this.btnBai1.Size = new System.Drawing.Size(262, 71);
+            this.btnBai1.Size = new System.Drawing.Size(196, 58);
             this.btnBai1.TabIndex = 0;
             this.btnBai1.Text = "Bài 1";
             this.btnBai1.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // btnBai2
             // 
             this.btnBai2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBai2.Location = new System.Drawing.Point(445, 64);
+            this.btnBai2.Location = new System.Drawing.Point(334, 52);
+            this.btnBai2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBai2.Name = "btnBai2";
-            this.btnBai2.Size = new System.Drawing.Size(262, 71);
+            this.btnBai2.Size = new System.Drawing.Size(196, 58);
             this.btnBai2.TabIndex = 1;
             this.btnBai2.Text = "Bài 2";
             this.btnBai2.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // btnBai3
             // 
             this.btnBai3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBai3.Location = new System.Drawing.Point(93, 185);
+            this.btnBai3.Location = new System.Drawing.Point(70, 150);
+            this.btnBai3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBai3.Name = "btnBai3";
-            this.btnBai3.Size = new System.Drawing.Size(262, 71);
+            this.btnBai3.Size = new System.Drawing.Size(196, 58);
             this.btnBai3.TabIndex = 2;
             this.btnBai3.Text = "Bài 3";
             this.btnBai3.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // btnBai4
             // 
             this.btnBai4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBai4.Location = new System.Drawing.Point(445, 185);
+            this.btnBai4.Location = new System.Drawing.Point(334, 150);
+            this.btnBai4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBai4.Name = "btnBai4";
-            this.btnBai4.Size = new System.Drawing.Size(262, 71);
+            this.btnBai4.Size = new System.Drawing.Size(196, 58);
             this.btnBai4.TabIndex = 3;
             this.btnBai4.Text = "Bài 4";
             this.btnBai4.UseVisualStyleBackColor = true;
@@ -82,9 +86,10 @@
             // btnBai5
             // 
             this.btnBai5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBai5.Location = new System.Drawing.Point(93, 307);
+            this.btnBai5.Location = new System.Drawing.Point(70, 249);
+            this.btnBai5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBai5.Name = "btnBai5";
-            this.btnBai5.Size = new System.Drawing.Size(262, 71);
+            this.btnBai5.Size = new System.Drawing.Size(196, 58);
             this.btnBai5.TabIndex = 4;
             this.btnBai5.Text = "Bài 5";
             this.btnBai5.UseVisualStyleBackColor = true;
@@ -92,16 +97,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnBai5);
             this.Controls.Add(this.btnBai4);
             this.Controls.Add(this.btnBai3);
             this.Controls.Add(this.btnBai2);
             this.Controls.Add(this.btnBai1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
 
         }

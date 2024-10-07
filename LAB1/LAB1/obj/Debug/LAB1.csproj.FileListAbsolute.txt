@@ -13,3 +13,18 @@ D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai02.resources
 D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai03.resources
 D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai04.resources
 D:\kudo\NT106\ThucHanh\LAB1\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai05.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\bin\Debug\LAB1.exe.config
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\bin\Debug\LAB1.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\bin\Debug\LAB1.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.csproj.AssemblyReference.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Form1.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai01.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai02.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai03.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai04.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Lab01_Bai05.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.Properties.Resources.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.csproj.GenerateResource.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.csproj.CoreCompileInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB1\LAB1\obj\Debug\LAB1.pdb

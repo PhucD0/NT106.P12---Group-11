@@ -32,37 +32,56 @@ namespace LAB1
         static string ConvertGroup(long number)
         {
             string result = "";
+
+            // Xử lý hàng tỷ
             if (number >= 1000000000)
             {
                 result += ConvertGroup(number / 1000000000) + " tỷ ";
                 number %= 1000000000;
             }
+
+            // Xử lý hàng triệu
             if (number >= 1000000)
             {
                 result += ConvertGroup(number / 1000000) + " triệu ";
                 number %= 1000000;
             }
+
+            // Xử lý hàng nghìn
             if (number >= 1000)
             {
                 result += ConvertGroup(number / 1000) + " nghìn ";
                 number %= 1000;
             }
+
+            // Xử lý hàng trăm
             if (number >= 100)
             {
                 result += ones[number / 100] + " trăm ";
                 number %= 100;
             }
+
+            // Xử lý hàng chục
             if (number >= 20)
             {
                 result += tens[number / 10] + " ";
                 number %= 10;
             }
+            // Xử lý trường hợp từ 10 đến 19
+            else if (number >= 10 && number < 20)
+            {
+                result += " mười ";
+                number %= 10;
+            }
+
+            // Xử lý hàng đơn vị
             if (number > 0)
             {
                 result += ones[number];
             }
             return result.Trim();
         }
+
 
         private void button_Read_Click(object sender, EventArgs e)
         {
@@ -82,6 +101,19 @@ namespace LAB1
             var form1 = (Form1)Tag;
             form1.Show();
             Close();
+        }
+
+        private void ButtonClear_Click(object sender, EventArgs e)
+        {
+            textBox_Input.Text = string.Empty;  
+            textBox_Result.Text = string.Empty;
+        }
+
+        private void Lab01_Bai03_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();    
+            Form1 form = new Form1();   
+            form.Show();
         }
     }
 }
