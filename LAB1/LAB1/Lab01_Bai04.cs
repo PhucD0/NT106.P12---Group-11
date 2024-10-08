@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace LAB1
 {
@@ -26,12 +27,29 @@ namespace LAB1
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
-            DateTime birthDate = dtpBirthday.Value;
-            int day = birthDate.Day;
-            int month = birthDate.Month;
-            string zodiac = Get_Zodiac(day, month);
+            string zodiac = "";
+            int day, month;
+            string dateInput = txbInput.Text;
+            DateTime dateOfBirth;
 
-            txbOutput.Text = string.Format("Bạn thuộc cung: {0}", zodiac);
+            bool isValid = DateTime.TryParseExact(dateInput, "dd/MM/yyyy",
+                CultureInfo.InvariantCulture, DateTimeStyles.None, out dateOfBirth);
+
+            if (isValid)
+            {
+                day = dateOfBirth.Day;
+                month = dateOfBirth.Month;
+
+                zodiac = Get_Zodiac(day, month);
+
+                txbOutput.Text = string.Format("Bạn thuộc cung: {0}", zodiac);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập ngày hợp lệ", "Lỗi định dạng",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //zodiac = "";
         }
         
         private string Get_Zodiac(int day, int month)
@@ -40,77 +58,42 @@ namespace LAB1
             switch(month)
             {
                 case 1:
-                    if (day <= 20)
-                        res = "Ma Kết";
-                    else
-                        res = "Bảo Bình";
+                    res = (day <= 20) ? "Ma Kết" : "Bảo Bình";
                     break;
                 case 2:
-                    if (day <= 19)
-                        res = "Bảo Bình";
-                    else
-                        res = "Song Ngư";
+                    res = (day <= 19) ? "Bảo Bình" : "Song Ngư";
                     break;
                 case 3:
-                    if (day <= 20)
-                        res = "Song Ngư";
-                    else
-                        res = "Bạch Dương";
+                    res = (day <= 20) ? "Song Ngư" : "Bạch Dương";
                     break;
                 case 4:
-                    if (day <= 20)
-                        res = "Bạch Dương";
-                    else
-                        res = "Kim Ngưu";
+                    res = (day <= 20) ? "Bạch Dương" : "Kim Ngưu";
                     break;
                 case 5:
-                    if (day <= 21)
-                        res = "Kim Ngưu";
-                    else
-                        res = "Song Tử";
+                    res = (day <= 21) ? "Kim Ngưu" : "Song Tử";
                     break;
                 case 6:
-                    if (day <= 21)
-                        res = "Song Tử";
-                    else
-                        res = "Cự Giải";
+                    res = (day <= 21) ? "Song Tử" : "Cự Giải";
                     break;
                 case 7:
-                    if (day <= 22)
-                        res = "Cự Giải";
-                    else
-                        res = "Sư Tử";
+                    res = (day <= 22) ? "Cự Giải" : "Sư Tử";
                     break;
                 case 8:
-                    if (day <= 22)
-                        res = "Sư Tử";
-                    else
-                        res = "Xử Nữ";
+                    res = (day <= 22) ? "Sư Tử" : "Xử Nữ";
                     break;
                 case 9:
-                    if (day <= 23)
-                        res = "Xử Nữ";
-                    else
-                        res = "Thiên Bình";
+                    res = (day <= 23) ? "Xử Nữ" : "Thiên Bình";
                     break;
                 case 10:
-                    if (day <= 23)
-                        res = "Thiên Bình";
-                    else
-                        res = "Thần Nông";
+                    res = (day <= 23) ? "Thiên Bình" : "Thần Nông";
                     break;
                 case 11:
-                    if (day <= 22)
-                        res = "Thần Nông";
-                    else
-                        res = "Nhân Mã";
+                    res = (day <= 22) ? "Thần Nông" : "Nhân Mã";
                     break;
                 default:
-                    if (day <= 21)
-                        res = "Nhân Mã";
-                    else
-                        res = "Ma Kết";
+                    res = (day <= 21) ? "Nhân Mã" : "Ma Kết";
                     break;
+
             }
             return res;
         }
