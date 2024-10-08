@@ -26,21 +26,24 @@ namespace LAB1
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            //if (comboBox.Text == "Bảng cửu chương")
-            //{
-            //    txtOutput.Text = "Hi";
-            //}
-            //else
-            //{
-            //    txtOutput.Text = "Hello";
-            //}
             int numA, numB;
+
+            // Xử lý trường hợp khi người dùng không chọn
+            if (comboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an option!");
+                return;
+            }
+
             try
             {
                 numA = Int32.Parse(txtInput1.Text.Trim());
                 numB = Int32.Parse(txtInput2.Text.Trim());
 
                 string SelectedOption = comboBox.SelectedItem.ToString();
+
+                //Xử lý bảng cửu chương
+
                 if (SelectedOption == "Bảng cửu chương")
                 {
                     string multiplicationTable = "";
@@ -49,18 +52,40 @@ namespace LAB1
                     {
                         multiplicationTable += $"{result} x {i} = {result * i}\r\n";
                     }
-                    txtOutput.Text = multiplicationTable;
+                    txtOutput.Text = $"Bảng cửu chương B - A:\n{multiplicationTable}";
                 }
                 else
                 {
-                    long sum = 0;
-                    int Base = 1;
-                    for (int i = 1; i <= numB; i++)
+
+                    //Kiểm tra hợp lệ A - B để tính giai thừa
+
+                    if (numA - numB < 0) 
                     {
-                        Base *= numA;
-                        sum += Base;
+                        MessageBox.Show("A bé hơn B. Vui lòng nhập lại!");
                     }
-                    txtOutput.Text = sum.ToString();
+                    else 
+                    {
+
+                        // Tính giai thừa của A - B
+
+                        long result = 1;
+                        for (int i = 1; i <= (numA - numB  ); i++)
+                        {
+                            result *= i;
+                        }
+
+                        //Tính tổng A^1 + A^2 + ... + A^B
+
+                        long sum = 0;
+                        int Base = 1;
+                        for (int i = 1; i <= numB; i++)
+                        {
+                            Base *= numA;
+                            sum += Base;
+                        }
+
+                        txtOutput.Text = $"(A - B)! = {result}{Environment.NewLine}Tổng S: {sum}";
+                    }
                 }
             }
             catch (FormatException)
@@ -78,7 +103,13 @@ namespace LAB1
             txtInput1.Clear();
             txtInput2.Clear();
             txtOutput.Clear();
-            //comboBox.Items.Clear();
+        }
+
+        private void Lab01_Bai02_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();    
+            Form1 form = new Form1();
+            form.Show();
         }
     }
 }
