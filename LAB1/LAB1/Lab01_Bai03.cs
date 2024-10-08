@@ -36,29 +36,76 @@ namespace LAB1
             // Xử lý hàng tỷ
             if (number >= 1000000000)
             {
-                result += ConvertGroup(number / 1000000000) + " tỷ ";
-                number %= 1000000000;
+                if (number % 1000000000 >= 10 && number % 1000000000 < 100)
+                {
+                    result += ConvertGroup(number / 1000000000) + " tỷ không trăm ";
+                    number %= 1000000000;
+                }
+                else if (number % 1000000000 >= 1 && number % 1000000000 < 10)
+                {
+                    result += ConvertGroup(number / 1000000000) + " tỷ không trăm linh ";
+                    number %= 1000000000;
+                }
+                else
+                {
+                    result += ConvertGroup(number / 1000000000) + " tỷ ";
+                    number %= 1000000000;
+                }
             }
 
             // Xử lý hàng triệu
             if (number >= 1000000)
             {
-                result += ConvertGroup(number / 1000000) + " triệu ";
-                number %= 1000000;
+                if (number % 1000000 >= 10 && number % 1000000 < 100)
+                {
+                    result += ConvertGroup(number / 1000000) + " triệu không trăm ";
+                    number %= 1000000;
+                }
+                else if (number % 1000000 >= 1 && number % 1000000 < 10)
+                {
+                    result += ConvertGroup(number / 1000000) + " triệu không trăm linh ";
+                    number %= 1000000;
+                }
+                else
+                {
+                    result += ConvertGroup(number / 1000000) + " triệu ";
+                    number %= 1000000;
+                }
             }
 
             // Xử lý hàng nghìn
             if (number >= 1000)
             {
-                result += ConvertGroup(number / 1000) + " nghìn ";
-                number %= 1000;
+                if (number % 1000 >= 10 && number % 1000 < 100)
+                {
+                    result += ConvertGroup(number / 1000) + " nghìn không trăm ";
+                    number %= 1000;
+                }
+                else if (number % 1000 >= 1 && number % 1000 < 10)
+                {
+                    result += ConvertGroup(number / 1000) + " nghìn không trăm linh ";
+                    number %= 1000;
+                }
+                else
+                {
+                    result += ConvertGroup(number / 1000) + " nghìn ";
+                    number %= 1000;
+                }
             }
 
             // Xử lý hàng trăm
             if (number >= 100)
             {
-                result += ones[number / 100] + " trăm ";
-                number %= 100;
+                if (number % 100 >= 1 && number % 100 < 10)
+                {
+                    result += ConvertGroup(number / 100) + " trăm linh ";
+                    number %= 100;
+                }
+                else
+                {
+                    result += ones[number / 100] + " trăm ";
+                    number %= 100;
+                }
             }
 
             // Xử lý hàng chục
