@@ -31,7 +31,9 @@
             TextboxIP = new TextBox();
             Label_IP = new Label();
             ButtonListen = new Button();
-            textBox1 = new TextBox();
+            TextboxConversation = new TextBox();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // TextboxIP
@@ -59,26 +61,27 @@
             ButtonListen.TabIndex = 2;
             ButtonListen.Text = "Listen";
             ButtonListen.UseVisualStyleBackColor = true;
+            ButtonListen.Click += ButtonListen_Click;
             // 
-            // textBox1
+            // TextboxConversation
             // 
-            textBox1.Location = new Point(3, 38);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ScrollBars = ScrollBars.Both;
-            textBox1.Size = new Size(299, 400);
-            textBox1.TabIndex = 3;
+            TextboxConversation.Location = new Point(3, 38);
+            TextboxConversation.Multiline = true;
+            TextboxConversation.Name = "TextboxConversation";
+            TextboxConversation.ScrollBars = ScrollBars.Both;
+            TextboxConversation.Size = new Size(299, 400);
+            TextboxConversation.TabIndex = 3;
             // 
-            // Form1
+            // Server
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(304, 450);
-            Controls.Add(textBox1);
+            Controls.Add(TextboxConversation);
             Controls.Add(ButtonListen);
             Controls.Add(Label_IP);
             Controls.Add(TextboxIP);
-            Name = "Form1";
+            Name = "Server";
             Text = "Server";
             ResumeLayout(false);
             PerformLayout();
@@ -89,6 +92,8 @@
         private TextBox TextboxIP;
         private Label Label_IP;
         private Button ButtonListen;
-        private TextBox textBox1;
+        private TextBox TextboxConversation;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

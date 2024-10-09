@@ -1,0 +1,17 @@
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\bin\Debug\net8.0-windows\Server.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\bin\Debug\net8.0-windows\Server.deps.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\bin\Debug\net8.0-windows\Server.runtimeconfig.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\bin\Debug\net8.0-windows\Server.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\bin\Debug\net8.0-windows\Server.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.Server.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.csproj.GenerateResource.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\refint\Server.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\Week5\TCP_Chat\Server\obj\Debug\net8.0-windows\ref\Server.dll

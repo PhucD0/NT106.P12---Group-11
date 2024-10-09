@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             Label_IP = new Label();
             TextboxIP = new TextBox();
             LabelName = new Label();
             TextboxName = new TextBox();
             ButtonConnect = new Button();
             ButtonPrivateRoom = new Button();
-            textBox1 = new TextBox();
+            TextboxConversation = new TextBox();
             labelMessage = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            textBox2 = new TextBox();
+            TextboxMessage = new TextBox();
             ButtonSend = new Button();
             ButtonSendFile = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // Label_IP
@@ -86,6 +86,7 @@
             ButtonConnect.TabIndex = 6;
             ButtonConnect.Text = "Connect";
             ButtonConnect.UseVisualStyleBackColor = true;
+            ButtonConnect.Click += ButtonConnect_Click;
             // 
             // ButtonPrivateRoom
             // 
@@ -96,15 +97,16 @@
             ButtonPrivateRoom.TabIndex = 7;
             ButtonPrivateRoom.Text = "Private Chat Room";
             ButtonPrivateRoom.UseVisualStyleBackColor = true;
+            ButtonPrivateRoom.Click += ButtonPrivateRoom_Click;
             // 
-            // textBox1
+            // TextboxConversation
             // 
-            textBox1.Location = new Point(6, 46);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ScrollBars = ScrollBars.Both;
-            textBox1.Size = new Size(782, 300);
-            textBox1.TabIndex = 8;
+            TextboxConversation.Location = new Point(6, 46);
+            TextboxConversation.Multiline = true;
+            TextboxConversation.Name = "TextboxConversation";
+            TextboxConversation.ScrollBars = ScrollBars.Both;
+            TextboxConversation.Size = new Size(782, 300);
+            TextboxConversation.TabIndex = 8;
             // 
             // labelMessage
             // 
@@ -116,19 +118,14 @@
             labelMessage.TabIndex = 9;
             labelMessage.Text = "Message:";
             // 
-            // contextMenuStrip1
+            // TextboxMessage
             // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(6, 369);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.ScrollBars = ScrollBars.Both;
-            textBox2.Size = new Size(603, 60);
-            textBox2.TabIndex = 11;
+            TextboxMessage.Location = new Point(6, 369);
+            TextboxMessage.Multiline = true;
+            TextboxMessage.Name = "TextboxMessage";
+            TextboxMessage.ScrollBars = ScrollBars.Both;
+            TextboxMessage.Size = new Size(603, 60);
+            TextboxMessage.TabIndex = 11;
             // 
             // ButtonSend
             // 
@@ -139,6 +136,7 @@
             ButtonSend.TabIndex = 12;
             ButtonSend.Text = "Send";
             ButtonSend.UseVisualStyleBackColor = true;
+            ButtonSend.Click += ButtonSend_Click;
             // 
             // ButtonSendFile
             // 
@@ -150,6 +148,10 @@
             ButtonSendFile.Text = "Send File";
             ButtonSendFile.UseVisualStyleBackColor = true;
             // 
+            // backgroundWorker1
+            // 
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+            // 
             // Client
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -157,9 +159,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(ButtonSendFile);
             Controls.Add(ButtonSend);
-            Controls.Add(textBox2);
+            Controls.Add(TextboxMessage);
             Controls.Add(labelMessage);
-            Controls.Add(textBox1);
+            Controls.Add(TextboxConversation);
             Controls.Add(ButtonPrivateRoom);
             Controls.Add(ButtonConnect);
             Controls.Add(TextboxName);
@@ -180,11 +182,12 @@
         private TextBox TextboxName;
         private Button ButtonConnect;
         private Button ButtonPrivateRoom;
-        private TextBox textBox1;
+        private TextBox TextboxConversation;
         private Label labelMessage;
-        private ContextMenuStrip contextMenuStrip1;
-        private TextBox textBox2;
+        private TextBox TextboxMessage;
         private Button ButtonSend;
         private Button ButtonSendFile;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
