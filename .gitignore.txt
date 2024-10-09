@@ -1,3 +1,11 @@
-# Ignore bin and obj folders across all projects
+# Ignore Visual Studio specific files
+.vs/
 **/bin/
 **/obj/
+
+# Ignore specific debug files
+LAB1/LAB1/bin/Debug/*.exe
+LAB1/LAB1/bin/Debug/*.pdb
+LAB1/LAB1/obj/Debug/*.cache
+LAB1/LAB1/obj/Debug/*.txt
+LAB1/LAB1/obj/Debug/*.vsidx
