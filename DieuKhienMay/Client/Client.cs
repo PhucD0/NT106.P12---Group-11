@@ -6,5 +6,10 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        private void ButtonConnect_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

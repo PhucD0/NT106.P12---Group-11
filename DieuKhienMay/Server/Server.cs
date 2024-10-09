@@ -6,5 +6,10 @@ namespace Server
         {
             InitializeComponent();
         }
+
+        private void ButtonStopServer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
