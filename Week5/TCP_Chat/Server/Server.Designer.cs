@@ -32,8 +32,6 @@
             Label_IP = new Label();
             ButtonListen = new Button();
             TextboxConversation = new TextBox();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // TextboxIP
@@ -42,6 +40,7 @@
             TextboxIP.Name = "TextboxIP";
             TextboxIP.Size = new Size(126, 23);
             TextboxIP.TabIndex = 0;
+            TextboxIP.Text = "127.0.0.1";
             // 
             // Label_IP
             // 
@@ -93,7 +92,5 @@
         private Label Label_IP;
         private Button ButtonListen;
         private TextBox TextboxConversation;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

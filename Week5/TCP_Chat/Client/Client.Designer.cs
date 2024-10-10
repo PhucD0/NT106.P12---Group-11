@@ -31,7 +31,7 @@
             Label_IP = new Label();
             TextboxIP = new TextBox();
             LabelName = new Label();
-            TextboxName = new TextBox();
+            TextboxUsername = new TextBox();
             ButtonConnect = new Button();
             ButtonPrivateRoom = new Button();
             TextboxConversation = new TextBox();
@@ -39,8 +39,6 @@
             TextboxMessage = new TextBox();
             ButtonSend = new Button();
             ButtonSendFile = new Button();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
             // Label_IP
@@ -59,6 +57,7 @@
             TextboxIP.Name = "TextboxIP";
             TextboxIP.Size = new Size(126, 23);
             TextboxIP.TabIndex = 2;
+            TextboxIP.Text = "127.0.0.1";
             // 
             // LabelName
             // 
@@ -70,12 +69,12 @@
             LabelName.TabIndex = 4;
             LabelName.Text = "Name:";
             // 
-            // TextboxName
+            // TextboxUsername
             // 
-            TextboxName.Location = new Point(291, 10);
-            TextboxName.Name = "TextboxName";
-            TextboxName.Size = new Size(126, 23);
-            TextboxName.TabIndex = 5;
+            TextboxUsername.Location = new Point(291, 10);
+            TextboxUsername.Name = "TextboxUsername";
+            TextboxUsername.Size = new Size(126, 23);
+            TextboxUsername.TabIndex = 5;
             // 
             // ButtonConnect
             // 
@@ -97,7 +96,6 @@
             ButtonPrivateRoom.TabIndex = 7;
             ButtonPrivateRoom.Text = "Private Chat Room";
             ButtonPrivateRoom.UseVisualStyleBackColor = true;
-            ButtonPrivateRoom.Click += ButtonPrivateRoom_Click;
             // 
             // TextboxConversation
             // 
@@ -148,10 +146,6 @@
             ButtonSendFile.Text = "Send File";
             ButtonSendFile.UseVisualStyleBackColor = true;
             // 
-            // backgroundWorker1
-            // 
-            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
-            // 
             // Client
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -164,7 +158,7 @@
             Controls.Add(TextboxConversation);
             Controls.Add(ButtonPrivateRoom);
             Controls.Add(ButtonConnect);
-            Controls.Add(TextboxName);
+            Controls.Add(TextboxUsername);
             Controls.Add(LabelName);
             Controls.Add(Label_IP);
             Controls.Add(TextboxIP);
@@ -179,7 +173,7 @@
         private Label Label_IP;
         private TextBox TextboxIP;
         private Label LabelName;
-        private TextBox TextboxName;
+        private TextBox TextboxUsername;
         private Button ButtonConnect;
         private Button ButtonPrivateRoom;
         private TextBox TextboxConversation;
@@ -187,7 +181,5 @@
         private TextBox TextboxMessage;
         private Button ButtonSend;
         private Button ButtonSendFile;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

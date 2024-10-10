@@ -1,18 +1,20 @@
 using System.ComponentModel;
+using System;
+using System.Threading;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Client
 {
     public partial class Client : Form
     {
-        private TcpClient client;
-        private int serverPort = 8000;
-        public StreamReader str;
-        public StreamWriter stw;
-        public string receive;
-        public string TextToSend;
+        private TcpClient tcpClient;
+        private NetworkStream stream;
+        private const int port = 8000;
+        private const string serverIP = "127.0.0.1"; // Change this to the actual server IP
 
         public Client()
         {
@@ -21,59 +23,96 @@ namespace Client
 
         private void ButtonConnect_Click(object sender, EventArgs e)
         {
-            // Replace TextboxIP.Text with the IP address of the server
-            // and the port number (make sure they match the server's port)
-            string ipAddress = TextboxIP.Text; // e.g., "127.0.0.1"
+            try
+            {
+                tcpClient = new TcpClient();
+                tcpClient.Connect(IPAddress.Parse(serverIP), port); // Connect to the server
+                stream = tcpClient.GetStream();
 
-            client = new TcpClient();
-            client.Connect(ipAddress, serverPort); // Connect to the server
+                MessageBox.Show("Connected to server!");
 
-            str = new StreamReader(client.GetStream());
-            stw = new StreamWriter(client.GetStream());
-            stw.AutoFlush = true;
-
-            // Start receiving messages in a background thread
-            backgroundWorker1.RunWorkerAsync();
+                // Start a task to listen for incoming messages from the server
+                Task.Run(() => ListenForMessages());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error connecting to server: {ex.Message}");
+            }
         }
 
         private void ButtonSend_Click(object sender, EventArgs e)
         {
-            TextToSend = TextboxMessage.Text; // Assuming textBox1 is where the user types their message
-            stw.WriteLine(TextToSend); // Send the message to the server
-            TextboxMessage.Clear(); // Clear the input box after sending
-        }
-
-
-        private void ButtonPrivateRoom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            while (true)
+            try
             {
-                try
+                if (tcpClient == null || !tcpClient.Connected)
                 {
-                    receive = str.ReadLine(); // Read incoming message from the server
-                    if (receive != null)
-                    {
-                        // Invoke to update the UI thread
-                        this.Invoke((MethodInvoker)delegate
-                        {
-                            // Assuming you have a TextBox or ListBox to display messages
-                            TextboxConversation.AppendText(receive + Environment.NewLine); // Append received message
-                        });
-                    }
+                    MessageBox.Show("You need to connect to the server first.");
+                    return;
                 }
-                catch (Exception ex)
+
+                string username = TextboxUsername.Text;
+                string message = TextboxMessage.Text;
+
+                if (string.IsNullOrWhiteSpace(username))
                 {
-                    // Handle any exceptions that occur
-                    MessageBox.Show(ex.Message);
-                    break; // Exit loop on error
+                    MessageBox.Show("Please enter a username.");
+                    return;
                 }
+
+                string fullMessage = $"{username}: {message}"; // Combine username and message
+                byte[] data = Encoding.UTF8.GetBytes(fullMessage); // Convert to bytes
+                stream.Write(data, 0, data.Length); // Send to server
+
+                TextboxMessage.Clear(); // Clear the message input box
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error sending message: {ex.Message}");
             }
         }
 
+        // Listen for incoming messages from the server
+        private void ListenForMessages()
+        {
+            byte[] buffer = new byte[1024];
+
+            try
+            {
+                while (tcpClient.Connected)
+                {
+                    int bytesRead = stream.Read(buffer, 0, buffer.Length); // Read incoming messages
+                    if (bytesRead > 0)
+                    {
+                        string message = Encoding.UTF8.GetString(buffer, 0, bytesRead); // Decode received bytes
+                        AppendMessageToChat(message); // Update the UI with the received message
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error receiving message: {ex.Message}");
+            }
+        }
+
+        // Append received messages to the client's conversation text box
+        private void AppendMessageToChat(string message)
+        {
+            if (TextboxConversation.InvokeRequired)
+            {
+                TextboxConversation.Invoke(new Action(() => AppendMessageToChat(message)));
+            }
+            else
+            {
+                TextboxConversation.Text += message + Environment.NewLine; // Display message
+            }
+        }
+
+        private void Client_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (tcpClient != null)
+            {
+                tcpClient.Close(); // Close the connection
+            }
+        }
     }
 }
