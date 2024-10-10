@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab01_Bai01
+namespace LAB2_Bai01
 {
     internal static class Program
     {

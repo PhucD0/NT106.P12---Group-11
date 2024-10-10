@@ -1,4 +1,4 @@
-﻿namespace Lab01_Bai01
+﻿namespace LAB2_Bai01
 {
     partial class Form1
     {
