@@ -33,12 +33,13 @@
             LabelName = new Label();
             TextboxUsername = new TextBox();
             ButtonConnect = new Button();
-            ButtonPrivateRoom = new Button();
             TextboxConversation = new TextBox();
             labelMessage = new Label();
             TextboxMessage = new TextBox();
             ButtonSend = new Button();
             ButtonSendFile = new Button();
+            textBox1 = new TextBox();
+            LabelTo = new Label();
             SuspendLayout();
             // 
             // Label_IP
@@ -86,16 +87,6 @@
             ButtonConnect.Text = "Connect";
             ButtonConnect.UseVisualStyleBackColor = true;
             ButtonConnect.Click += ButtonConnect_Click;
-            // 
-            // ButtonPrivateRoom
-            // 
-            ButtonPrivateRoom.Font = new Font("Segoe UI", 11F);
-            ButtonPrivateRoom.Location = new Point(442, 8);
-            ButtonPrivateRoom.Name = "ButtonPrivateRoom";
-            ButtonPrivateRoom.Size = new Size(167, 27);
-            ButtonPrivateRoom.TabIndex = 7;
-            ButtonPrivateRoom.Text = "Private Chat Room";
-            ButtonPrivateRoom.UseVisualStyleBackColor = true;
             // 
             // TextboxConversation
             // 
@@ -146,17 +137,35 @@
             ButtonSendFile.Text = "Send File";
             ButtonSendFile.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(476, 10);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(126, 23);
+            textBox1.TabIndex = 15;
+            // 
+            // LabelTo
+            // 
+            LabelTo.AutoSize = true;
+            LabelTo.Font = new Font("Segoe UI", 12F);
+            LabelTo.Location = new Point(439, 9);
+            LabelTo.Name = "LabelTo";
+            LabelTo.Size = new Size(28, 21);
+            LabelTo.TabIndex = 14;
+            LabelTo.Text = "To:";
+            // 
             // Client
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Controls.Add(LabelTo);
             Controls.Add(ButtonSendFile);
             Controls.Add(ButtonSend);
             Controls.Add(TextboxMessage);
             Controls.Add(labelMessage);
             Controls.Add(TextboxConversation);
-            Controls.Add(ButtonPrivateRoom);
             Controls.Add(ButtonConnect);
             Controls.Add(TextboxUsername);
             Controls.Add(LabelName);
@@ -175,11 +184,12 @@
         private Label LabelName;
         private TextBox TextboxUsername;
         private Button ButtonConnect;
-        private Button ButtonPrivateRoom;
         private TextBox TextboxConversation;
         private Label labelMessage;
         private TextBox TextboxMessage;
         private Button ButtonSend;
         private Button ButtonSendFile;
+        private TextBox textBox1;
+        private Label LabelTo;
     }
 }
