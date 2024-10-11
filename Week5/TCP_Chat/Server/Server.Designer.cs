@@ -64,6 +64,7 @@
             // 
             // TextboxConversation
             // 
+            TextboxConversation.Font = new Font("Segoe UI", 10F);
             TextboxConversation.Location = new Point(3, 38);
             TextboxConversation.Multiline = true;
             TextboxConversation.Name = "TextboxConversation";

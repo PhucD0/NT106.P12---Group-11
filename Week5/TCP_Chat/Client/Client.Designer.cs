@@ -90,6 +90,7 @@
             // 
             // TextboxConversation
             // 
+            TextboxConversation.Font = new Font("Segoe UI", 12F);
             TextboxConversation.Location = new Point(6, 46);
             TextboxConversation.Multiline = true;
             TextboxConversation.Name = "TextboxConversation";
@@ -109,6 +110,7 @@
             // 
             // TextboxMessage
             // 
+            TextboxMessage.Font = new Font("Segoe UI", 11F);
             TextboxMessage.Location = new Point(6, 369);
             TextboxMessage.Multiline = true;
             TextboxMessage.Name = "TextboxMessage";
@@ -136,6 +138,7 @@
             ButtonSendFile.TabIndex = 13;
             ButtonSendFile.Text = "Send File";
             ButtonSendFile.UseVisualStyleBackColor = true;
+            ButtonSendFile.Click += ButtonSendFile_Click;
             // 
             // TextboxTo
             // 

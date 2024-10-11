@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System;
 using System.Threading;
 using System.IO;
@@ -92,6 +92,27 @@ namespace Client
                     if (bytesRead > 0)
                     {
                         string message = Encoding.UTF8.GetString(buffer, 0, bytesRead); // Decode received bytes
+                        if (message.StartsWith("Incoming file from"))
+                        {
+                            MessageBox.Show(message); // Display file transfer notification
+
+                            // Start receiving file data
+                            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                            {
+                                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                                {
+                                    string savePath = saveFileDialog.FileName;
+                                    using (FileStream fs = new FileStream(savePath, FileMode.Create, FileAccess.Write))
+                                    {
+                                        int fileBytesRead;
+                                        while ((fileBytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+                                        {
+                                            fs.Write(buffer, 0, fileBytesRead);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         AppendMessageToChat(message); // Update the UI with the received message
                     }
                 }
@@ -122,5 +143,55 @@ namespace Client
                 tcpClient.Close(); // Close the connection
             }
         }
+
+        private void ButtonSendFile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tcpClient == null || !tcpClient.Connected)
+                {
+                    MessageBox.Show("You need to connect to the server first.");
+                    return;
+                }
+
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string filePath = openFileDialog.FileName;
+                        string fileName = Path.GetFileName(filePath);
+                        string recipient = TextboxTo.Text.Trim();
+
+                        if (string.IsNullOrWhiteSpace(recipient))
+                        {
+                            MessageBox.Show("Please enter the recipient.");
+                            return;
+                        }
+
+                        // Send file request to the server
+                        string fileRequest = $"{recipient}: {fileName}";
+                        byte[] data = Encoding.UTF8.GetBytes(fileRequest);
+                        stream.Write(data, 0, data.Length);
+
+                        // Send file data to the server
+                        using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+                        {
+                            byte[] buffer = new byte[1024];
+                            int bytesRead;
+                            while ((bytesRead = fs.Read(buffer, 0, buffer.Length)) > 0)
+                            {
+                                stream.Write(buffer, 0, bytesRead);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error sending file: {ex.Message}");
+            }
+        }
+
     }
 }
+//Tham khảo tự chatGPT và Bing - Copilot

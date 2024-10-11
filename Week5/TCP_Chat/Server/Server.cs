@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.IO;
@@ -143,5 +143,50 @@ namespace Server
                 TextboxConversation.Text += message + Environment.NewLine;
             }
         }
+
+        // Method to handle file transfer requests
+        private void HandleFileTransfer(Socket sender, string recipient, string fileName)
+        {
+            if (clients.ContainsKey(recipient))
+            {
+                // Notify recipient about incoming file
+                byte[] notification = Encoding.UTF8.GetBytes($"Incoming file from {sender}: {fileName}");
+                clients[recipient].Send(notification);
+
+                // Start sending file data
+                byte[] buffer = new byte[1024];
+                using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+                {
+                    int bytesRead;
+                    while ((bytesRead = fs.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        clients[recipient].Send(buffer, bytesRead, SocketFlags.None);
+                    }
+                }
+            }
+            else
+            {
+                byte[] data = Encoding.UTF8.GetBytes($"User {recipient} is not connected.");
+                sender.Send(data);
+            }
+        }
+
+
+        // Method to send the file data
+        void SendFile(Socket sender, Socket recipient, string fileName)
+        {
+            // Reading the file and sending it in chunks
+            byte[] buffer = new byte[1024];
+            using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+            {
+                int bytesRead;
+                while ((bytesRead = fs.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    recipient.Send(buffer, bytesRead, SocketFlags.None);
+                }
+            }
+        }
+
     }
 }
+//Tham khảo tự chatGPT và Bing - Copilot
