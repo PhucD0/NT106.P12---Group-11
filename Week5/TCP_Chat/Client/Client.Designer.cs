@@ -38,7 +38,7 @@
             TextboxMessage = new TextBox();
             ButtonSend = new Button();
             ButtonSendFile = new Button();
-            textBox1 = new TextBox();
+            TextboxTo = new TextBox();
             LabelTo = new Label();
             SuspendLayout();
             // 
@@ -137,12 +137,12 @@
             ButtonSendFile.Text = "Send File";
             ButtonSendFile.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // TextboxTo
             // 
-            textBox1.Location = new Point(476, 10);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(126, 23);
-            textBox1.TabIndex = 15;
+            TextboxTo.Location = new Point(476, 10);
+            TextboxTo.Name = "TextboxTo";
+            TextboxTo.Size = new Size(126, 23);
+            TextboxTo.TabIndex = 15;
             // 
             // LabelTo
             // 
@@ -159,7 +159,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            Controls.Add(TextboxTo);
             Controls.Add(LabelTo);
             Controls.Add(ButtonSendFile);
             Controls.Add(ButtonSend);
@@ -189,7 +189,7 @@
         private TextBox TextboxMessage;
         private Button ButtonSend;
         private Button ButtonSendFile;
-        private TextBox textBox1;
+        private TextBox TextboxTo;
         private Label LabelTo;
     }
 }

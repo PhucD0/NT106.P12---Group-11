@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Server
 {
@@ -15,8 +17,8 @@ namespace Server
         public int port = 8000;
         public bool isRunning = true;
 
-        // List to keep track of connected clients
-        private List<Socket> clients = new List<Socket>();
+        // Dictionary to map usernames to their corresponding client sockets
+        private Dictionary<string, Socket> clients = new Dictionary<string, Socket>();
 
         public Server()
         {
@@ -39,8 +41,6 @@ namespace Server
                     {
                         // Accept incoming client connections
                         Socket client = listener.AcceptSocket(); // Blocking call that waits for a connection
-                        clients.Add(client); // Add the new client to the list
-                        NotifyConnection(client); // Notify server about the new connection
                         Task.Run(() => HandleClient(client));  // Handle each client in a separate task/thread
                     }
                     catch (SocketException ex)
@@ -51,27 +51,26 @@ namespace Server
             });
         }
 
-        // Notify server about new client connection
-        private void NotifyConnection(Socket client)
-        {
-            string message = $"User connected: {client.RemoteEndPoint.ToString()}";
-            AppendToConversation(message);
-        }
-
         // Method to handle communication with each client
         void HandleClient(Socket client)
         {
             try
             {
+                byte[] rcv = new byte[1024];
+                int bytesRead = client.Receive(rcv); // Get the actual number of bytes received
+                string username = Encoding.UTF8.GetString(rcv, 0, bytesRead).Trim(); // Read username
+                clients[username] = client; // Add to the clients dictionary
+                NotifyConnection(username); // Notify server about the new connection
+
                 while (isRunning && client.Connected)
                 {
-                    byte[] rcv = new byte[1024];
-                    int bytesRead = client.Receive(rcv); // Get the actual number of bytes received
+                    rcv = new byte[1024];
+                    bytesRead = client.Receive(rcv); // Get the actual number of bytes received
 
                     if (bytesRead > 0) // Check if we received any data
                     {
                         string s = Encoding.UTF8.GetString(rcv, 0, bytesRead); // Decode only the received bytes
-                        BroadcastMessage(s); // Broadcast the message to all clients
+                        HandlePrivateMessage(s, username); // Handle private message
                     }
                 }
             }
@@ -82,22 +81,54 @@ namespace Server
             finally
             {
                 client.Close(); // Close the connection when done
-                clients.Remove(client); // Remove the client from the list
+                // Remove client from the dictionary
+                var disconnectedUser = clients.FirstOrDefault(x => x.Value == client).Key;
+                if (disconnectedUser != null)
+                {
+                    clients.Remove(disconnectedUser);
+                }
             }
         }
 
-        // Broadcast message to all connected clients
-        private void BroadcastMessage(string message)
+        // Notify server about new client connection
+        private void NotifyConnection(string username)
         {
-            byte[] data = Encoding.UTF8.GetBytes(message); // Convert message to bytes
-            foreach (var client in clients)
+            string message = $"{username} connected.";
+            AppendToConversation(message);
+        }
+
+        // Handle private messages
+        private void HandlePrivateMessage(string message, string sender)
+        {
+            // Expecting message format: "recipient: message"
+            var parts = message.Split(new[] { ':' }, 2);
+            if (parts.Length < 2)
             {
-                if (client.Connected)
-                {
-                    client.Send(data); // Send message to each connected client
-                }
+                return; // Invalid message format
             }
-            AppendToConversation(message); // Display message on the server UI
+
+            string recipient = parts[0].Trim();
+            string privateMessage = parts[1].Trim();
+
+            // Check if the recipient is connected
+            if (clients.ContainsKey(recipient))
+            {
+                // Send private message to recipient
+                byte[] data = Encoding.UTF8.GetBytes($"{sender}: {privateMessage}");
+                clients[recipient].Send(data); // Send the message to the specific recipient
+
+                // Echo the message back to the sender
+                clients[sender].Send(data); // Send the same message back to the sender
+
+                // Append the message to the server's conversation textbox
+                AppendToConversation($"{sender} to {recipient}: {privateMessage}");
+            }
+            else
+            {
+                // Optionally notify the sender that the recipient is not connected
+                byte[] data = Encoding.UTF8.GetBytes($"User {recipient} is not connected.");
+                clients[sender].Send(data);
+            }
         }
 
         private void AppendToConversation(string message)

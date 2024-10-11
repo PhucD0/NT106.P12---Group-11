@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Client
 {
@@ -15,6 +16,7 @@ namespace Client
         private NetworkStream stream;
         private const int port = 8000;
         private const string serverIP = "127.0.0.1"; // Change this to the actual server IP
+
 
         public Client()
         {
@@ -28,6 +30,11 @@ namespace Client
                 tcpClient = new TcpClient();
                 tcpClient.Connect(IPAddress.Parse(serverIP), port); // Connect to the server
                 stream = tcpClient.GetStream();
+
+                // Send the username immediately after connecting
+                string username = TextboxUsername.Text.Trim();
+                byte[] data = Encoding.UTF8.GetBytes(username);
+                stream.Write(data, 0, data.Length); // Send username to the server
 
                 MessageBox.Show("Connected to server!");
 
@@ -50,16 +57,17 @@ namespace Client
                     return;
                 }
 
-                string username = TextboxUsername.Text;
-                string message = TextboxMessage.Text;
+                string username = TextboxUsername.Text.Trim();
+                string recipient = TextboxTo.Text.Trim(); // Add TextBox for recipient
+                string message = TextboxMessage.Text.Trim();
 
-                if (string.IsNullOrWhiteSpace(username))
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(recipient))
                 {
-                    MessageBox.Show("Please enter a username.");
+                    MessageBox.Show("Please enter both your username and recipient.");
                     return;
                 }
 
-                string fullMessage = $"{username}: {message}"; // Combine username and message
+                string fullMessage = $"{recipient}: {message}"; // Format for sending private message
                 byte[] data = Encoding.UTF8.GetBytes(fullMessage); // Convert to bytes
                 stream.Write(data, 0, data.Length); // Send to server
 
