@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Server\\Server.cs",
               "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\Week5\\TCP_Chat\\Server\\Server.cs",
               "RelativeToolTip": "Server\\Server.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAcwKwAAAAAAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAIwLAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:44:29.096Z",
               "EditorCaption": ""
@@ -54,8 +54,7 @@
               "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\Week5\\TCP_Chat\\Server\\Server.cs [Design]",
               "RelativeToolTip": "Server\\Server.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T13:50:11.245Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-09T13:50:11.245Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Client\\Client.Designer.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAwFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:48:55.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:48:55.254Z"
             },
             {
               "$type": "Document",
@@ -78,7 +76,7 @@
               "RelativeDocumentMoniker": "Client\\Client.cs",
               "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\Week5\\TCP_Chat\\Client\\Client.cs",
               "RelativeToolTip": "Client\\Client.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAQwHUAAAARAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAYwIEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:17:19.354Z",
               "EditorCaption": ""
@@ -92,8 +90,7 @@
               "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\Week5\\TCP_Chat\\Client\\Client.cs [Design]",
               "RelativeToolTip": "Client\\Client.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:03:49.607Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-09T14:03:49.607Z"
             }
           ]
         }

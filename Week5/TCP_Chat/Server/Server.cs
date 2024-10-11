@@ -153,8 +153,8 @@ namespace Server
                 byte[] notification = Encoding.UTF8.GetBytes($"Incoming file from {sender}: {fileName}");
                 clients[recipient].Send(notification);
 
-                // Start sending file data
-                byte[] buffer = new byte[1024];
+                // Start sending file data in chunks
+                byte[] buffer = new byte[8192]; // Increased buffer size to handle larger chunks
                 using (FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
                 {
                     int bytesRead;
@@ -163,6 +163,10 @@ namespace Server
                         clients[recipient].Send(buffer, bytesRead, SocketFlags.None);
                     }
                 }
+
+                // Notify recipient that file transfer is complete
+                byte[] transferComplete = Encoding.UTF8.GetBytes("File transfer complete");
+                clients[recipient].Send(transferComplete);
             }
             else
             {
@@ -170,6 +174,7 @@ namespace Server
                 sender.Send(data);
             }
         }
+
 
 
         // Method to send the file data

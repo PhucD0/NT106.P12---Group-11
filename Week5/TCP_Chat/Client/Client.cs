@@ -82,7 +82,7 @@ namespace Client
         // Listen for incoming messages from the server
         private void ListenForMessages()
         {
-            byte[] buffer = new byte[1024];
+            byte[] buffer = new byte[8192]; // Increased buffer size to handle larger chunks
 
             try
             {
@@ -96,7 +96,6 @@ namespace Client
                         {
                             MessageBox.Show(message); // Display file transfer notification
 
-                            // Start receiving file data
                             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                             {
                                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -108,12 +107,19 @@ namespace Client
                                         while ((fileBytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
                                         {
                                             fs.Write(buffer, 0, fileBytesRead);
+                                            if (Encoding.UTF8.GetString(buffer, 0, fileBytesRead).Contains("File transfer complete"))
+                                            {
+                                                break;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                        AppendMessageToChat(message); // Update the UI with the received message
+                        else
+                        {
+                            AppendMessageToChat(message); // Update the UI with the received message
+                        }
                     }
                 }
             }
@@ -122,6 +128,7 @@ namespace Client
                 MessageBox.Show($"Error receiving message: {ex.Message}");
             }
         }
+
 
         // Append received messages to the client's conversation text box
         private void AppendMessageToChat(string message)
