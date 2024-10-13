@@ -13,3 +13,18 @@ D:\kudo\NT106\ThucHanh\THUCHANH\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai02
 D:\kudo\NT106\ThucHanh\THUCHANH\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai03.resources
 D:\kudo\NT106\ThucHanh\THUCHANH\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai04.resources
 D:\kudo\NT106\ThucHanh\THUCHANH\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai05.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\bin\Debug\LAB2_Bai01.exe.config
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\bin\Debug\LAB2_Bai01.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\bin\Debug\LAB2_Bai01.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2.csproj.AssemblyReference.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai01.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai02.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai03.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai04.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Lab02_Bai05.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.Properties.Resources.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB2\LAB2_Bai01\obj\Debug\LAB2_Bai01.pdb

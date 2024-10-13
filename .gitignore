@@ -1,0 +1,12 @@
+# Bỏ qua thư mục .vs của Visual Studio
+.vs/
+
+# Bỏ qua tất cả các tệp .log
+*.log
+
+# Bỏ qua tệp cấu hình IDE
+*.suo
+*.user
+
+# Bỏ qua thư mục node_modules
+node_modules/
