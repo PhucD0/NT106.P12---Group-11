@@ -48,7 +48,7 @@ namespace LAB2_Bai01
             Hide();
         }
 
-        private void btnBai5_Click(object sender, EventArgs e)
+        private void btnBai5_Click_1(object sender, EventArgs e)
         {
             Lab02_Bai05 form6 = new Lab02_Bai05();
             form6.Tag = this;
