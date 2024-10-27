@@ -24,7 +24,7 @@ namespace LAB2_Bai01
             form2.Show(this);
             Hide();
         }
-        private void btnBai2_Click(object sender, EventArgs e)
+        private void btnBai2_Click_1(object sender, EventArgs e)
         {
             Lab02_Bai02 form3 = new Lab02_Bai02();
             form3.Tag = this;
@@ -56,7 +56,7 @@ namespace LAB2_Bai01
             Hide();
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
