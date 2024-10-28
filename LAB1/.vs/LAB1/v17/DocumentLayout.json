@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\",
+  "WorkspaceRootPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|d:\\kudo\\nt106\\thuchanh\\thuchanh\\lab1\\lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|d:\\hoc tap\\bai tap\\laptrinhmnag\\project\\lab1\\lab1\\lab01_bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\lab01_bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|d:\\kudo\\nt106\\thuchanh\\thuchanh\\lab1\\lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|d:\\kudo\\nt106\\thuchanh\\thuchanh\\lab1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|d:\\hoc tap\\bai tap\\laptrinhmnag\\project\\lab1\\lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\lab01_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7AA06C5C-9BF7-414A-B353-716CD07E3841}|LAB1\\LAB1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,17 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Lab01_Bai05.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai05.cs",
+              "RelativeDocumentMoniker": "LAB1\\Lab01_Bai05.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai05.cs",
+              "RelativeToolTip": "LAB1\\Lab01_Bai05.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:07:16.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Lab01_Bai01.cs",
-              "DocumentMoniker": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Lab01_Bai01.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai01.cs",
               "RelativeDocumentMoniker": "LAB1\\Lab01_Bai01.cs",
-              "ToolTip": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Lab01_Bai01.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai01.cs",
               "RelativeToolTip": "LAB1\\Lab01_Bai01.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T01:28:47.623Z",
               "EditorCaption": ""
@@ -45,9 +66,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Lab01_Bai01.cs [Design]",
-              "DocumentMoniker": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Lab01_Bai01.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai01.cs",
               "RelativeDocumentMoniker": "LAB1\\Lab01_Bai01.cs",
-              "ToolTip": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Lab01_Bai01.cs [Design]",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Lab01_Bai01.cs [Design]",
               "RelativeToolTip": "LAB1\\Lab01_Bai01.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T01:28:45.938Z",
@@ -55,28 +76,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Form1.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Form1.cs",
               "RelativeDocumentMoniker": "LAB1\\Form1.cs",
-              "ToolTip": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Form1.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Form1.cs",
               "RelativeToolTip": "LAB1\\Form1.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T01:20:50.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T01:20:50.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Form1.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB1\\LAB1\\Form1.cs",
               "RelativeDocumentMoniker": "LAB1\\Form1.cs",
               "ToolTip": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Form1.cs [Design]",
-              "RelativeToolTip": "LAB1\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\kudo\\NT106\\ThucHanh\\THUCHANH\\LAB1\\LAB1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T07:32:45.151Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-08T07:32:45.151Z"
             }
           ]
         }

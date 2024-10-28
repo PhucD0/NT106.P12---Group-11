@@ -1,21 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\",
+  "WorkspaceRootPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\lab2\\lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|d:\\hoc tap\\bai tap\\laptrinhmnag\\project\\lab2\\lab2_bai01\\lab02_bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\lab02_bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\lab02_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|d:\\hoc tap\\bai tap\\laptrinhmnag\\project\\lab2\\lab2_bai01\\lab02_bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\lab2\\lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\lab02_bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\lab2\\lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{032B6CDE-5216-4050-B9AF-CC524E0CFEA5}|LAB2_Bai01\\LAB2.csproj|solutionrelative:lab2_bai01\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,28 +42,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lab02_Bai05.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai05.cs",
+              "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai05.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai05.cs",
+              "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai05.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAuwI0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T09:27:24.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lab02_Bai01.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai01.cs",
+              "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai01.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai01.cs",
+              "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai01.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwBEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T03:48:33.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lab02_Bai04.cs [Design]",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai04.cs",
+              "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai04.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai04.cs [Design]*",
+              "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai04.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:51:46.809Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Lab02_Bai04.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai04.cs",
+              "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai04.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai04.cs*",
+              "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai04.cs*",
+              "ViewState": "AQIAAMkAAAAAAAAAAIAwwNwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:50:44.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Lab02_Bai03.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
               "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai03.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
               "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai03.cs",
-              "ViewState": "AQIAABgBAAAAAAAAAAAiwCsBAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T07:50:58.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Lab02_Bai03.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs",
               "RelativeDocumentMoniker": "LAB2_Bai01\\Lab02_Bai03.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs [Design]",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Lab02_Bai03.cs [Design]",
               "RelativeToolTip": "LAB2_Bai01\\Lab02_Bai03.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T07:49:20.052Z",
@@ -55,28 +126,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Form1.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Form1.cs",
               "RelativeDocumentMoniker": "LAB2_Bai01\\Form1.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Form1.cs",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Form1.cs",
               "RelativeToolTip": "LAB2_Bai01\\Form1.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvyIAAAAXAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAA0wD4AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T13:46:37.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T13:46:37.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Form1.cs",
+              "DocumentMoniker": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Form1.cs",
               "RelativeDocumentMoniker": "LAB2_Bai01\\Form1.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\LAB2\\LAB2_Bai01\\Form1.cs [Design]",
+              "ToolTip": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\LAB2\\LAB2_Bai01\\Form1.cs [Design]",
               "RelativeToolTip": "LAB2_Bai01\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T13:46:35.617Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-26T13:46:35.617Z"
             }
           ]
         }
