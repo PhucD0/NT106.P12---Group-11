@@ -32,8 +32,8 @@
             TextboxPort = new TextBox();
             label_password = new Label();
             label_port = new Label();
-            ButtonStopServer = new Button();
-            button1 = new Button();
+            btnStop = new Button();
+            btnListen = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
             SuspendLayout();
@@ -83,30 +83,31 @@
             label_port.TabIndex = 6;
             label_port.Text = "IP:";
             // 
-            // ButtonStopServer
+            // btnStop
             // 
-            ButtonStopServer.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
-            ButtonStopServer.ForeColor = Color.Coral;
-            ButtonStopServer.Location = new Point(510, 86);
-            ButtonStopServer.Margin = new Padding(4, 3, 4, 3);
-            ButtonStopServer.Name = "ButtonStopServer";
-            ButtonStopServer.Size = new Size(130, 82);
-            ButtonStopServer.TabIndex = 11;
-            ButtonStopServer.Text = "Stop ";
-            ButtonStopServer.UseVisualStyleBackColor = true;
-            ButtonStopServer.Click += ButtonStopServer_Click;
+            btnStop.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
+            btnStop.ForeColor = Color.Coral;
+            btnStop.Location = new Point(510, 86);
+            btnStop.Margin = new Padding(4, 3, 4, 3);
+            btnStop.Name = "btnStop";
+            btnStop.Size = new Size(130, 82);
+            btnStop.TabIndex = 11;
+            btnStop.Text = "Stop ";
+            btnStop.UseVisualStyleBackColor = true;
+            btnStop.Click += btnStop_Click;
             // 
-            // button1
+            // btnListen
             // 
-            button1.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
-            button1.ForeColor = Color.Coral;
-            button1.Location = new Point(348, 86);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(130, 82);
-            button1.TabIndex = 12;
-            button1.Text = "Listen";
-            button1.UseVisualStyleBackColor = true;
+            btnListen.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
+            btnListen.ForeColor = Color.Coral;
+            btnListen.Location = new Point(348, 86);
+            btnListen.Margin = new Padding(4, 3, 4, 3);
+            btnListen.Name = "btnListen";
+            btnListen.Size = new Size(130, 82);
+            btnListen.TabIndex = 12;
+            btnListen.Text = "Listen";
+            btnListen.UseVisualStyleBackColor = true;
+            btnListen.Click += btnListen_Click;
             // 
             // label1
             // 
@@ -132,8 +133,8 @@
             ClientSize = new Size(744, 362);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Controls.Add(button1);
-            Controls.Add(ButtonStopServer);
+            Controls.Add(btnListen);
+            Controls.Add(btnStop);
             Controls.Add(TextboxPassword);
             Controls.Add(TextboxPort);
             Controls.Add(label_password);
@@ -152,8 +153,8 @@
         private TextBox TextboxPort;
         private Label label_password;
         private Label label_port;
-        private Button ButtonStopServer;
-        private Button button1;
+        private Button btnStop;
+        private Button btnListen;
         private Label label1;
         private TextBox textBox1;
     }
