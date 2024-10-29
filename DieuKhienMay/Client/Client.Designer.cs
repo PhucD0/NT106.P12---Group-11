@@ -30,12 +30,12 @@
         {
             label_IP = new Label();
             label_port = new Label();
-            TextboxIP = new TextBox();
-            TextboxPort = new TextBox();
-            ButtonSaveIP = new Button();
-            ButtonConnect = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            txbIP = new TextBox();
+            txbPort = new TextBox();
+            btnSaveIP = new Button();
+            btnConnect = new Button();
+            pictureBox = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
             // 
             // label_IP
@@ -63,61 +63,62 @@
             label_port.TabIndex = 1;
             label_port.Text = "Port:";
             // 
-            // TextboxIP
+            // txbIP
             // 
-            TextboxIP.Font = new Font("Segoe UI", 15F);
-            TextboxIP.Location = new Point(175, 52);
-            TextboxIP.Margin = new Padding(4, 3, 4, 3);
-            TextboxIP.Multiline = true;
-            TextboxIP.Name = "TextboxIP";
-            TextboxIP.ScrollBars = ScrollBars.Both;
-            TextboxIP.Size = new Size(493, 41);
-            TextboxIP.TabIndex = 3;
+            txbIP.Font = new Font("Segoe UI", 15F);
+            txbIP.Location = new Point(175, 52);
+            txbIP.Margin = new Padding(4, 3, 4, 3);
+            txbIP.Multiline = true;
+            txbIP.Name = "txbIP";
+            txbIP.ScrollBars = ScrollBars.Both;
+            txbIP.Size = new Size(493, 41);
+            txbIP.TabIndex = 3;
             // 
-            // TextboxPort
+            // txbPort
             // 
-            TextboxPort.BackColor = Color.White;
-            TextboxPort.Font = new Font("Segoe UI", 15F);
-            TextboxPort.Location = new Point(175, 113);
-            TextboxPort.Margin = new Padding(4, 3, 4, 3);
-            TextboxPort.Multiline = true;
-            TextboxPort.Name = "TextboxPort";
-            TextboxPort.Size = new Size(493, 41);
-            TextboxPort.TabIndex = 4;
+            txbPort.BackColor = Color.White;
+            txbPort.Font = new Font("Segoe UI", 15F);
+            txbPort.Location = new Point(175, 113);
+            txbPort.Margin = new Padding(4, 3, 4, 3);
+            txbPort.Multiline = true;
+            txbPort.Name = "txbPort";
+            txbPort.Size = new Size(493, 41);
+            txbPort.TabIndex = 4;
             // 
-            // ButtonSaveIP
+            // btnSaveIP
             // 
-            ButtonSaveIP.Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ButtonSaveIP.ForeColor = Color.Coral;
-            ButtonSaveIP.Location = new Point(577, 163);
-            ButtonSaveIP.Margin = new Padding(4, 3, 4, 3);
-            ButtonSaveIP.Name = "ButtonSaveIP";
-            ButtonSaveIP.Size = new Size(91, 36);
-            ButtonSaveIP.TabIndex = 6;
-            ButtonSaveIP.Text = "Save";
-            ButtonSaveIP.UseVisualStyleBackColor = true;
+            btnSaveIP.Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSaveIP.ForeColor = Color.Coral;
+            btnSaveIP.Location = new Point(577, 163);
+            btnSaveIP.Margin = new Padding(4, 3, 4, 3);
+            btnSaveIP.Name = "btnSaveIP";
+            btnSaveIP.Size = new Size(91, 36);
+            btnSaveIP.TabIndex = 6;
+            btnSaveIP.Text = "Save";
+            btnSaveIP.UseVisualStyleBackColor = true;
+            btnSaveIP.Click += btnSaveIP_Click;
             // 
-            // ButtonConnect
+            // btnConnect
             // 
-            ButtonConnect.Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ButtonConnect.ForeColor = Color.Coral;
-            ButtonConnect.Location = new Point(700, 46);
-            ButtonConnect.Margin = new Padding(4, 3, 4, 3);
-            ButtonConnect.Name = "ButtonConnect";
-            ButtonConnect.Size = new Size(130, 108);
-            ButtonConnect.TabIndex = 8;
-            ButtonConnect.Text = "Connect";
-            ButtonConnect.UseVisualStyleBackColor = true;
-            ButtonConnect.Click += ButtonConnect_Click;
+            btnConnect.Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnConnect.ForeColor = Color.Coral;
+            btnConnect.Location = new Point(700, 46);
+            btnConnect.Margin = new Padding(4, 3, 4, 3);
+            btnConnect.Name = "btnConnect";
+            btnConnect.Size = new Size(130, 108);
+            btnConnect.TabIndex = 8;
+            btnConnect.Text = "Connect";
+            btnConnect.UseVisualStyleBackColor = true;
+            btnConnect.Click += btnConnect_Click;
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.Location = new Point(24, 224);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(806, 423);
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
+            pictureBox.BackColor = Color.White;
+            pictureBox.Location = new Point(24, 224);
+            pictureBox.Name = "pictureBox";
+            pictureBox.Size = new Size(806, 423);
+            pictureBox.TabIndex = 9;
+            pictureBox.TabStop = false;
             // 
             // Client
             // 
@@ -125,11 +126,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(884, 670);
-            Controls.Add(pictureBox1);
-            Controls.Add(ButtonConnect);
-            Controls.Add(ButtonSaveIP);
-            Controls.Add(TextboxPort);
-            Controls.Add(TextboxIP);
+            Controls.Add(pictureBox);
+            Controls.Add(btnConnect);
+            Controls.Add(btnSaveIP);
+            Controls.Add(txbPort);
+            Controls.Add(txbIP);
             Controls.Add(label_port);
             Controls.Add(label_IP);
             Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -137,7 +138,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Client";
             Text = "Client";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,10 +147,10 @@
 
         private Label label_IP;
         private Label label_port;
-        private TextBox TextboxIP;
-        private TextBox TextboxPort;
-        private Button ButtonSaveIP;
-        private Button ButtonConnect;
-        private PictureBox pictureBox1;
+        private TextBox txbIP;
+        private TextBox txbPort;
+        private Button btnSaveIP;
+        private Button btnConnect;
+        private PictureBox pictureBox;
     }
 }

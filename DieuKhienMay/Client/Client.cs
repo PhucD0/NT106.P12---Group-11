@@ -9,7 +9,7 @@ namespace Client
             InitializeComponent();
         }
 
-        private void ButtonConnect_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
             ConnectToServer();
         }
@@ -25,5 +25,11 @@ namespace Client
         // Nhan va hien thi hinh anh do Server gui qua 
         // nhan tin hieu ket thuc hoac gui tin hieu ket thuc den server
 
+
+        // Luu, xoa, them dia chi IP
+        private void btnSaveIP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

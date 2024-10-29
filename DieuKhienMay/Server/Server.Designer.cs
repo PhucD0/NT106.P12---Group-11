@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            TextboxPassword = new TextBox();
-            TextboxPort = new TextBox();
+            txbPort = new TextBox();
+            txbIP = new TextBox();
             label_password = new Label();
             label_port = new Label();
             btnStop = new Button();
             btnListen = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txbStatus = new TextBox();
             SuspendLayout();
             // 
-            // TextboxPassword
+            // txbPort
             // 
-            TextboxPassword.Font = new Font("Segoe UI", 15F);
-            TextboxPassword.Location = new Point(130, 137);
-            TextboxPassword.Margin = new Padding(4, 3, 4, 3);
-            TextboxPassword.Multiline = true;
-            TextboxPassword.Name = "TextboxPassword";
-            TextboxPassword.Size = new Size(157, 31);
-            TextboxPassword.TabIndex = 9;
+            txbPort.Font = new Font("Segoe UI", 15F);
+            txbPort.Location = new Point(130, 137);
+            txbPort.Margin = new Padding(4, 3, 4, 3);
+            txbPort.Multiline = true;
+            txbPort.Name = "txbPort";
+            txbPort.Size = new Size(157, 31);
+            txbPort.TabIndex = 9;
             // 
-            // TextboxPort
+            // txbIP
             // 
-            TextboxPort.Font = new Font("Segoe UI", 15F);
-            TextboxPort.Location = new Point(130, 86);
-            TextboxPort.Margin = new Padding(4, 3, 4, 3);
-            TextboxPort.Multiline = true;
-            TextboxPort.Name = "TextboxPort";
-            TextboxPort.Size = new Size(157, 31);
-            TextboxPort.TabIndex = 8;
+            txbIP.Font = new Font("Segoe UI", 15F);
+            txbIP.Location = new Point(130, 86);
+            txbIP.Margin = new Padding(4, 3, 4, 3);
+            txbIP.Multiline = true;
+            txbIP.Name = "txbIP";
+            txbIP.Size = new Size(157, 31);
+            txbIP.TabIndex = 8;
             // 
             // label_password
             // 
@@ -118,12 +118,12 @@
             label1.TabIndex = 13;
             label1.Text = "Status:";
             // 
-            // textBox1
+            // txbStatus
             // 
-            textBox1.Location = new Point(136, 19);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(579, 28);
-            textBox1.TabIndex = 14;
+            txbStatus.Location = new Point(136, 19);
+            txbStatus.Name = "txbStatus";
+            txbStatus.Size = new Size(579, 28);
+            txbStatus.TabIndex = 14;
             // 
             // Server
             // 
@@ -131,12 +131,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(744, 362);
-            Controls.Add(textBox1);
+            Controls.Add(txbStatus);
             Controls.Add(label1);
             Controls.Add(btnListen);
             Controls.Add(btnStop);
-            Controls.Add(TextboxPassword);
-            Controls.Add(TextboxPort);
+            Controls.Add(txbPort);
+            Controls.Add(txbIP);
             Controls.Add(label_password);
             Controls.Add(label_port);
             Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -149,13 +149,13 @@
 
         #endregion
 
-        private TextBox TextboxPassword;
-        private TextBox TextboxPort;
+        private TextBox txbPort;
+        private TextBox txbIP;
         private Label label_password;
         private Label label_port;
         private Button btnStop;
         private Button btnListen;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txbStatus;
     }
 }
