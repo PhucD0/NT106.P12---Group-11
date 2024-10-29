@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # 🖥️ ỨNG DỤNG ĐIỀU KHIỂN MÁY TÍNH TỪ XA
 # NT106.P12 - Group 11
 ---
@@ -34,5 +33,3 @@
 | Phạm Văn Quốc       | ???    | [23521310](mailto:23521310@gm.uit.edu.vn) |
 | Lê Trung Kiên            | ???     | [23520797](mailto:23520797@gm.uit.edu.vn) |
 
-
->>>>>>> 01f49b49702a9364d8b463748d80861f5fde46a4
