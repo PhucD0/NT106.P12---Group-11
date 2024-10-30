@@ -77,6 +77,11 @@ namespace Server
                         stream.Read(dataBytesRecv, 0, dataLength);
                         HandleInputBytes(dataBytesRecv);
                     }
+                    else if(dataType == 2)  //yeu cau xem log tu server
+                    {
+                        string logs = LoadLogs();
+                        SendLogs(logs);
+                    }
                     else
                     {
                         // Kết nối thất bại
@@ -105,6 +110,18 @@ namespace Server
         private void UpdateStatus(string message)
         {
 
+        }
+
+        // Truy cap co so du lieu de lay lish su ket noi
+        private string LoadLogs()
+        {
+            return "";
+        }
+
+        // Gui logs cho client
+        private void SendLogs(string logs)
+        {
+            
         }
 
         // Nhận file từ client

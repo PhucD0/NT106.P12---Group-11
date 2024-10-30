@@ -32,18 +32,18 @@ namespace Client
         {
             try
             {
-                //// code k?t n?i ??n server here
-                
-                // B?t ??u l?ng nghe t? server
+                //// code ket noi den server here
+
+                // Bat dau lang nghe tu server
                 ListenAndDisplayImages();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"K?t n?i th?t b?i: {ex.Message}");
+                MessageBox.Show($"Ket noi that bai: {ex.Message}");
             }
         }
-        
-        // L?ng nghe và hi?n th? d? li?u hình ?nh bên phía server
+
+        // Lang nghe và hien thi du lieu hình anh bên phía server
         private void ListenAndDisplayImages()
         {
             new Thread(() =>
@@ -52,22 +52,23 @@ namespace Client
                 {
                     while (client.Connected)
                     {
-                        // ??c d? li?u ?nh t? server và hi?n th? lên picturebox
+
+                        // nhan du lieu anh tu server và hien thi lên picturebox
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"L?i l?ng nghe d? li?u t? server: {ex.Message}");
+                    MessageBox.Show($"Loi lang nghe du lieu tu server: {ex.Message}");
                 }
             }).Start();
         }
 
-        // X? lí input và g?i t?i server
+        // Xu li input va gui toi server
         private void SendInputData(byte[] inputData)
         {
             // code something here
         }
-        // Hàm SendInputData ???c g?i qua các s? ki?n c?a chu?t và bàn phím
+        // Ham SendInputDat duoc goi qua cac su kien cua chuot va ban phim
 
         // Luu dia chi IP và port
         private void btnSaveIP_Click(object sender, EventArgs e)
@@ -75,12 +76,25 @@ namespace Client
 
         }
 
-        // Thêm, xóa ??a ch? IP và port
+        // Gui file qua server
+        private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
 
-        // Ghi l?i l?ch s? các l?n k?t n?i
+        // Yeu cau lich su ket noi tu server
+        private void requestLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RequestLogs();
+        }
 
+        private void RequestLogs()
+        {
 
-        // G?i file qua server
+        }
+
+        // Thêm, xóa dia chi IP và port
+        
+
     }
 }

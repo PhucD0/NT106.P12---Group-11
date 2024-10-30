@@ -35,7 +35,11 @@
             btnSaveIP = new Button();
             btnConnect = new Button();
             pictureBox = new PictureBox();
+            menuStrip1 = new MenuStrip();
+            sendFileToolStripMenuItem = new ToolStripMenuItem();
+            requestLogsToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label_IP
@@ -120,6 +124,30 @@
             pictureBox.TabIndex = 9;
             pictureBox.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(884, 28);
+            menuStrip1.TabIndex = 10;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // sendFileToolStripMenuItem
+            // 
+            sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
+            sendFileToolStripMenuItem.Size = new Size(83, 24);
+            sendFileToolStripMenuItem.Text = "Send File";
+            sendFileToolStripMenuItem.Click += sendFileToolStripMenuItem_Click;
+            // 
+            // requestLogsToolStripMenuItem
+            // 
+            requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
+            requestLogsToolStripMenuItem.Size = new Size(111, 24);
+            requestLogsToolStripMenuItem.Text = "Request Logs";
+            requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click;
+            // 
             // Client
             // 
             AutoScaleDimensions = new SizeF(12F, 22F);
@@ -133,12 +161,16 @@
             Controls.Add(txbIP);
             Controls.Add(label_port);
             Controls.Add(label_IP);
+            Controls.Add(menuStrip1);
             Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.Coral;
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Client";
             Text = "Client";
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,5 +184,8 @@
         private Button btnSaveIP;
         private Button btnConnect;
         private PictureBox pictureBox;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem sendFileToolStripMenuItem;
+        private ToolStripMenuItem requestLogsToolStripMenuItem;
     }
 }
