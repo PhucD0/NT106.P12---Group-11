@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -48,7 +48,10 @@ namespace Client
             }
         }
 
-        // Lang nghe v� hien thi du lieu h�nh anh b�n ph�a server
+        /// <summary>
+        /// Xử lí ảnh
+        /// </summary>
+        // Lang nghe và hien thi du lieu hình anh bên phía server
         private void ListenAndDisplayImages()
         {
             new Thread(() =>
@@ -58,7 +61,32 @@ namespace Client
                     while (client.Connected)
                     {
 
-                        // nhan du lieu anh tu server v� hien thi l�n picturebox
+                        // Đọc header để xác định loại dữ liệu (0 cho hình ảnh)
+                        byte[] header = new byte[2];
+                        stream.Read(header, 0, header.Length);
+                        ushort dataType = BitConverter.ToUInt16(header, 0);
+
+                        // Đọc chiều dài dữ liệu hình ảnh
+                        byte[] lengthBytes = new byte[2];
+                        stream.Read(lengthBytes, 0, lengthBytes.Length);
+                        ushort length = BitConverter.ToUInt16(lengthBytes, 0);
+
+                        // Nếu loại dữ liệu là hình ảnh
+                        if (dataType == 0) // 0 là mã loại dữ liệu hình ảnh
+                        {
+                            byte[] imageData = new byte[length];
+                            stream.Read(imageData, 0, length); // Đọc dữ liệu hình ảnh
+
+                            // Chuyển đổi byte array thành hình ảnh và hiển thị
+                            using (MemoryStream ms = new MemoryStream(imageData))
+                            {
+                                Image image = Image.FromStream(ms);
+                                this.Invoke((MethodInvoker)delegate
+                                {
+                                    pictureBox.Image = image; // Hiển thị hình ảnh lên PictureBox
+                                });
+                            }
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -79,7 +107,7 @@ namespace Client
         // Ham SendInputDat duoc goi qua cac su kien cua chuot va ban phim
 
         /// <summary>
-        /// Luu dia chi IP v� port
+        /// Luu dia chi IP và port
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -112,8 +140,8 @@ namespace Client
 
         private void RequestLogs()
         {
-            byte[] header = BitConverter.GetBytes((ushort)2); // Gi? s? 2 l� lo?i y�u c?u xem logs
-            byte[] length = BitConverter.GetBytes(0); // Kh�ng c� d? li?u th�m, ch? l� y�u c?u
+            byte[] header = BitConverter.GetBytes((ushort)2); // Gi? s? 2 là lo?i yêu c?u xem logs
+            byte[] length = BitConverter.GetBytes(0); // Không có d? li?u thêm, ch? là yêu c?u
 
             stream.Write(header, 0, header.Length);
             stream.Write(length, 0, length.Length);
@@ -123,22 +151,22 @@ namespace Client
 
         private void ReceiveLogsFromServer()
         {
-            byte[] header = BitConverter.GetBytes((ushort)2); // 2 c� th? ??i di?n cho y�u c?u logs
+            byte[] header = BitConverter.GetBytes((ushort)2); // 2 có th? ??i di?n cho yêu c?u logs
             stream.Write(header, 0, header.Length);
 
-            byte[] logsBytes = new byte[2048]; // T?ng k�ch th??c n?u c?n
+            byte[] logsBytes = new byte[2048]; // T?ng kích th??c n?u c?n
             int bytesRead = stream.Read(logsBytes, 0, logsBytes.Length);
 
             string logs = Encoding.ASCII.GetString(logsBytes, 0, bytesRead);
 
-            // Ghi logs v�o m?t file t?m th?i v� m? Notepad
+            // Ghi logs vào m?t file t?m th?i và m? Notepad
             string tempFilePath = Path.GetTempPath() + "connection_logs.txt";
             File.WriteAllText(tempFilePath, logs);
             System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
         }
 
         /// <summary>
-        /// Th�m, x�a dia chi IP v� port
+        /// Thêm, xóa dia chi IP và port
         /// </summary>
 
 

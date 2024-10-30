@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using System.Net;
 using System.Text;
 using System.Data;
+using System.Drawing.Imaging;
 
 namespace Server
 {
@@ -121,7 +122,65 @@ namespace Server
         /// </summary>
         private void SendImage()
         {
+            try
+            {
+                // Chụp ảnh màn hình với độ phân giải và chất lượng giảm
+                Bitmap screenshot = CaptureScreen(0.5f, 40L); // Scale ảnh xuống 50% và chất lượng JPEG 40%
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    screenshot.Save(ms, ImageFormat.Jpeg);
+                    byte[] imageData = ms.ToArray();
 
+                    byte[] header = BitConverter.GetBytes((ushort)0); // 0 là mã loại dữ liệu ảnh
+                    byte[] length = BitConverter.GetBytes(imageData.Length);
+
+                    stream.Write(header, 0, header.Length);
+                    stream.Write(length, 0, length.Length);
+                    stream.Write(imageData, 0, imageData.Length);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi gửi ảnh: {ex.Message}");
+            }
+        }
+
+        // Hàm chụp ảnh với độ phân giải thấp và chất lượng JPEG giảm
+        private Bitmap CaptureScreen(float scaleFactor = 0.5f, long quality = 50L)
+        {
+            // Xác định kích thước ảnh với scaleFactor để giảm độ phân giải
+            Rectangle screenSize = Screen.PrimaryScreen.Bounds;
+            int scaledWidth = (int)(screenSize.Width * scaleFactor);
+            int scaledHeight = (int)(screenSize.Height * scaleFactor);
+
+            Bitmap bmp = new Bitmap(scaledWidth, scaledHeight);
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighSpeed;
+                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Low;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+
+                // Chụp màn hình với kích thước nhỏ hơn
+                g.CopyFromScreen(0, 0, 0, 0, new Size(scaledWidth, scaledHeight));
+            }
+
+            // Giảm chất lượng ảnh khi lưu JPEG
+            return CompressImage(bmp, quality);
+        }
+
+        // Hàm nén ảnh bằng cách giảm chất lượng JPEG
+        private Bitmap CompressImage(Bitmap bmp, long quality)
+        {
+            ImageCodecInfo jpegCodec = ImageCodecInfo.GetImageDecoders()
+                                                     .First(codec => codec.FormatID == ImageFormat.Jpeg.Guid);
+            EncoderParameters encoderParams = new EncoderParameters(1);
+            encoderParams.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                bmp.Save(ms, jpegCodec, encoderParams);
+                return new Bitmap(ms);
+            }
         }
 
         /// <summary>

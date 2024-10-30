@@ -34,8 +34,8 @@
               "Title": "Server.cs [Design]",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeDocumentMoniker": "Server\\Server.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs [Design]*",
-              "RelativeToolTip": "Server\\Server.cs [Design]*",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs [Design]",
+              "RelativeToolTip": "Server\\Server.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T07:34:38.996Z",
               "EditorCaption": " [Design]"
@@ -46,11 +46,10 @@
               "Title": "Client.cs [Design]",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
               "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs [Design]*",
-              "RelativeToolTip": "Client\\Client.cs [Design]*",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs [Design]",
+              "RelativeToolTip": "Client\\Client.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T07:34:35.961Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-30T07:34:35.961Z"
             },
             {
               "$type": "Document",
@@ -58,9 +57,9 @@
               "Title": "Server.cs",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeDocumentMoniker": "Server\\Server.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs*",
-              "RelativeToolTip": "Server\\Server.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAswIcAAAAVAAAAAAAAAA==",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
+              "RelativeToolTip": "Server\\Server.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwI8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T10:03:15.476Z",
               "EditorCaption": ""
@@ -71,12 +70,11 @@
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
               "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs*",
-              "RelativeToolTip": "Client\\Client.cs*",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
+              "RelativeToolTip": "Client\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T09:46:13.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T09:46:13.163Z"
             }
           ]
         }
