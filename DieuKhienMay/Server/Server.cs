@@ -13,6 +13,7 @@ using System.Net;
 using System.Text;
 using System.Data;
 using System.Drawing.Imaging;
+using System.Timers;
 
 namespace Server
 {
@@ -24,6 +25,8 @@ namespace Server
         private NetworkStream stream;
         private bool isConnected = false;
         private SqlConnection sqlConnection;
+        private System.Timers.Timer timer;
+
 
         public Server()
         {
@@ -82,7 +85,9 @@ namespace Server
                     {
                         if(isConnected)
                         {
-                            // code something here, co dung ham SendImage()
+                            timer = new System.Timers.Timer(100);
+                            timer.Elapsed += (sender, e) => SendImage();
+                            timer.Start();
                         }
                     }
                     else if(dataType == 1) // xử lí dữ liệu input từ client
@@ -198,7 +203,7 @@ namespace Server
         // Chuỗi kết nối đến cơ sở dữ liệu
         string connectionString = "Server=your_server;Database=RemoteDesktopDB;User Id=your_user;Password=your_password;";
 
-        // Hàm khởi tạo kết nối
+        // Hàm khởi tạo kết nối csdl
         private SqlConnection InitializeDatabase()
         {
             SqlConnection connection = new SqlConnection(connectionString);
@@ -222,7 +227,7 @@ namespace Server
             }
         }
 
-        // Truy cap co so du lieu de lay lish su ket noi
+        // Truy cap co so du lieu để lấy lịch sử kết nối
         private DataTable LoadLogs()
         {
             DataTable logs = new DataTable();
