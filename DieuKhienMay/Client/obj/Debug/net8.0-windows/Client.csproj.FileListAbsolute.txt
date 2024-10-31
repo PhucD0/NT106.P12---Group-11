@@ -48,3 +48,20 @@ D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.pdb
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.genruntimeconfig.cache
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Client.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\refint\Client.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll

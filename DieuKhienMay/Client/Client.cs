@@ -45,7 +45,16 @@ namespace Client
             try
             {
                 //// code ket noi den server here
+                // Đọc IP và Port từ các ô nhập liệu
+                string ipAddress = txbIP.Text;
+                int port = int.Parse(txbPort.Text);
 
+                // Khởi tạo kết nối tới server
+                client = new TcpClient(ipAddress, port);
+                stream = client.GetStream();
+
+                // Thông báo kết nối thành công và bắt đầu lắng nghe từ server
+                MessageBox.Show("Kết nối thành công!");
                 // Bat dau lang nghe tu server
                 ListenAndDisplayImages();
             }

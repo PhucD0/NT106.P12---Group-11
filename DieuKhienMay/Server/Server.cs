@@ -50,17 +50,76 @@ namespace Server
         private void StartListening()
         {
             // có gọi hàm HandleClientInput here
+            try
+            {
+                StopListening(); // Dừng mọi kết nối trước khi bắt đầu lại
 
+                int port = 5000;
+                IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+                listener = new TcpListener(localAddr, port);
+
+                listener.Start();
+                MessageBox.Show("Đang lắng nghe kết nối từ client...");
+
+                listener.BeginAcceptTcpClient(new AsyncCallback(AcceptClientCallback), listener);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lắng nghe: {ex.Message}");
+            }
 
             // Ghi lại thông tin kết nối
-            LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString(),
-                ((IPEndPoint)client.Client.RemoteEndPoint).Port);
+            /*LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString(),
+                ((IPEndPoint)client.Client.RemoteEndPoint).Port);*/
+        }
+
+        private void AcceptClientCallback(IAsyncResult ar)
+        {
+            try
+            {
+                // Hoàn tất việc chấp nhận kết nối từ client
+                listener = (TcpListener)ar.AsyncState;
+                client = listener.EndAcceptTcpClient(ar);
+                stream = client.GetStream();
+                isConnected = true;
+
+                // Hiển thị thông báo kết nối thành công
+                MessageBox.Show("Kết nối thành công với client!");
+
+                // Ghi lại thông tin kết nối
+                LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString(),
+                    ((IPEndPoint)client.Client.RemoteEndPoint).Port);
+
+                // Bắt đầu xử lý dữ liệu từ client
+                Task.Run(() => HandleClientInput());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi chấp nhận kết nối từ client: {ex.Message}");
+            }
         }
 
         // Ket thuc ket noi
         private void StopListening()
         {
+            try
+            {
+                if (client != null && client.Connected)
+                {
+                    client.Close();
+                    isConnected = false;
+                }
 
+                if (listener != null)
+                {
+                    listener.Stop();
+                    MessageBox.Show("Đã dừng lắng nghe.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi dừng lắng nghe: {ex.Message}");
+            }
         }
 
         // Nhận thông tin điều khiển từ client

@@ -50,7 +50,7 @@
             label_IP.Location = new Point(24, 52);
             label_IP.Margin = new Padding(4, 0, 4, 0);
             label_IP.Name = "label_IP";
-            label_IP.Size = new Size(82, 44);
+            label_IP.Size = new Size(66, 35);
             label_IP.TabIndex = 0;
             label_IP.Text = "IP:";
             // 
@@ -63,7 +63,7 @@
             label_port.Location = new Point(24, 115);
             label_port.Margin = new Padding(4, 0, 4, 0);
             label_port.Name = "label_port";
-            label_port.Size = new Size(127, 44);
+            label_port.Size = new Size(102, 35);
             label_port.TabIndex = 1;
             label_port.Text = "Port:";
             // 
@@ -77,6 +77,7 @@
             txbIP.ScrollBars = ScrollBars.Both;
             txbIP.Size = new Size(493, 41);
             txbIP.TabIndex = 3;
+            txbIP.Text = "127.0.0.1";
             // 
             // txbPort
             // 
@@ -88,6 +89,7 @@
             txbPort.Name = "txbPort";
             txbPort.Size = new Size(493, 41);
             txbPort.TabIndex = 4;
+            txbPort.Text = "5000";
             // 
             // btnSaveIP
             // 
@@ -130,27 +132,27 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(884, 28);
+            menuStrip1.Size = new Size(884, 24);
             menuStrip1.TabIndex = 10;
             menuStrip1.Text = "menuStrip1";
             // 
             // sendFileToolStripMenuItem
             // 
             sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
-            sendFileToolStripMenuItem.Size = new Size(83, 24);
+            sendFileToolStripMenuItem.Size = new Size(66, 20);
             sendFileToolStripMenuItem.Text = "Send File";
             sendFileToolStripMenuItem.Click += sendFileToolStripMenuItem_Click;
             // 
             // requestLogsToolStripMenuItem
             // 
             requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
-            requestLogsToolStripMenuItem.Size = new Size(111, 24);
+            requestLogsToolStripMenuItem.Size = new Size(89, 20);
             requestLogsToolStripMenuItem.Text = "Request Logs";
             requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click;
             // 
             // Client
             // 
-            AutoScaleDimensions = new SizeF(12F, 22F);
+            AutoScaleDimensions = new SizeF(10F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(884, 670);
