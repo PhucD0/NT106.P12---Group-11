@@ -26,6 +26,7 @@ namespace Server
         private bool isConnected = false;
         private SqlConnection sqlConnection;
         private System.Timers.Timer timer;
+        private bool isListening = false;
         // Chuỗi kết nối đến cơ sở dữ liệu
         private string connectionString = "Server=your_server;Database=RemoteDesktopDB;User Id=your_user;Password=your_password;";
 
@@ -50,23 +51,49 @@ namespace Server
         // Bắt đầu lắng nghe từ client (sd bat dong bo)
         private void StartListening()
         {
-            // có gọi hàm HandleClientInput here
+            StopListening();  // Dọn dẹp mọi kết nối cũ
+            int port;
+            if (!int.TryParse(txbPort.Text, out port))
+            {
+                MessageBox.Show("Port không hợp lệ. Vui lòng kiểm tra lại.");
+                return;
+            }
+
             try
             {
-                StopListening(); // Dừng mọi kết nối trước khi bắt đầu lại
-
-                int port = 5000;
-                IPAddress localAddr = IPAddress.Parse("127.0.0.1");
-                listener = new TcpListener(localAddr, port);
-
+                listener = new TcpListener(IPAddress.Any, port);
                 listener.Start();
-                MessageBox.Show("Đang lắng nghe kết nối từ client...");
+                isListening = true;
+                UpdateStatus("Đang lắng nghe...");
 
-                listener.BeginAcceptTcpClient(new AsyncCallback(AcceptClientCallback), listener);
+                Task.Run(() =>
+                {
+                    try
+                    {
+                        if (!isListening) return;  // Kiểm tra nếu server đã dừng
+
+                        client = listener.AcceptTcpClient(); // Chấp nhận kết nối từ client
+                        stream = client.GetStream();
+                        isConnected = true;
+                        UpdateStatus("Đã kết nối với client.");
+
+                        var clientEndPoint = (IPEndPoint)client.Client.RemoteEndPoint;
+                        LogConnection("Connected", clientEndPoint.Address.ToString(), clientEndPoint.Port);
+
+                        // Xử lý dữ liệu từ client
+                        //HandleClientInput();
+                    }
+                    catch (Exception ex)
+                    {
+                        if (isListening)  // Chỉ báo lỗi nếu server đang lắng nghe
+                            MessageBox.Show($"Lỗi khi chấp nhận kết nối từ client: {ex.Message}");
+                    }
+                });
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi lắng nghe: {ex.Message}");
+                MessageBox.Show($"Lỗi khi bắt đầu lắng nghe: {ex.Message}");
+                isConnected = false;
             }
 
             // Ghi lại thông tin kết nối
@@ -74,53 +101,27 @@ namespace Server
                 ((IPEndPoint)client.Client.RemoteEndPoint).Port);*/
         }
 
-        private void AcceptClientCallback(IAsyncResult ar)
-        {
-            try
-            {
-                // Hoàn tất việc chấp nhận kết nối từ client
-                listener = (TcpListener)ar.AsyncState;
-                client = listener.EndAcceptTcpClient(ar);
-                stream = client.GetStream();
-                isConnected = true;
 
-                // Hiển thị thông báo kết nối thành công
-                MessageBox.Show("Kết nối thành công với client!");
-
-                // Ghi lại thông tin kết nối
-                LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString(),
-                    ((IPEndPoint)client.Client.RemoteEndPoint).Port);
-
-                // Bắt đầu xử lý dữ liệu từ client
-                Task.Run(() => HandleClientInput());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi chấp nhận kết nối từ client: {ex.Message}");
-            }
-        }
 
         // Ket thuc ket noi
         private void StopListening()
         {
-            try
-            {
-                if (client != null && client.Connected)
-                {
-                    client.Close();
-                    isConnected = false;
-                }
+            isListening = false;  // Đặt cờ để dừng chấp nhận kết nối mới
+            timer?.Stop();  // Dừng timer nếu đang chạy
 
-                if (listener != null)
-                {
-                    listener.Stop();
-                    MessageBox.Show("Đã dừng lắng nghe.");
-                }
-            }
-            catch (Exception ex)
+            if (client != null)
             {
-                MessageBox.Show($"Lỗi khi dừng lắng nghe: {ex.Message}");
+                client.Close();
+                client = null;
             }
+
+            if (listener != null)
+            {
+                listener.Stop();
+                listener = null;
+            }
+
+            UpdateStatus("Đã dừng lắng nghe.");
         }
 
 
@@ -132,7 +133,7 @@ namespace Server
             try
             {
                 // Xử lí gói tin nhận được từ client
-                while(client.Connected)
+                while (client.Connected)
                 {
                     byte[] headerBytesRecv = new byte[6];
                     stream.Read(headerBytesRecv, 0, headerBytesRecv.Length);
@@ -144,25 +145,25 @@ namespace Server
                     // độ dài dữ liệu input
                     int dataLength = BitConverter.ToInt32(headerBytesRecv, 2);
 
-                    if(dataType == 0)   // client yêu cầu gửi ảnh màn hình từ server
+                    if (dataType == 0)   // client yêu cầu gửi ảnh màn hình từ server
                     {
-                        if(isConnected)
+                        if (isConnected)
                         {
                             timer = new System.Timers.Timer(100);
                             timer.Elapsed += (sender, e) => SendImage();
                             timer.Start();
                         }
                     }
-                    else if(dataType == 1) // xử lí dữ liệu input từ client
+                    else if (dataType == 1) // xử lí dữ liệu input từ client
                     {
                         byte[] dataBytesRecv = new byte[dataLength];
                         stream.Read(dataBytesRecv, 0, dataLength);
                         HandleInputBytes(dataBytesRecv);
                     }
-                    else if(dataType == 2)  //yeu cau xem log tu server
+                    else if (dataType == 2)  //yeu cau xem log tu server
                     {
                         DataTable logs = LoadLogs();
-                        SendLogs(logs);
+                        //SendLogs(logs);
                     }
                     else
                     {
@@ -170,7 +171,7 @@ namespace Server
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show($"Exception: {ex.Message}");
             }
@@ -260,7 +261,14 @@ namespace Server
         /// <param name="message"></param>
         private void UpdateStatus(string message)
         {
-            txbStatus.Text = message;
+            if (txbStatus.InvokeRequired)
+            {
+                txbStatus.Invoke(new Action(() => txbStatus.Text = message));
+            }
+            else
+            {
+                txbStatus.Text = message;
+            }
         }
 
 
@@ -330,6 +338,8 @@ namespace Server
             stream.Write(length, 0, length.Length);
             stream.Write(logData, 0, logData.Length);
         }
+
+
 
         /// <summary>
         /// gui file

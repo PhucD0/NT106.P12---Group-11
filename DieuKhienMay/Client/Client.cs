@@ -46,26 +46,45 @@ namespace Client
         // Ket noi den server
         private void ConnectToServer()
         {
-            try
-            {
-                //// code ket noi den server here
-                // Đọc IP và Port từ các ô nhập liệu
-                string ipAddress = txbIP.Text;
-                int port = int.Parse(txbPort.Text);
+            string ip = txbIP.Text.Trim();
+            int port;
 
-                // Khởi tạo kết nối tới server
-                client = new TcpClient(ipAddress, port);
-                stream = client.GetStream();
-
-                // Thông báo kết nối thành công và bắt đầu lắng nghe từ server
-                MessageBox.Show("Kết nối thành công!");
-                // Bat dau lang nghe tu server
-                ListenAndDisplayImages();
-            }
-            catch (Exception ex)
+            if (!IsValidIP(ip) || !int.TryParse(txbPort.Text.Trim(), out port) || !IsValidPort(port))
             {
-                MessageBox.Show($"Ket noi that bai: {ex.Message}");
+                MessageBox.Show("Địa chỉ IP hoặc Port không hợp lệ. Vui lòng kiểm tra lại.");
+                return;
             }
+
+            int attempts = 0;
+
+            while (attempts < maxConnectionAttempts)
+            {
+                try
+                {
+                    client = new TcpClient();
+                    client.Connect(IPAddress.Parse(ip), port);  // Kết nối đến server
+
+                    if (client.Connected)
+                    {
+                        stream = client.GetStream();
+                        MessageBox.Show("Kết nối thành công đến server!");
+
+                        // Bắt đầu lắng nghe và hiển thị hình ảnh từ server
+                        ListenAndDisplayImages();
+
+                        return;
+                    }
+                }
+                catch (SocketException ex)
+                {
+                    attempts++;
+                    MessageBox.Show($"Lỗi kết nối đến server: {ex.Message}. Thử lại ({attempts}/{maxConnectionAttempts})");
+
+                    Thread.Sleep(1000); // Tạm dừng trong 1 giây trước khi thử lại
+                }
+            }
+
+            MessageBox.Show("Không thể kết nối đến server sau nhiều lần thử. Vui lòng kiểm tra lại kết nối.");
         }
 
         /// <summary>
