@@ -45,7 +45,7 @@
             txbPort.Margin = new Padding(4, 3, 4, 3);
             txbPort.Multiline = true;
             txbPort.Name = "txbPort";
-            txbPort.Size = new Size(157, 31);
+            txbPort.Size = new Size(181, 31);
             txbPort.TabIndex = 9;
             txbPort.Text = "5000";
             // 
@@ -56,9 +56,8 @@
             txbIP.Margin = new Padding(4, 3, 4, 3);
             txbIP.Multiline = true;
             txbIP.Name = "txbIP";
-            txbIP.Size = new Size(157, 31);
+            txbIP.Size = new Size(181, 31);
             txbIP.TabIndex = 8;
-            txbIP.Text = "127.0.0.1";
             // 
             // label_password
             // 
@@ -68,7 +67,7 @@
             label_password.Location = new Point(18, 141);
             label_password.Margin = new Padding(4, 0, 4, 0);
             label_password.Name = "label_password";
-            label_password.Size = new Size(87, 31);
+            label_password.Size = new Size(58, 22);
             label_password.TabIndex = 7;
             label_password.Text = "Port:";
             label_password.TextAlign = ContentAlignment.MiddleCenter;
@@ -81,7 +80,7 @@
             label_port.Location = new Point(43, 89);
             label_port.Margin = new Padding(4, 0, 4, 0);
             label_port.Name = "label_port";
-            label_port.Size = new Size(56, 31);
+            label_port.Size = new Size(38, 22);
             label_port.TabIndex = 6;
             label_port.Text = "IP:";
             // 
@@ -116,7 +115,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(25, 24);
             label1.Name = "label1";
-            label1.Size = new Size(99, 27);
+            label1.Size = new Size(65, 17);
             label1.TabIndex = 13;
             label1.Text = "Status:";
             // 
@@ -124,12 +123,12 @@
             // 
             txbStatus.Location = new Point(136, 19);
             txbStatus.Name = "txbStatus";
-            txbStatus.Size = new Size(579, 33);
+            txbStatus.Size = new Size(579, 24);
             txbStatus.TabIndex = 14;
             // 
             // Server
             // 
-            AutoScaleDimensions = new SizeF(15F, 27F);
+            AutoScaleDimensions = new SizeF(10F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(744, 362);
