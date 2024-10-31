@@ -8,12 +8,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Sockets;
-using System.Data.SqlClient;
 using System.Net;
 using System.Text;
 using System.Data;
 using System.Drawing.Imaging;
 using System.Timers;
+using System.Data.SqlClient;
 
 namespace Server
 {
@@ -26,7 +26,8 @@ namespace Server
         private bool isConnected = false;
         private SqlConnection sqlConnection;
         private System.Timers.Timer timer;
-
+        // Chuỗi kết nối đến cơ sở dữ liệu
+        private string connectionString = "Server=your_server;Database=RemoteDesktopDB;User Id=your_user;Password=your_password;";
 
         public Server()
         {
@@ -266,8 +267,6 @@ namespace Server
         /// <summary>
         /// View logs
         /// </summary>
-        // Chuỗi kết nối đến cơ sở dữ liệu
-        string connectionString = "Server=your_server;Database=RemoteDesktopDB;User Id=your_user;Password=your_password;";
 
         // Hàm khởi tạo kết nối csdl
         private SqlConnection InitializeDatabase()
@@ -282,12 +281,13 @@ namespace Server
         {
             using (SqlConnection connection = InitializeDatabase())
             {
-                string query = "INSERT INTO ConnectionLogs (Status, IP, Port) VALUES (@Status, @IP, @Port)";
+                string query = "INSERT INTO ConnectionLogs (Status, IP, Port, Timestamp) VALUES (@Status, @IP, @Port, @Timestamp)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Status", status);
                     command.Parameters.AddWithValue("@IP", ip);
                     command.Parameters.AddWithValue("@Port", port);
+                    command.Parameters.AddWithValue("@Timestamp", DateTime.Now);
                     command.ExecuteNonQuery();
                 }
             }
@@ -312,9 +312,9 @@ namespace Server
         }
 
         // Gui logs cho client
-        private void SendLogs(DataTable logs)
+        private void SendLogs()
         {
-            logs = LoadLogs(); 
+            DataTable logs = LoadLogs();
             StringBuilder sb = new StringBuilder();
 
             foreach (DataRow row in logs.Rows)
@@ -334,6 +334,6 @@ namespace Server
         /// <summary>
         /// gui file
         /// </summary>
-        
+
     }
 }
