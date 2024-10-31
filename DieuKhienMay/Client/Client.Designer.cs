@@ -38,6 +38,7 @@
             menuStrip1 = new MenuStrip();
             sendFileToolStripMenuItem = new ToolStripMenuItem();
             requestLogsToolStripMenuItem = new ToolStripMenuItem();
+            listBox = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -50,7 +51,7 @@
             label_IP.Location = new Point(24, 52);
             label_IP.Margin = new Padding(4, 0, 4, 0);
             label_IP.Name = "label_IP";
-            label_IP.Size = new Size(66, 35);
+            label_IP.Size = new Size(82, 44);
             label_IP.TabIndex = 0;
             label_IP.Text = "IP:";
             // 
@@ -63,7 +64,7 @@
             label_port.Location = new Point(24, 115);
             label_port.Margin = new Padding(4, 0, 4, 0);
             label_port.Name = "label_port";
-            label_port.Size = new Size(102, 35);
+            label_port.Size = new Size(127, 44);
             label_port.TabIndex = 1;
             label_port.Text = "Port:";
             // 
@@ -132,30 +133,42 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(884, 24);
+            menuStrip1.Size = new Size(884, 28);
             menuStrip1.TabIndex = 10;
             menuStrip1.Text = "menuStrip1";
             // 
             // sendFileToolStripMenuItem
             // 
             sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
-            sendFileToolStripMenuItem.Size = new Size(66, 20);
+            sendFileToolStripMenuItem.Size = new Size(83, 24);
             sendFileToolStripMenuItem.Text = "Send File";
             sendFileToolStripMenuItem.Click += sendFileToolStripMenuItem_Click;
             // 
             // requestLogsToolStripMenuItem
             // 
             requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
-            requestLogsToolStripMenuItem.Size = new Size(89, 20);
+            requestLogsToolStripMenuItem.Size = new Size(111, 24);
             requestLogsToolStripMenuItem.Text = "Request Logs";
             requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click;
             // 
+            // listBox
+            // 
+            listBox.FormattingEnabled = true;
+            listBox.ItemHeight = 22;
+            listBox.Location = new Point(175, 91);
+            listBox.Name = "listBox";
+            listBox.Size = new Size(150, 114);
+            listBox.TabIndex = 11;
+            listBox.Visible = false;
+            listBox.MouseClick += listBox_MouseClick_1;
+            // 
             // Client
             // 
-            AutoScaleDimensions = new SizeF(10F, 17F);
+            AutoScaleDimensions = new SizeF(12F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(884, 670);
+            Controls.Add(listBox);
             Controls.Add(pictureBox);
             Controls.Add(btnConnect);
             Controls.Add(btnSaveIP);
@@ -189,5 +202,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sendFileToolStripMenuItem;
         private ToolStripMenuItem requestLogsToolStripMenuItem;
+        private ListBox listBox;
     }
 }

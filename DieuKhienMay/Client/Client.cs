@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net.Sockets;
 using System.Text;
 using System.Configuration;
+using System.Net;
 //using Client.Properties;
 
 
@@ -20,14 +21,17 @@ namespace Client
         // KHAI BAO HERE
         private NetworkStream stream;
         private TcpClient client;
+        private List<(string ip, int port)> savedConnections = new List<(string, int)>();
+        private const int maxConnectionAttempts = 5;
 
         public Client()
         {
             InitializeComponent();
 
-            // Tải lại giá trị IP và Port từ Settings
-            //txbIP.Text = Properties.Settings.Default.SavedIP;
-            //txbPort.Text = Properties.Settings.Default.SavedPort;
+            // Gọi sự kiện khi mouse hover vào textbox IP
+            txbIP.MouseHover += TxtIP_MouseHover;
+            // Gọi sự kiện khi user click vào save button
+            btnSaveIP.Click += btnSaveIP_Click;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -38,7 +42,7 @@ namespace Client
         /// <summary>
         /// Xu li ket noi
         /// </summary>
-        
+
         // Ket noi den server
         private void ConnectToServer()
         {
@@ -160,7 +164,7 @@ namespace Client
             byte[] header = BitConverter.GetBytes((ushort)2); // 2 là yêu cầu logs
             stream.Write(header, 0, header.Length);
 
-            byte[] logsBytes = new byte[2048]; 
+            byte[] logsBytes = new byte[2048];
             int bytesRead = stream.Read(logsBytes, 0, logsBytes.Length);
 
             string logs = Encoding.ASCII.GetString(logsBytes, 0, bytesRead);
@@ -178,18 +182,59 @@ namespace Client
         /// <param name="e"></param>
         private void btnSaveIP_Click(object sender, EventArgs e)
         {
-            // Lưu lại IP và Port vào Settings
-            //Properties.Settings.Default.SavedIP = txtServerIP.Text;
-            //Properties.Settings.Default.SavedPort = txtServerPort.Text;
-            //Properties.Settings.Default.Save();
+            string ip = txbIP.Text.Trim();
+            string portText = txbPort.Text.Trim();
 
-            MessageBox.Show("Đã lưu địa chỉ IP và Port!");
+            if (IsValidIP(ip) && int.TryParse(portText, out int port) && IsValidPort(port))
+            {
+                savedConnections.Add((ip, port));
+                MessageBox.Show("Địa chỉ IP và Port đã được lưu.");
+            }
+            else
+            {
+                MessageBox.Show("Địa chỉ IP hoặc Port không hợp lệ.");
+            }
         }
 
-        /// <summary>
-        /// Thêm, xóa dia chi IP và port
-        /// </summary>
+        private void TxtIP_MouseHover(object sender, EventArgs e)
+        {
+            listBox.Items.Clear();
+            foreach (var connection in savedConnections)
+            {
+                listBox.Items.Add($"{connection.ip}:{connection.port}");
+            }
 
+            if (listBox.Items.Count > 0)
+            {
+                listBox.Visible = true;
+            }
+            else
+            {
+                listBox.Visible = false;
+            }
+        }
+
+        private bool IsValidIP(string ip)
+        {
+            return IPAddress.TryParse(ip, out _);
+        }
+
+        private bool IsValidPort(int port)
+        {
+            return port > 0 && port <= 65535;
+        }
+
+        private void listBox_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            if (listBox.SelectedItem != null)
+            {
+                string selected = listBox.SelectedItem.ToString();
+                var parts = selected.Split(':');
+                txbIP.Text = parts[0];
+                txbPort.Text = parts[1];
+                listBox.Visible = false;
+            }
+        }
 
     }
 }

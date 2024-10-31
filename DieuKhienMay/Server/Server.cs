@@ -122,7 +122,10 @@ namespace Server
             }
         }
 
-        // Nhận thông tin điều khiển từ client
+
+        /// <summary>
+        /// Nhận thông tin điều khiển từ client
+        /// </summary>
         private void HandleClientInput()
         {
             try
@@ -172,6 +175,7 @@ namespace Server
             }
         }
 
+
         /// <summary>
         /// Xu li du lieu 
         /// </summary>
@@ -180,6 +184,7 @@ namespace Server
         {
             // code something here
         }
+
 
         /// <summary>
         /// Gui anh
@@ -247,14 +252,16 @@ namespace Server
             }
         }
 
+
         /// <summary>
         /// Cap nhat trang thai, được gọi bởi StartListening(), StopListening(),...
         /// </summary>
         /// <param name="message"></param>
         private void UpdateStatus(string message)
         {
-
+            txbStatus.Text = message;
         }
+
 
         /// <summary>
         /// View logs
