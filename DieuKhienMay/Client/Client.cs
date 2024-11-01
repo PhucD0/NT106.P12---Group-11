@@ -30,8 +30,10 @@ namespace Client
 
             // Gọi sự kiện khi mouse hover vào textbox IP
             txbIP.MouseHover += TxtIP_MouseHover;
-            // Gọi sự kiện khi user click vào save button
-            btnSaveIP.Click += btnSaveIP_Click;
+
+            this.Click += (s, e) => HideValidIPs();
+
+
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -255,5 +257,9 @@ namespace Client
             }
         }
 
+        private void HideValidIPs()
+        {  
+            listBox.Visible = false;   
+        }
     }
 }
