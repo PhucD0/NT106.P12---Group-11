@@ -78,7 +78,6 @@
             txbIP.ScrollBars = ScrollBars.Both;
             txbIP.Size = new Size(493, 41);
             txbIP.TabIndex = 3;
-            txbIP.Text = "127.0.0.1";
             // 
             // txbPort
             // 
@@ -90,7 +89,6 @@
             txbPort.Name = "txbPort";
             txbPort.Size = new Size(493, 41);
             txbPort.TabIndex = 4;
-            txbPort.Text = "5000";
             // 
             // btnSaveIP
             // 
