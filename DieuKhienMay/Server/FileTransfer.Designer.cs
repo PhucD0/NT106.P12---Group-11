@@ -241,7 +241,7 @@
             Controls.Add(startButton);
             Controls.Add(notificationPanel);
             Name = "FileTransfer";
-            Text = "FileTransfer";
+            Text = "Server - File Transfer";
             Load += FileTransfer_Load;
             notificationPanel.ResumeLayout(false);
             notificationPanel.PerformLayout();

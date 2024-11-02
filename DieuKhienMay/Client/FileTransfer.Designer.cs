@@ -163,6 +163,7 @@
             browseButton.TabIndex = 8;
             browseButton.Text = "Browse";
             browseButton.UseVisualStyleBackColor = true;
+            browseButton.Click += browseButton_Click;
             // 
             // sendFileButton
             // 
@@ -244,7 +245,7 @@
             Controls.Add(startButton);
             Controls.Add(notificationPanel);
             Name = "FileTransfer";
-            Text = "FileTransfer";
+            Text = "Client - File Transfer";
             FormClosing += FileTransfer_FormClosing;
             Load += FileTransfer_Load;
             notificationPanel.ResumeLayout(false);

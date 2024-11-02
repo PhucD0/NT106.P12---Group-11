@@ -488,6 +488,5 @@ namespace Client
                 serverForm.Show();
             }
         }
-
     }
 }
