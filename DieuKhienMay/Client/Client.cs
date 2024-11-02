@@ -159,7 +159,8 @@ namespace Client
         /// <param name="e"></param>
         private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FileTransfer fileTransfer = new FileTransfer();
+            fileTransfer.Show();
         }
 
         /// <summary>
