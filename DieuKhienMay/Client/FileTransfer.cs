@@ -326,32 +326,28 @@ namespace Client
                     {
                         notification = new Thread(new ThreadStart(showNotification));
                         notification.Start();
-                        //notificationPanel.Visible = true;
-                        //notificationTempLabel.Text = "File sending to " + targetIP + " " + targetName + "...";
                         fileNotificationLabel.Text = "Please don't do other tasks. File sending to " + targetIP + " " + targetName + "...";
-                        //closing the server
-                        listener.Stop();
-                        serverThread.Abort();
-                        serverThread.Join();
+
+                        // Closing the server properly using CancellationTokenSource
+                        serverCancellationTokenSource.Cancel();
+                        serverThread.Join(); // Wait for the thread to finish
                         serverRunning = false;
-                        //now making this program a client
+
+                        // Now making this program a client
                         socketForClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                         socketForClient.Connect(new IPEndPoint(IPAddress.Parse(targetIP), 11000));
                         string fileName = fileNameLabel.Tag.ToString();
-                        //long fileSize = new FileInfo(fileNameLabel.Text).Length;
                         byte[] fileNameData = Encoding.Default.GetBytes(fileName + "@" + this.IP + "@" + Environment.MachineName);
                         socketForClient.Send(fileNameData);
                         socketForClient.Shutdown(SocketShutdown.Both);
                         socketForClient.Close();
+
                         socketForClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                         socketForClient.Connect(new IPEndPoint(IPAddress.Parse(targetIP), 11000));
                         socketForClient.SendFile(fileNameLabel.Text);
                         socketForClient.Shutdown(SocketShutdown.Both);
                         socketForClient.Close();
-                        //notification.Abort();
-                        //notification.Join();
-                        //notificationTempLabel.Text = "";
-                        //notificationPanel.Visible = false;
+
                         Invoke((MethodInvoker)delegate
                         {
                             f2.Dispose();
@@ -375,11 +371,12 @@ namespace Client
                         onlinePCList.Items[this.onlinePCList.SelectedIndices[i]].Selected = false;
                     }
                     fileNotificationLabel.Text = ".";
-                    //again making this program a server
+                    // Again making this program a server
                     startServer();
                 }
             }
         }
+
 
         void showNotification()
         {

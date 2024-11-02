@@ -3,56 +3,20 @@
   "WorkspaceRootPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\filetransfer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\filetransfer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\client\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\server\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\notificationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\filetransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,166 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FileTransfer.Designer.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.Designer.cs",
-              "RelativeDocumentMoniker": "Client\\FileTransfer.Designer.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.Designer.cs",
-              "RelativeToolTip": "Client\\FileTransfer.Designer.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAIAwwKUAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "FileTransfer.cs",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs",
+              "RelativeDocumentMoniker": "Client\\FileTransfer.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs",
+              "RelativeToolTip": "Client\\FileTransfer.cs",
+              "ViewState": "AQIAAFMBAAAAAAAAAAAmwHABAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:35:35.971Z",
+              "WhenOpened": "2024-11-02T17:42:52.054Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NotificationForm.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\NotificationForm.cs",
-              "RelativeDocumentMoniker": "Server\\NotificationForm.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\NotificationForm.cs",
-              "RelativeToolTip": "Server\\NotificationForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:16:58.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NotificationForm.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\NotificationForm.cs",
-              "RelativeDocumentMoniker": "Server\\NotificationForm.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\NotificationForm.cs [Design]",
-              "RelativeToolTip": "Server\\NotificationForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:16:51.026Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FileTransfer.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
-              "RelativeDocumentMoniker": "Server\\FileTransfer.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
-              "RelativeToolTip": "Server\\FileTransfer.cs",
-              "ViewState": "AQIAANIBAAAAAAAAAAAwwO0BAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:13:56.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileTransfer.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
-              "RelativeDocumentMoniker": "Server\\FileTransfer.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs [Design]",
-              "RelativeToolTip": "Server\\FileTransfer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:13:52Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Server.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
-              "RelativeDocumentMoniker": "Server\\Server.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
-              "RelativeToolTip": "Server\\Server.cs",
-              "ViewState": "AQIAAEsBAAAAAAAAAAApwGQBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:13:06.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Server.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
-              "RelativeDocumentMoniker": "Server\\Server.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs [Design]",
-              "RelativeToolTip": "Server\\Server.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:12:35.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Client.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeToolTip": "Client\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:51:56.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Client.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs [Design]",
-              "RelativeToolTip": "Client\\Client.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:51:50.782Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FileTransfer.cs [Design]",
               "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs",
               "RelativeDocumentMoniker": "Client\\FileTransfer.cs",
               "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs [Design]",
               "RelativeToolTip": "Client\\FileTransfer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:51:44.549Z",
+              "WhenOpened": "2024-11-02T17:42:49.785Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FileTransfer.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs",
-              "RelativeDocumentMoniker": "Client\\FileTransfer.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\FileTransfer.cs",
-              "RelativeToolTip": "Client\\FileTransfer.cs",
-              "ViewState": "AQIAAK0BAAAAAAAAAAAqwLkBAAAaAAAA",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
+              "RelativeDocumentMoniker": "Server\\FileTransfer.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
+              "RelativeToolTip": "Server\\FileTransfer.cs",
+              "ViewState": "AQIAAEUBAAAAAAAAAAAmwHsBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:52:01.728Z",
+              "WhenOpened": "2024-11-02T17:40:32.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NotificationForm.cs [Design]",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\NotificationForm.cs",
-              "RelativeDocumentMoniker": "Client\\NotificationForm.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\NotificationForm.cs [Design]",
-              "RelativeToolTip": "Client\\NotificationForm.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "FileTransfer.cs [Design]",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs",
+              "RelativeDocumentMoniker": "Server\\FileTransfer.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\FileTransfer.cs [Design]",
+              "RelativeToolTip": "Server\\FileTransfer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:51:49.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NotificationForm.cs",
-              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\NotificationForm.cs",
-              "RelativeDocumentMoniker": "Client\\NotificationForm.cs",
-              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\NotificationForm.cs",
-              "RelativeToolTip": "Client\\NotificationForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:52:08.419Z"
+              "WhenOpened": "2024-11-02T17:40:29.425Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
