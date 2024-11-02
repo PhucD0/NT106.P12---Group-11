@@ -36,6 +36,10 @@
             btnListen = new Button();
             label1 = new Label();
             txbStatus = new TextBox();
+            menuStrip1 = new MenuStrip();
+            sendFileToolStripMenuItem = new ToolStripMenuItem();
+            requestLogsToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // txbPort
@@ -66,7 +70,7 @@
             label_password.Location = new Point(18, 141);
             label_password.Margin = new Padding(4, 0, 4, 0);
             label_password.Name = "label_password";
-            label_password.Size = new Size(72, 27);
+            label_password.Size = new Size(58, 22);
             label_password.TabIndex = 7;
             label_password.Text = "Port:";
             label_password.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,7 +83,7 @@
             label_port.Location = new Point(43, 89);
             label_port.Margin = new Padding(4, 0, 4, 0);
             label_port.Name = "label_port";
-            label_port.Size = new Size(47, 27);
+            label_port.Size = new Size(38, 22);
             label_port.TabIndex = 6;
             label_port.Text = "IP:";
             // 
@@ -112,25 +116,49 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(25, 24);
+            label1.Location = new Point(18, 45);
             label1.Name = "label1";
-            label1.Size = new Size(83, 23);
+            label1.Size = new Size(65, 17);
             label1.TabIndex = 13;
             label1.Text = "Status:";
             // 
             // txbStatus
             // 
-            txbStatus.Location = new Point(136, 19);
+            txbStatus.Location = new Point(129, 40);
             txbStatus.Name = "txbStatus";
-            txbStatus.Size = new Size(579, 28);
+            txbStatus.Size = new Size(579, 24);
             txbStatus.TabIndex = 14;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(744, 24);
+            menuStrip1.TabIndex = 15;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // sendFileToolStripMenuItem
+            // 
+            sendFileToolStripMenuItem.Name = "sendFileToolStripMenuItem";
+            sendFileToolStripMenuItem.Size = new Size(66, 20);
+            sendFileToolStripMenuItem.Text = "Send File";
+            sendFileToolStripMenuItem.Click += sendFileToolStripMenuItem_Click;
+            // 
+            // requestLogsToolStripMenuItem
+            // 
+            requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
+            requestLogsToolStripMenuItem.Size = new Size(89, 20);
+            requestLogsToolStripMenuItem.Text = "Request Logs";
             // 
             // Server
             // 
-            AutoScaleDimensions = new SizeF(12F, 22F);
+            AutoScaleDimensions = new SizeF(10F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
             ClientSize = new Size(744, 362);
+            Controls.Add(menuStrip1);
             Controls.Add(txbStatus);
             Controls.Add(label1);
             Controls.Add(btnListen);
@@ -143,6 +171,8 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Server";
             Text = "Server";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +187,8 @@
         private Button btnListen;
         private Label label1;
         private TextBox txbStatus;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem sendFileToolStripMenuItem;
+        private ToolStripMenuItem requestLogsToolStripMenuItem;
     }
 }

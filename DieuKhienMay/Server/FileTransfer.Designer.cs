@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             ipBox = new TextBox();
             fileNotificationLabel = new Label();
             fileNameLabel = new Label();
@@ -47,6 +48,7 @@
             exitButton = new Button();
             startButton = new Button();
             notificationPanel = new Panel();
+            timer1 = new System.Windows.Forms.Timer(components);
             notificationPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // fileNotificationLabel
             // 
             fileNotificationLabel.AutoSize = true;
-            fileNotificationLabel.Location = new Point(12, 286);
+            fileNotificationLabel.Location = new Point(12, 135);
             fileNotificationLabel.Name = "fileNotificationLabel";
             fileNotificationLabel.Size = new Size(10, 15);
             fileNotificationLabel.TabIndex = 29;
@@ -69,7 +71,7 @@
             // fileNameLabel
             // 
             fileNameLabel.AutoSize = true;
-            fileNameLabel.Location = new Point(12, 313);
+            fileNameLabel.Location = new Point(12, 162);
             fileNameLabel.Name = "fileNameLabel";
             fileNameLabel.Size = new Size(10, 15);
             fileNameLabel.TabIndex = 28;
@@ -77,30 +79,33 @@
             // 
             // clearButton
             // 
-            clearButton.Location = new Point(459, 331);
+            clearButton.Location = new Point(459, 180);
             clearButton.Name = "clearButton";
             clearButton.Size = new Size(143, 46);
             clearButton.TabIndex = 27;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // sendFileButton
             // 
-            sendFileButton.Location = new Point(140, 331);
+            sendFileButton.Location = new Point(140, 180);
             sendFileButton.Name = "sendFileButton";
             sendFileButton.Size = new Size(322, 46);
             sendFileButton.TabIndex = 26;
             sendFileButton.Text = "Send File to Selected Computer";
             sendFileButton.UseVisualStyleBackColor = true;
+            sendFileButton.Click += sendFileButton_Click;
             // 
             // browseButton
             // 
-            browseButton.Location = new Point(0, 331);
+            browseButton.Location = new Point(0, 180);
             browseButton.Name = "browseButton";
             browseButton.Size = new Size(143, 46);
             browseButton.TabIndex = 25;
             browseButton.Text = "Browse";
             browseButton.UseVisualStyleBackColor = true;
+            browseButton.Click += browseButton_Click;
             // 
             // notificationTempLabel
             // 
@@ -135,7 +140,7 @@
             onlinePCList.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
             onlinePCList.Location = new Point(140, 119);
             onlinePCList.Name = "onlinePCList";
-            onlinePCList.Size = new Size(322, 161);
+            onlinePCList.Size = new Size(322, 10);
             onlinePCList.TabIndex = 24;
             onlinePCList.UseCompatibleStateImageBehavior = false;
             // 
@@ -174,6 +179,7 @@
             stopButton.TabIndex = 20;
             stopButton.Text = "Stop";
             stopButton.UseVisualStyleBackColor = true;
+            stopButton.Click += stopButton_Click;
             // 
             // changeSaveLocButton
             // 
@@ -183,6 +189,7 @@
             changeSaveLocButton.TabIndex = 19;
             changeSaveLocButton.Text = "Save Location";
             changeSaveLocButton.UseVisualStyleBackColor = true;
+            changeSaveLocButton.Click += changeSaveLocButton_Click;
             // 
             // exitButton
             // 
@@ -192,6 +199,7 @@
             exitButton.TabIndex = 18;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
             // 
             // startButton
             // 
@@ -201,11 +209,12 @@
             startButton.TabIndex = 16;
             startButton.Text = "Start";
             startButton.UseVisualStyleBackColor = true;
+            startButton.Click += startButton_Click;
             // 
             // notificationPanel
             // 
             notificationPanel.Controls.Add(notificationTempLabel);
-            notificationPanel.Location = new Point(224, 286);
+            notificationPanel.Location = new Point(223, 135);
             notificationPanel.Name = "notificationPanel";
             notificationPanel.Size = new Size(156, 37);
             notificationPanel.TabIndex = 17;
@@ -214,7 +223,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(605, 380);
+            ClientSize = new Size(605, 231);
             Controls.Add(ipBox);
             Controls.Add(fileNotificationLabel);
             Controls.Add(fileNameLabel);
@@ -233,6 +242,7 @@
             Controls.Add(notificationPanel);
             Name = "FileTransfer";
             Text = "FileTransfer";
+            Load += FileTransfer_Load;
             notificationPanel.ResumeLayout(false);
             notificationPanel.PerformLayout();
             ResumeLayout(false);
@@ -260,5 +270,6 @@
         private Button exitButton;
         private Button startButton;
         private Panel notificationPanel;
+        private System.Windows.Forms.Timer timer1;
     }
 }

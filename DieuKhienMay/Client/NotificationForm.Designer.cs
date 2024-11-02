@@ -49,6 +49,7 @@
             Controls.Add(notificationTempLabel);
             Name = "NotificationForm";
             Text = "NotificationForm";
+            Load += NotificationForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
