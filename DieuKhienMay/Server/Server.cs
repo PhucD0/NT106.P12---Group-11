@@ -58,10 +58,9 @@ namespace Server
                 MessageBox.Show("Port không hợp lệ. Vui lòng kiểm tra lại.");
                 return;
             }
-
             try
             {
-                listener = new TcpListener(IPAddress.Any, port);
+                listener = new TcpListener(IPAddress.Parse(txbIP.Text), port);
                 listener.Start();
                 isListening = true;
                 UpdateStatus("Đang lắng nghe...");
@@ -106,21 +105,28 @@ namespace Server
         // Ket thuc ket noi
         private void StopListening()
         {
-            isListening = false;  // Đặt cờ để dừng chấp nhận kết nối mới
             timer?.Stop();  // Dừng timer nếu đang chạy
+
+            if (stream != null)
+            {
+                stream.Close();  // Đóng stream
+                stream = null;
+            }
 
             if (client != null)
             {
-                client.Close();
+                client.Close();  // Đóng kết nối client
                 client = null;
             }
 
             if (listener != null)
             {
-                listener.Stop();
+                listener.Stop();  // Dừng lắng nghe
                 listener = null;
             }
 
+            isListening = false;  // Đặt lại trạng thái lắng nghe
+            isConnected = false;  // Đặt lại trạng thái kết nối
             UpdateStatus("Đã dừng lắng nghe.");
         }
 

@@ -20,7 +20,7 @@ namespace Client
     {
         // KHAI BAO HERE
         private NetworkStream stream;
-        private TcpClient client;
+        private  TcpClient client;
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;
 
@@ -48,10 +48,19 @@ namespace Client
         // Ket noi den server
         private void ConnectToServer()
         {
-            string ip = txbIP.Text.Trim();
+
+            // Đảm bảo rằng mọi đối tượng client cũ đều đã được đóng hoàn toàn
+            if (client != null && client.Connected)
+            {
+                client.Close();
+            }
+
+            // Khởi tạo một đối tượng TcpClient mới cho mỗi lần kết nối
+            client = new TcpClient();
+
             int port;
 
-            if (!IsValidIP(ip) || !int.TryParse(txbPort.Text.Trim(), out port) || !IsValidPort(port))
+            if (!IsValidIP(txbIP.Text) || !int.TryParse(txbPort.Text.Trim(), out port) || !IsValidPort(port))
             {
                 MessageBox.Show("Địa chỉ IP hoặc Port không hợp lệ. Vui lòng kiểm tra lại.");
                 return;
@@ -59,12 +68,9 @@ namespace Client
 
             int attempts = 0;
 
-            while (attempts < maxConnectionAttempts)
-            {
                 try
                 {
-                    client = new TcpClient();
-                    client.Connect(IPAddress.Parse(ip), port);  // Kết nối đến server
+                    client.Connect(txbIP.Text, port);  // Kết nối đến server
 
                     if (client.Connected)
                     {
@@ -72,7 +78,7 @@ namespace Client
                         MessageBox.Show("Kết nối thành công đến server!");
 
                         // Bắt đầu lắng nghe và hiển thị hình ảnh từ server
-                        ListenAndDisplayImages();
+                        //ListenAndDisplayImages();
 
                         return;
                     }
@@ -80,11 +86,10 @@ namespace Client
                 catch (SocketException ex)
                 {
                     attempts++;
-                    MessageBox.Show($"Lỗi kết nối đến server: {ex.Message}. Thử lại ({attempts}/{maxConnectionAttempts})");
+                    MessageBox.Show($"Lỗi kết nối đến server: {ex.Message}.");
 
-                    Thread.Sleep(1000); // Tạm dừng trong 1 giây trước khi thử lại
+
                 }
-            }
 
             MessageBox.Show("Không thể kết nối đến server sau nhiều lần thử. Vui lòng kiểm tra lại kết nối.");
         }
