@@ -29,6 +29,14 @@ namespace Client
             // Bắt đầu nhận hình ảnh từ server
             receivingThread = new Thread(() => ReceiveDesktopImages(cts.Token));
             receivingThread.Start();
+
+            // Gán sự kiện chuột và bàn phím
+            pictureBox1.MouseDown += pictureBox1_MouseDown;
+            pictureBox1.MouseUp += pictureBox1_MouseUp;
+            pictureBox1.MouseMove += pictureBox1_MouseMove;
+            this.KeyDown += Form1_KeyDown;
+            this.KeyUp += Form1_KeyUp;
+            this.KeyPreview = true; // Đảm bảo Form nhận sự kiện KeyDown
         }
 
         private void ReceiveDesktopImages(CancellationToken token)
@@ -83,25 +91,29 @@ namespace Client
 
         }
 
+        // Sự kiện khi nhấn chuột
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            // Điều chỉnh tọa độ trước khi gửi
-            int adjustedX = e.X * Screen.PrimaryScreen.Bounds.Width / pictureBox1.Width;
-            int adjustedY = e.Y * Screen.PrimaryScreen.Bounds.Height / pictureBox1.Height;
-            SendMouseEvent("click", adjustedX, adjustedY, e.Button.ToString());
+            string button = e.Button.ToString();
+            SendMouseEvent("click", e.X, e.Y, button);
         }
 
+        // Sự kiện khi di chuyển chuột
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            // Điều chỉnh tọa độ trước khi gửi
-            int adjustedX = e.X * Screen.PrimaryScreen.Bounds.Width / pictureBox1.Width;
-            int adjustedY = e.Y * Screen.PrimaryScreen.Bounds.Height / pictureBox1.Height;
-            SendMouseEvent("move", adjustedX, adjustedY, "");
+            SendMouseEvent("move", e.X, e.Y, "none");
         }
 
-        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        // Sự kiện khi nhấn phím
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             SendKeyboardEvent("keydown", e.KeyCode.ToString());
+        }
+
+        // Sự kiện khi thả phím
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            SendKeyboardEvent("keyup", e.KeyCode.ToString());
         }
 
         private void SendPictureBoxSize()
@@ -117,6 +129,7 @@ namespace Client
                 MessageBox.Show("Error sending PictureBox size: " + ex.Message);
             }
         }
+        // Phương thức gửi sự kiện chuột đến server
         private void SendMouseEvent(string action, int x, int y, string button)
         {
             try
@@ -131,6 +144,7 @@ namespace Client
             }
         }
 
+        // Gửi sự kiện bàn phím
         private void SendKeyboardEvent(string action, string key)
         {
             try
@@ -145,21 +159,18 @@ namespace Client
             }
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        // Gửi sự kiện khi thả chuột ra
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            // Yêu cầu hủy luồng
-            cts.Cancel();
-
-            // Đợi cho luồng nhận kết thúc
-            receivingThread?.Join();
-
-            stream?.Close();
-            client?.Close();
-            cts.Dispose();
-
-            base.OnFormClosing(e);
+            string button = e.Button.ToString();
+            SendMouseEvent("mouseup", e.X, e.Y, button);
         }
 
-
+        // Gửi sự kiện khi nhấn chuột xuống
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            string button = e.Button.ToString();
+            SendMouseEvent("mousedown", e.X, e.Y, button);
+        }
     }
 }

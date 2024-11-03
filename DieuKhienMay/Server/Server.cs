@@ -35,6 +35,7 @@ namespace Server
         private SqlConnection sqlConnection;
         private System.Timers.Timer timer;
         private bool isListening = false;
+        private CancellationTokenSource cancellationTokenSource;
         // Chuỗi kết nối đến cơ sở dữ liệu
         //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
         private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
@@ -44,15 +45,16 @@ namespace Server
         private const int MOUSEEVENTF_LEFTUP = 0x04;
         private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
         private const int MOUSEEVENTF_RIGHTUP = 0x10;
-        private const int MOUSEEVENTF_MOVE = 0x0001;
-        private const int KEYEVENTF_KEYDOWN = 0x0000;
-        private const int KEYEVENTF_KEYUP = 0x0002;
 
         [DllImport("user32.dll")]
-        private static extern void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
+        public static extern void mouse_event(uint dwFlags, int dx, int dy, uint cButtons, uint dwExtraInfo);
 
         [DllImport("user32.dll")]
-        private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+        public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
+
+        private const uint KEYEVENTF_KEYDOWN = 0x0000;
+        private const uint KEYEVENTF_KEYUP = 0x0002;
+
         public Server()
         {
             InitializeComponent();
@@ -67,156 +69,192 @@ namespace Server
         {
             port = int.Parse(txbPort.Text);
             server = new TcpListener(IPAddress.Any, port);
-            listeningThread = new Thread(StartListening);
+            cancellationTokenSource = new CancellationTokenSource();
+            var token = cancellationTokenSource.Token;
+
+            listeningThread = new Thread(() => StartListening(token));
             listeningThread.Start();
             btnListen.Enabled = false;
+            btnStop.Enabled = true;
         }
 
         /// <summary>
         /// Xu li ket noi
         /// </summary>
         // Bắt đầu lắng nghe từ client (sd bat dong bo)
-        private void StartListening()
+        private void StartListening(CancellationToken token)
         {
             server.Start();
-            client = server.AcceptTcpClient();
-            // Ghi lại thông tin kết nối gồm địa chỉ IP và status
-            /*LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());*/
+            UpdateStatus("Server đang lắng nghe...");
 
-            // Ghi lại thông tin kết nối gồm địa chỉ IP
-            LogConnection1(((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
+            try
+            {
+                while (!token.IsCancellationRequested)
+                {
+                    if (server.Pending())
+                    {
+                        client = server.AcceptTcpClient();
+                        UpdateStatus("Client đã kết nối.");
 
-            // Bắt đầu gửi hình ảnh sau khi kết nối thành công
-            sendingThread = new Thread(SendDesktopImages);
-            sendingThread.Start();
-            // Bắt đầu nhận và xử lý các sự kiện điều khiển từ client
-            controlThread = new Thread(ReceiveControlEvents);
-            controlThread.Start();
+                        // Bắt đầu gửi hình ảnh và nhận sự kiện điều khiển khi kết nối thành công
+                        sendingThread = new Thread(() => SendDesktopImages(token));
+                        sendingThread.Start();
+
+                        controlThread = new Thread(() => ReceiveControlEvents(token));
+                        controlThread.Start();
+
+                        //LogConnection(client.Client.RemoteEndPoint.ToString()); // Log kết nối vào CSDL
+                    }
+                    Thread.Sleep(100); // Nghỉ ngắn để giảm tải CPU
+                }
+            }
+            catch (Exception ex)
+            {
+                HandleError("Error in StartListening", ex);
+            }
+            finally
+            {
+                server.Stop();
+                UpdateStatus("Server đã dừng lắng nghe.");
+            }
         }
+
 
         // Ket thuc ket noi
         private void StopListening()
         {
+            if (isListening)
+            {
+                try
+                {
+                    isListening = false;
+                    cancellationTokenSource.Cancel();
 
+                    // Đợi các thread dừng lại
+                    if (listeningThread != null && listeningThread.IsAlive)
+                    {
+                        listeningThread.Join();
+                    }
+
+                    if (sendingThread != null && sendingThread.IsAlive)
+                    {
+                        sendingThread.Join();
+                    }
+
+                    if (controlThread != null && controlThread.IsAlive)
+                    {
+                        controlThread.Join();
+                    }
+
+                    if (client != null && client.Connected)
+                    {
+                        client.Close();
+                    }
+
+                    UpdateStatus("Server đã dừng lắng nghe.");
+                    btnListen.Enabled = true;
+                    btnStop.Enabled = false;
+                }
+                catch (Exception ex)
+                {
+                    HandleError("Error stopping the server", ex);
+                }
+            }
         }
+
+
 
 
         /// <summary>
         /// Nhận thông tin điều khiển từ client
         /// </summary>
-        private void ReceiveControlEvents()
+        private void ReceiveControlEvents(CancellationToken token)
         {
-            NetworkStream stream = client.GetStream();
-            byte[] buffer = new byte[1024];
-            while (client.Connected)
-            {
-                try
-                {
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                    if (message == "GETLOGS")
-                    {
-                        SendLogs(stream);
-                    }
-                    else
-                    {
-                        ProcessControlEvent(message);
-                    }
-                    ProcessControlEvent(message);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error receiving control event: " + ex.Message);
-                    break;
-                }
-            }
-        }
-        private void ProcessControlEvent(string message)
-        {
-            string[] parts = message.Split(':');
-
-            if (parts[0] == "size")
-            {
-                // Lưu kích thước PictureBox từ client
-                pictureBoxWidth = int.Parse(parts[1]);
-                pictureBoxHeight = int.Parse(parts[2]);
-            }
-            else if (parts[0] == "mouse")
-            {
-                string action = parts[1];
-                int x = int.Parse(parts[2]);
-                int y = int.Parse(parts[3]);
-                string button = parts[4];
-
-                // Điều chỉnh tọa độ chuột theo tỷ lệ màn hình server
-                int adjustedX = x * Screen.PrimaryScreen.Bounds.Width / pictureBoxWidth;
-                int adjustedY = y * Screen.PrimaryScreen.Bounds.Height / pictureBoxHeight;
-
-                PerformMouseAction(action, adjustedX, adjustedY, button);
-            }
-            else if (parts[0] == "keyboard")
-            {
-                string action = parts[1];
-                string key = parts[2];
-                PerformKeyboardAction(action, key);
-            }
-        }
-
-        private void PerformMouseAction(string action, int x, int y, string button)
-        {
-            // Sử dụng WinAPI hoặc các lệnh điều khiển để thực hiện thao tác chuột
-            // Di chuyển chuột đến vị trí mong muốn
-            Cursor.Position = new Point(x, y);
-
-            // Thực hiện các hành động nhấp chuột dựa trên yêu cầu từ client
-            if (action == "click")
-            {
-                if (button == "Left")
-                {
-                    mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, x, y, 0, 0);
-                }
-                else if (button == "Right")
-                {
-                    mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, x, y, 0, 0);
-                }
-            }
-            else if (action == "move")
-            {
-                // Di chuyển chuột
-                mouse_event(MOUSEEVENTF_MOVE, x, y, 0, 0);
-            }
-        }
-
-        private void PerformKeyboardAction(string action, string key)
-        {
-            // Sử dụng WinAPI hoặc các lệnh điều khiển để thực hiện thao tác bàn phím
-            // Chuyển ký tự thành mã phím (Virtual Key Code)
             try
             {
-                byte keyCode = (byte)Enum.Parse(typeof(Keys), key);
+                NetworkStream stream = client.GetStream();
+                byte[] buffer = new byte[1024];
 
-                if (action == "keydown")
+                while (client.Connected && !token.IsCancellationRequested)
                 {
-                    keybd_event(keyCode, 0, KEYEVENTF_KEYDOWN, 0);
-                }
-                else if (action == "keyup")
-                {
-                    keybd_event(keyCode, 0, KEYEVENTF_KEYUP, 0);
+                    if (stream.DataAvailable)
+                    {
+                        int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                        if (bytesRead > 0)
+                        {
+                            string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+
+                            // Kiểm tra lệnh GETLOGS từ client
+                            if (message == "GETLOGS")
+                            {
+                                SendLogs(stream);
+                            }
+                            else
+                            {
+                                ProcessControlEvent(message);
+                            }
+                        }
+                    }
+                    Thread.Sleep(10); // Nghỉ ngắn để giảm tải CPU khi không có dữ liệu
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error processing keyboard event: " + ex.Message);
+                HandleError("Error in ReceiveControlEvents", ex);
             }
         }
+
+
+        private void ProcessControlEvent(string message)
+        {
+            // Phân tách thông điệp để xác định loại sự kiện và chi tiết
+            string[] parts = message.Split(':');
+            if (parts.Length < 2)
+                return;
+
+            string actionType = parts[0];
+
+            // Kiểm tra xem đó là sự kiện chuột hay bàn phím
+            if (actionType == "mouse" && parts.Length >= 5)
+            {
+                PerformMouseAction(parts[1], int.Parse(parts[2]), int.Parse(parts[3]), parts[4]);
+            }
+            else if (actionType == "keyboard" && parts.Length >= 3)
+            {
+                PerformKeyboardAction(parts[1], parts[2]);
+            }
+        }
+
+
+        private void PerformMouseAction(string action, int x, int y, string button)
+        {
+            Cursor.Position = new Point(x, y);
+            uint downEvent = (button == "left") ? (uint)MOUSEEVENTF_LEFTDOWN : (uint)MOUSEEVENTF_RIGHTDOWN;
+            uint upEvent = (button == "left") ? (uint)MOUSEEVENTF_LEFTUP : (uint)MOUSEEVENTF_RIGHTUP;
+
+
+            if (action == "down") mouse_event(downEvent, x, y, 0, 0);
+            else if (action == "up") mouse_event(upEvent, x, y, 0, 0);
+        }
+
+
+
+        private void PerformKeyboardAction(string action, string key)
+        {
+            Keys keyValue = (Keys)Enum.Parse(typeof(Keys), key, true);
+
+            if (action == "keydown") keybd_event((byte)keyValue, 0, 0, 0);
+            else if (action == "keyup") keybd_event((byte)keyValue, 0, KEYEVENTF_KEYUP, 0);
+        }
+
 
         /// <summary>
         /// Gui anh
         /// </summary>
-        private void SendDesktopImages()
+        private void SendDesktopImages(CancellationToken token)
         {
             NetworkStream stream = client.GetStream();
-            while (client.Connected)
+            while (client.Connected && !token.IsCancellationRequested)
             {
                 try
                 {
@@ -224,51 +262,44 @@ namespace Server
 
                     using (MemoryStream ms = new MemoryStream())
                     {
-                        // Lưu ảnh dưới dạng PNG vào MemoryStream
                         desktopImage.Save(ms, ImageFormat.Png);
                         byte[] imageBytes = ms.ToArray();
-
-                        // Gửi kích thước của ảnh trước
                         byte[] sizeBytes = BitConverter.GetBytes(imageBytes.Length);
-                        stream.Write(sizeBytes, 0, sizeBytes.Length);
 
-                        // Gửi nội dung ảnh
+                        stream.Write(sizeBytes, 0, sizeBytes.Length);
                         stream.Write(imageBytes, 0, imageBytes.Length);
                     }
 
                     desktopImage.Dispose();
-                    Thread.Sleep(100); // Giảm tải cho hệ thống
+                    Thread.Sleep(100);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error sending image: " + ex.Message);
+                    HandleError("Error sending image", ex);
                     break;
                 }
             }
         }
 
+
         // Hàm chụp ảnh với độ phân giải thấp và chất lượng JPEG giảm
         private Image CaptureDesktop()
         {
             // Lấy độ rộng và chiều cao tối đa bao gồm tất cả các màn hình
-            int totalWidth = 0;
-            int maxHeight = 0;
-            foreach (Screen screen in Screen.AllScreens)
-            {
-                totalWidth += screen.Bounds.Width;
-                maxHeight = Math.Max(maxHeight, screen.Bounds.Height);
-            }
+            int totalWidth = Screen.AllScreens.Sum(screen => screen.Bounds.Width);
+            int maxHeight = Screen.AllScreens.Max(screen => screen.Bounds.Height);
 
             // Tạo bitmap với kích thước tổng hợp của tất cả các màn hình
             Bitmap screenshot = new Bitmap(totalWidth, maxHeight, PixelFormat.Format32bppArgb);
             Graphics graphics = Graphics.FromImage(screenshot);
+
 
             // Vẽ nội dung của từng màn hình lên bitmap
             int offsetX = 0;
             foreach (Screen screen in Screen.AllScreens)
             {
                 graphics.CopyFromScreen(screen.Bounds.X, screen.Bounds.Y, offsetX, 0, screen.Bounds.Size, CopyPixelOperation.SourceCopy);
-                offsetX += screen.Bounds.Width; // Di chuyển đến vị trí kế tiếp cho màn hình tiếp theo
+                offsetX += screen.Bounds.Width;
             }
 
             graphics.Dispose();
@@ -398,6 +429,17 @@ namespace Server
         {
             //mainForm main = new mainForm();
             //main.Show();
+        }
+
+        private void HandleError(string message, Exception ex)
+        {
+            Console.WriteLine($"{message}: {ex.Message}");
+            UpdateStatus($"{message}: {ex.Message}");
+        }
+
+        private void Server_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopListening();
         }
     }
 }
