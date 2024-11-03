@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bg9n9xB316k=",
+  "dgSpecHash": "fG+yntrrcw8=",
   "success": true,
   "projectFilePath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

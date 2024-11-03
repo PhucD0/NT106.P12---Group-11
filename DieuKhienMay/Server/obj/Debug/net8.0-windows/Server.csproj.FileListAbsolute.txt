@@ -91,9 +91,3 @@ D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\D
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.FileTransfer.resources
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.NotificationForm.resources
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.deps.json
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.runtimeconfig.json
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.exe
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.dll
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.pdb
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\File Transfer.dll.config
