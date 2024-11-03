@@ -35,7 +35,8 @@ namespace Server
         private System.Timers.Timer timer;
         private bool isListening = false;
         // Chuỗi kết nối đến cơ sở dữ liệu
-        private string connectionString = "Server=your_server;Database=RemoteDesktopDB;User Id=your_user;Password=your_password;";
+        //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
+        private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
 
         // Khai báo các hằng số cho hành động chuột và bàn phím
         private const int MOUSEEVENTF_LEFTDOWN = 0x02;
@@ -78,6 +79,11 @@ namespace Server
         {
             server.Start();
             client = server.AcceptTcpClient();
+            // Ghi lại thông tin kết nối gồm địa chỉ IP và status
+            /*LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());*/
+
+            // Ghi lại thông tin kết nối gồm địa chỉ IP
+            LogConnection1(((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
 
             // Bắt đầu gửi hình ảnh sau khi kết nối thành công
             sendingThread = new Thread(SendDesktopImages);
@@ -85,18 +91,12 @@ namespace Server
             // Bắt đầu nhận và xử lý các sự kiện điều khiển từ client
             controlThread = new Thread(ReceiveControlEvents);
             controlThread.Start();
-
-            // Ghi lại thông tin kết nối
-            /*LogConnection("Connected", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString(),
-                ((IPEndPoint)client.Client.RemoteEndPoint).Port);*/
         }
-
-
 
         // Ket thuc ket noi
         private void StopListening()
         {
-            
+
         }
 
 
@@ -113,6 +113,14 @@ namespace Server
                 {
                     int bytesRead = stream.Read(buffer, 0, buffer.Length);
                     string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                    if (message == "GETLOGS")
+                    {
+                        SendLogs(stream);
+                    }
+                    else
+                    {
+                        ProcessControlEvent(message);
+                    }
                     ProcessControlEvent(message);
                 }
                 catch (Exception ex)
@@ -200,17 +208,6 @@ namespace Server
                 MessageBox.Show("Error processing keyboard event: " + ex.Message);
             }
         }
-
-
-        /// <summary>
-        /// Xu li du lieu 
-        /// </summary>
-        /// <param name="inputBytes"></param>
-        private void HandleInputBytes(byte[] inputBytes)
-        {
-            // code something here
-        }
-
 
         /// <summary>
         /// Gui anh
@@ -313,79 +310,93 @@ namespace Server
         /// <summary>
         /// View logs
         /// </summary>
-
         // Hàm khởi tạo kết nối csdl
-       /* private SqlConnection InitializeDatabase()
+        private SqlConnection InitializeDatabase()
         {
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(databaseConnectionString);
             connection.Open();
             return connection;
         }
 
-        // ghi lại thông tin kết nối
-        private void LogConnection(string status, string ip, int port)
+        // ghi lại thông tin kết nối bản 1
+        private void LogConnection1(string ip)
         {
-            using (SqlConnection connection = InitializeDatabase())
+            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
             {
-                string query = "INSERT INTO ConnectionLogs (Status, IP, Port, Timestamp) VALUES (@Status, @IP, @Port, @Timestamp)";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Status", status);
-                    command.Parameters.AddWithValue("@IP", ip);
-                    command.Parameters.AddWithValue("@Port", port);
-                    command.Parameters.AddWithValue("@Timestamp", DateTime.Now);
-                    command.ExecuteNonQuery();
-                }
+                string query = "INSERT INTO ConnectionLogs (IPAddress, AccessTime) VALUES (@IPAddress, @AccessTime)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@IPAddress", ip);
+                command.Parameters.AddWithValue("@AccessTime", DateTime.Now);
+
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
+
+        // ghi lại thông tin kết nối bản 2
+        //private void LogConnection1(string status, string ip)
+        //{
+        //    using (SqlConnection connection = InitializeDatabase())
+        //    {
+        //        string query = "INSERT INTO LogConnection (IPAddress, ConnectionTime, SessionStatus) VALUES (@IPAddress, @ConnectionTime, @SessionStatus)";
+        //        using (SqlCommand command = new SqlCommand(query, connection))
+        //        {
+        //            command.Parameters.AddWithValue("@SessionStatus", status);
+        //            command.Parameters.AddWithValue("@IPAddress", ip);
+        //            //command.Parameters.AddWithValue("@Port", port);
+        //            command.Parameters.AddWithValue("@ConnectionTime", DateTime.Now);
+        //            command.ExecuteNonQuery();
+        //        }
+        //    }
+        //}
 
         // Truy cap co so du lieu để lấy lịch sử kết nối
-        private DataTable LoadLogs()
-        {
-            DataTable logs = new DataTable();
-            using (SqlConnection connection = InitializeDatabase())
-            {
-                string query = "SELECT * FROM ConnectionLogs ORDER BY Timestamp DESC";
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                    {
-                        adapter.Fill(logs);
-                    }
-                }
-            }
-            return logs;
-        }
+        //private DataTable LoadLogs()
+        //{
+        //    DataTable logs = new DataTable();
+        //    using (SqlConnection connection = InitializeDatabase())
+        //    {
+        //        string query = "SELECT * FROM LogConnection ORDER BY ConnectionTime DESC";
+        //        using (SqlCommand command = new SqlCommand(query, connection))
+        //        {
+        //            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+        //            {
+        //                adapter.Fill(logs);
+        //            }
+        //        }
+        //    }
+        //    return logs;
+        //}
 
         // Gui logs cho client
-        private void SendLogs()
+        private void SendLogs(NetworkStream stream)
         {
-            DataTable logs = LoadLogs();
-            StringBuilder sb = new StringBuilder();
-
-            foreach (DataRow row in logs.Rows)
+            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
             {
-                sb.AppendLine($"{row["Timestamp"]} - {row["Status"]} - {row["IP"]}:{row["Port"]}");
+                string query = "SELECT IPAddress, AccessTime FROM ConnectionLogs";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                StringBuilder logs = new StringBuilder();
+
+                while (reader.Read())
+                {
+                    logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]}");
+                }
+
+                byte[] logsBytes = Encoding.ASCII.GetBytes(logs.ToString());
+                stream.Write(logsBytes, 0, logsBytes.Length);
             }
-
-            byte[] logData = Encoding.UTF8.GetBytes(sb.ToString());
-            byte[] header = BitConverter.GetBytes((ushort)2); // Giả định 2 là loại dữ liệu log
-            byte[] length = BitConverter.GetBytes(logData.Length);
-
-            stream.Write(header, 0, header.Length);
-            stream.Write(length, 0, length.Length);
-            stream.Write(logData, 0, logData.Length);
-        }*/
-
-        private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FileTransfer fileTransfer = new FileTransfer();
-            fileTransfer.Show();
         }
 
         /// <summary>
         /// gui file
         /// </summary>
-
+        private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FileTransfer fileTransfer = new FileTransfer();
+            fileTransfer.Show();
+        }
     }
 }

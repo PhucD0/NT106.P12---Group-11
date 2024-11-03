@@ -21,7 +21,7 @@ namespace Client
     {
         // KHAI BAO HERE
         private NetworkStream stream;
-        private  TcpClient client;
+        private TcpClient client;
         private int port;
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;
@@ -50,7 +50,6 @@ namespace Client
         // Ket noi den server
         private void ConnectToServer()
         {
-
             port = int.Parse(txbPort.Text);
             client = new TcpClient();
 
@@ -73,7 +72,7 @@ namespace Client
         /// Xử lí ảnh
         /// </summary>
         // Lang nghe và hien thi du lieu hình anh bên phía server
-        
+
 
         /// <summary>
         /// Xu li input va gui toi server
@@ -110,30 +109,48 @@ namespace Client
 
         private void RequestLogs()
         {
-            byte[] header = BitConverter.GetBytes((ushort)2); // 2 là yêu cầu xem logs
-            byte[] length = BitConverter.GetBytes(0); // Không có dữ liệu thêm
+            using (TcpClient tempClient = new TcpClient())
+            {
+                try
+                {
+                    // Kết nối tạm thời đến server
+                    tempClient.Connect(txbIP.Text, int.Parse(txbPort.Text));
+                    NetworkStream stream = tempClient.GetStream();
 
-            stream.Write(header, 0, header.Length);
-            stream.Write(length, 0, length.Length);
+                    // Gửi yêu cầu "GETLOGS"
+                    byte[] requestBytes = Encoding.ASCII.GetBytes("GETLOGS");
+                    stream.Write(requestBytes, 0, requestBytes.Length);
 
-            ReceiveLogsFromServer();
+                    // Đọc phản hồi chứa log
+                    byte[] buffer = new byte[4096];
+                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                    string logs = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+
+                    // Hiển thị log cho người dùng
+                    MessageBox.Show("Connection Logs:\n" + logs);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể lấy log: " + ex.Message);
+                }
+            }
         }
 
-        private void ReceiveLogsFromServer()
-        {
-            byte[] header = BitConverter.GetBytes((ushort)2); // 2 là yêu cầu logs
-            stream.Write(header, 0, header.Length);
+        //private void ReceiveLogsFromServer()
+        //{
+        //    byte[] header = BitConverter.GetBytes((ushort)2); // 2 là yêu cầu logs
+        //    stream.Write(header, 0, header.Length);
 
-            byte[] logsBytes = new byte[2048];
-            int bytesRead = stream.Read(logsBytes, 0, logsBytes.Length);
+        //    byte[] logsBytes = new byte[2048];
+        //    int bytesRead = stream.Read(logsBytes, 0, logsBytes.Length);
 
-            string logs = Encoding.ASCII.GetString(logsBytes, 0, bytesRead);
+        //    string logs = Encoding.ASCII.GetString(logsBytes, 0, bytesRead);
 
-            // Ghi logs vào một file tạm thời và mở Notepad
-            string tempFilePath = Path.GetTempPath() + "connection_logs.txt";
-            File.WriteAllText(tempFilePath, logs);
-            System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
-        }
+        //    // Ghi logs vào một file tạm thời và mở Notepad
+        //    string tempFilePath = Path.GetTempPath() + "connection_logs.txt";
+        //    File.WriteAllText(tempFilePath, logs);
+        //    System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
+        //}
 
         /// <summary>
         /// Luu dia chi IP và port
@@ -197,8 +214,8 @@ namespace Client
         }
 
         private void HideValidIPs()
-        {  
-            listBox.Visible = false;   
+        {
+            listBox.Visible = false;
         }
     }
 }

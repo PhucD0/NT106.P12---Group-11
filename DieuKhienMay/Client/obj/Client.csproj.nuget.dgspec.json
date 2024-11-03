@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj": {}
+    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj": {
+    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj",
+        "projectUniqueName": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\obj\\",
+        "projectPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
