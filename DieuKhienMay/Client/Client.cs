@@ -11,6 +11,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Configuration;
 using System.Net;
+using static System.Windows.Forms.DataFormats;
 //using Client.Properties;
 
 
@@ -21,6 +22,7 @@ namespace Client
         // KHAI BAO HERE
         private NetworkStream stream;
         private  TcpClient client;
+        private int port;
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;
 
@@ -49,98 +51,29 @@ namespace Client
         private void ConnectToServer()
         {
 
-            // Đảm bảo rằng mọi đối tượng client cũ đều đã được đóng hoàn toàn
-            if (client != null && client.Connected)
-            {
-                client.Close();
-            }
-
-            // Khởi tạo một đối tượng TcpClient mới cho mỗi lần kết nối
+            port = int.Parse(txbPort.Text);
             client = new TcpClient();
 
-            int port;
-
-            if (!IsValidIP(txbIP.Text) || !int.TryParse(txbPort.Text.Trim(), out port) || !IsValidPort(port))
+            try
             {
-                MessageBox.Show("Địa chỉ IP hoặc Port không hợp lệ. Vui lòng kiểm tra lại.");
-                return;
+                client.Connect(txbIP.Text, port);
+                MessageBox.Show("Connected to server!");
+
+                // Mở Form2 để hiển thị màn hình server
+                Form1 displayForm = new Form1(client);
+                displayForm.Show();
             }
-
-            int attempts = 0;
-
-                try
-                {
-                    client.Connect(txbIP.Text, port);  // Kết nối đến server
-
-                    if (client.Connected)
-                    {
-                        stream = client.GetStream();
-                        MessageBox.Show("Kết nối thành công đến server!");
-
-                        // Bắt đầu lắng nghe và hiển thị hình ảnh từ server
-                        //ListenAndDisplayImages();
-
-                        return;
-                    }
-                }
-                catch (SocketException ex)
-                {
-                    attempts++;
-                    MessageBox.Show($"Lỗi kết nối đến server: {ex.Message}.");
-
-
-                }
-
-            MessageBox.Show("Không thể kết nối đến server sau nhiều lần thử. Vui lòng kiểm tra lại kết nối.");
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to connect: " + ex.Message);
+            }
         }
 
         /// <summary>
         /// Xử lí ảnh
         /// </summary>
         // Lang nghe và hien thi du lieu hình anh bên phía server
-        private void ListenAndDisplayImages()
-        {
-            new Thread(() =>
-            {
-                try
-                {
-                    while (client.Connected)
-                    {
-
-                        // Đọc header để xác định loại dữ liệu (0 cho hình ảnh)
-                        byte[] header = new byte[2];
-                        stream.Read(header, 0, header.Length);
-                        ushort dataType = BitConverter.ToUInt16(header, 0);
-
-                        // Đọc chiều dài dữ liệu hình ảnh
-                        byte[] lengthBytes = new byte[2];
-                        stream.Read(lengthBytes, 0, lengthBytes.Length);
-                        ushort length = BitConverter.ToUInt16(lengthBytes, 0);
-
-                        // Nếu loại dữ liệu là hình ảnh
-                        if (dataType == 0) // 0 là mã loại dữ liệu hình ảnh
-                        {
-                            byte[] imageData = new byte[length];
-                            stream.Read(imageData, 0, length); // Đọc dữ liệu hình ảnh
-
-                            // Chuyển đổi byte array thành hình ảnh và hiển thị
-                            using (MemoryStream ms = new MemoryStream(imageData))
-                            {
-                                Image image = Image.FromStream(ms);
-                                this.Invoke((MethodInvoker)delegate
-                                {
-                                    pictureBox.Image = image; // Hiển thị hình ảnh lên PictureBox
-                                });
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Loi lang nghe du lieu tu server: {ex.Message}");
-                }
-            }).Start();
-        }
+        
 
         /// <summary>
         /// Xu li input va gui toi server

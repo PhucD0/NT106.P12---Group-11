@@ -67,3 +67,6 @@ D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-win
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.FileTransfer.resources
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.NotificationForm.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.FileTransfer.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.NotificationForm.resources
