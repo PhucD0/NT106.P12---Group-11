@@ -16,6 +16,7 @@ using System.Timers;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
+using File_Transfer;
 
 namespace Server
 {
@@ -395,8 +396,8 @@ namespace Server
         /// </summary>
         private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileTransfer fileTransfer = new FileTransfer();
-            fileTransfer.Show();
+            mainForm main = new mainForm();
+            main.Show();
         }
     }
 }

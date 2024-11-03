@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj": {}
+    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj": {}
   },
   "projects": {
-    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj": {
+    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\obj\\",
+        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj": {
+                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -69,7 +73,80 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj",
+        "projectName": "File Transfer",
+        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

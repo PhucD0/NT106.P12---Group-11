@@ -1,14 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\",
+  "WorkspaceRootPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63E93FA2-511E-40E8-B634-FFDE43A921B0}|..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan_prototype\\file transfer\\file transfer\\file transfer\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E93FA2-511E-40E8-B634-FFDE43A921B0}|..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\File Transfer.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan_prototype\\file transfer\\file transfer\\file transfer\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\nubakachi\\universitystuff\\hk3\\l\u1EADp tr\u00ECnh m\u1EA1ng\\doan\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +32,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeToolTip": "Client\\Client.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAuwN0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HomeForm.cs",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "RelativeToolTip": "..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "ViewState": "AQIAAGcBAAAAAAAAAAAtwIcBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T02:04:06.874Z",
-              "IsPinned": true
+              "WhenOpened": "2024-11-03T13:51:34.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Server.cs",
-              "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
+              "DocumentIndex": 1,
+              "Title": "HomeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\DoAn_Prototype\\File Transfer\\File Transfer\\File Transfer\\HomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T13:51:28.469Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Server.cs [Design]",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeDocumentMoniker": "Server\\Server.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs [Design]",
+              "RelativeToolTip": "Server\\Server.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T13:49:59.55Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Server.cs",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
+              "RelativeDocumentMoniker": "Server\\Server.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeToolTip": "Server\\Server.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAAwIMBAAAvAAAAAAAAAA==",
+              "ViewState": "AQIAAHoBAAAAAAAAAAAlwI8BAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T02:40:34.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs [Design]",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
+              "RelativeDocumentMoniker": "Client\\Client.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs [Design]",
+              "RelativeToolTip": "Client\\Client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T13:49:58.6Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
+              "RelativeDocumentMoniker": "Client\\Client.cs",
+              "ToolTip": "D:\\Nubakachi\\UniversityStuff\\HK3\\L\u1EADp Tr\u00ECnh M\u1EA1ng\\DoAn\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
+              "RelativeToolTip": "Client\\Client.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAuwF8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T02:04:06.874Z",
               "EditorCaption": ""
             }
           ]

@@ -13,6 +13,7 @@ using System.Configuration;
 using System.Net;
 using static System.Windows.Forms.DataFormats;
 //using Client.Properties;
+using File_Transfer;
 
 
 namespace Client
@@ -91,8 +92,8 @@ namespace Client
         /// <param name="e"></param>
         private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileTransfer fileTransfer = new FileTransfer();
-            fileTransfer.Show();
+            mainForm main = new mainForm();
+            main.Show();
         }
 
         /// <summary>

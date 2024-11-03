@@ -65,8 +65,15 @@ D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-win
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.pdb
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.genruntimeconfig.cache
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.FileTransfer.resources
-D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.NotificationForm.resources
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.FileTransfer.resources
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Form1.resources
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.NotificationForm.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Form1.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.deps.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.runtimeconfig.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\File Transfer.dll.config
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.Up2Date
