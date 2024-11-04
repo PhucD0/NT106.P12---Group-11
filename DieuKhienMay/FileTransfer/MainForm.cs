@@ -349,6 +349,7 @@ namespace FileTransfer
                 serverCancellationTokenSource?.Cancel();
                 serverRunning = false;
             }
+            this.Close();
         }
 
         private void stopButton_Click(object sender, EventArgs e)
@@ -388,7 +389,7 @@ namespace FileTransfer
                 serverRunning = false;
             }
             // Hide the current FileTransfer form 
-            this.Hide();
+            this.Close();
         }
     }
 }
