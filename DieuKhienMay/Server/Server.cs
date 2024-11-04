@@ -68,10 +68,11 @@ namespace Server
         private void btnListen_Click(object sender, EventArgs e)
         {
             port = int.Parse(txbPort.Text);
-            server = new TcpListener(IPAddress.Any, port);
+            server = new TcpListener(IPAddress.Parse(txbIP.Text), port);
             cancellationTokenSource = new CancellationTokenSource();
             var token = cancellationTokenSource.Token;
 
+            isListening = true;  // Cập nhật trạng thái
             listeningThread = new Thread(() => StartListening(token));
             listeningThread.Start();
             btnListen.Enabled = false;
@@ -82,30 +83,28 @@ namespace Server
         /// Xu li ket noi
         /// </summary>
         // Bắt đầu lắng nghe từ client (sd bat dong bo)
-        private void StartListening(CancellationToken token)
+        private async void StartListening(CancellationToken token)
         {
-            server.Start();
-            UpdateStatus("Server đang lắng nghe...");
-
             try
             {
+                server.Start();
+                UpdateStatus("Server đang lắng nghe...");
+
                 while (!token.IsCancellationRequested)
                 {
                     if (server.Pending())
                     {
-                        client = server.AcceptTcpClient();
+                        client = await server.AcceptTcpClientAsync(); // Lắng nghe không đồng bộ
                         UpdateStatus("Client đã kết nối.");
 
-                        // Bắt đầu gửi hình ảnh và nhận sự kiện điều khiển khi kết nối thành công
-                        sendingThread = new Thread(() => SendDesktopImages(token));
+                        // Khởi động các luồng gửi và nhận không đồng bộ
+                        sendingThread = new Thread(() => SendDesktopImages(token)) { IsBackground = true };
                         sendingThread.Start();
 
-                        controlThread = new Thread(() => ReceiveControlEvents(token));
+                        controlThread = new Thread(() => ReceiveControlEvents(token)) { IsBackground = true };
                         controlThread.Start();
-
-                        //LogConnection(client.Client.RemoteEndPoint.ToString()); // Log kết nối vào CSDL
                     }
-                    Thread.Sleep(100); // Nghỉ ngắn để giảm tải CPU
+                    await Task.Delay(100); // Giảm tải CPU với delay không đồng bộ
                 }
             }
             catch (Exception ex)
@@ -120,47 +119,42 @@ namespace Server
         }
 
 
+
         // Ket thuc ket noi
         private void StopListening()
         {
             if (isListening)
             {
-                try
+                isListening = false;  // Cập nhật trạng thái
+                btnListen.Enabled = true;
+                btnStop.Enabled = false;
+
+                // Dừng server và luồng trong Task để không làm treo UI
+                Task.Run(() =>
                 {
-                    isListening = false;
-                    cancellationTokenSource.Cancel();
-
-                    // Đợi các thread dừng lại
-                    if (listeningThread != null && listeningThread.IsAlive)
+                    try
                     {
-                        listeningThread.Join();
-                    }
+                        cancellationTokenSource?.Cancel();
 
-                    if (sendingThread != null && sendingThread.IsAlive)
+                        // Đợi các thread dừng lại với timeout
+                        listeningThread?.Join(1000);
+                        sendingThread?.Join(1000);
+                        controlThread?.Join(1000);
+
+                        client?.Close();
+                        server?.Stop();
+
+                        // Cập nhật trạng thái UI sau khi dừng server
+                        Invoke(new Action(() => UpdateStatus("Server đã dừng lắng nghe.")));
+                    }
+                    catch (Exception ex)
                     {
-                        sendingThread.Join();
+                        Invoke(new Action(() => HandleError("Error stopping the server", ex)));
                     }
-
-                    if (controlThread != null && controlThread.IsAlive)
-                    {
-                        controlThread.Join();
-                    }
-
-                    if (client != null && client.Connected)
-                    {
-                        client.Close();
-                    }
-
-                    UpdateStatus("Server đã dừng lắng nghe.");
-                    btnListen.Enabled = true;
-                    btnStop.Enabled = false;
-                }
-                catch (Exception ex)
-                {
-                    HandleError("Error stopping the server", ex);
-                }
+                });
             }
         }
+
 
 
 
@@ -440,6 +434,36 @@ namespace Server
         private void Server_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopListening();
+
+            // Hủy các luồng nếu chúng vẫn đang chạy
+            if (listeningThread != null && listeningThread.IsAlive)
+            {
+                listeningThread.Join();
+            }
+
+            if (sendingThread != null && sendingThread.IsAlive)
+            {
+                sendingThread.Join();
+            }
+
+            if (controlThread != null && controlThread.IsAlive)
+            {
+                controlThread.Join();
+            }
+
+            // Đảm bảo client và server đều đã đóng
+            if (client != null && client.Connected)
+            {
+                client.Close();
+            }
+
+            if (server != null)
+            {
+                server.Stop();
+            }
+
+            // Hủy token để dừng các thao tác không cần thiết
+            cancellationTokenSource?.Cancel();
         }
     }
 }

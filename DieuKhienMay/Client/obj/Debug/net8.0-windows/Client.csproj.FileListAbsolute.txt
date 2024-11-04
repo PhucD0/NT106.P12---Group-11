@@ -74,3 +74,10 @@ D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\D
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.pdb
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.Up2Date
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.Up2Date

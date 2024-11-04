@@ -70,12 +70,20 @@ namespace Client
                         // Hiển thị ảnh và điều chỉnh kích thước Form2 và pictureBox1 để phù hợp
                         pictureBox1.Invoke((MethodInvoker)(() =>
                         {
-                            // Đặt kích thước Form2 và pictureBox1 để phù hợp với kích thước hình ảnh nhận được
-                            this.Size = new Size(receivedImage.Width, receivedImage.Height);
+                            // Đặt kích thước của pictureBox1 để khớp với kích thước hình ảnh
                             pictureBox1.Size = new Size(receivedImage.Width, receivedImage.Height);
 
+                            // Tạo một khoảng đệm (ví dụ 20px) để form lớn hơn pictureBox1
+                            int padding = 20;
+
+                            // Đặt kích thước của form lớn hơn kích thước của pictureBox1 với khoảng đệm
+                            this.Size = new Size(receivedImage.Width + padding * 2, receivedImage.Height + padding * 2);
+
+                            // Căn giữa pictureBox1 trong Form2 (nếu cần)
+                            pictureBox1.Location = new Point(padding, padding);
+
                             // Đảm bảo ảnh thu phóng để hiển thị đầy đủ
-                            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                            //pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                             pictureBox1.Image = receivedImage;
                         }));
                     }
