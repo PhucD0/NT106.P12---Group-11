@@ -16,7 +16,7 @@ using System.Timers;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
-//using File_Transfer;
+using FileTransfer;
 
 namespace Server
 {
@@ -427,8 +427,8 @@ namespace Server
         /// </summary>
         private void sendFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //mainForm main = new mainForm();
-            //main.Show();
+            mainForm main = new mainForm();
+            main.Show();
         }
 
         private void HandleError(string message, Exception ex)

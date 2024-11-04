@@ -89,3 +89,8 @@ D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\D
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.pdb
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.deps.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.runtimeconfig.json
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.pdb
