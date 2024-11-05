@@ -378,23 +378,6 @@ namespace Server
         //    }
         //}
 
-        // Truy cap co so du lieu để lấy lịch sử kết nối
-        //private DataTable LoadLogs()
-        //{
-        //    DataTable logs = new DataTable();
-        //    using (SqlConnection connection = InitializeDatabase())
-        //    {
-        //        string query = "SELECT * FROM LogConnection ORDER BY ConnectionTime DESC";
-        //        using (SqlCommand command = new SqlCommand(query, connection))
-        //        {
-        //            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-        //            {
-        //                adapter.Fill(logs);
-        //            }
-        //        }
-        //    }
-        //    return logs;
-        //}
 
         // Gui logs cho client
         private void SendLogs(NetworkStream stream)

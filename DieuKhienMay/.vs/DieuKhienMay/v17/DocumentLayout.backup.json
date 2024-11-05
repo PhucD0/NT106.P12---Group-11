@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1563D1F-00A8-4A08-8A25-07F3E9CB327B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2C65DE-02D6-4D78-8F0A-05FC662EB6AB}|Client\\Client.csproj|d:\\kudo\\nt106\\doancuoiki\\nt106.p12---group-11\\dieukhienmay\\client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Form1.cs",
               "RelativeDocumentMoniker": "Client\\Form1.cs",
@@ -39,13 +43,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Server.cs",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeDocumentMoniker": "Server\\Server.cs",
               "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Server\\Server.cs",
               "RelativeToolTip": "Server\\Server.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAEgBAAAAAAAAAADwv3wBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T02:40:34.685Z",
               "IsPinned": true,
@@ -54,14 +58,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Client.cs [Design]",
+              "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
+              "RelativeDocumentMoniker": "Client\\Client.cs",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs [Design]*",
+              "RelativeToolTip": "Client\\Client.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:32:19.386Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
               "RelativeDocumentMoniker": "Client\\Client.cs",
-              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs",
-              "RelativeToolTip": "Client\\Client.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAowIYAAABSAAAAAAAAAA==",
+              "ToolTip": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.cs*",
+              "RelativeToolTip": "Client\\Client.cs*",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAcwO8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:50:33.881Z"
+              "WhenOpened": "2024-11-04T15:50:33.881Z",
+              "EditorCaption": ""
             }
           ]
         }

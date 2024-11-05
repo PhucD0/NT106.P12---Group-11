@@ -27,6 +27,9 @@ namespace Client
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;
 
+        private ListBox listBox;
+
+
         public Client()
         {
             InitializeComponent();
@@ -34,9 +37,50 @@ namespace Client
             // Gọi sự kiện khi mouse hover vào textbox IP
             txbIP.MouseHover += TxtIP_MouseHover;
 
+            CreateListBox();
+
+
             this.Click += (s, e) => HideValidIPs();
 
 
+        }
+
+        private void CreateListBox()
+        {
+            listBox = new ListBox();
+            // Thiết lập chế độ vẽ OwnerDraw
+            listBox.DrawMode = DrawMode.OwnerDrawFixed;
+            listBox.DrawItem += ListBox_DrawItem;
+            listBox.Location = new Point(txbIP.Left, txbIP.Bottom + 5); // Đặt ListBox dưới TextBox txpIP
+            listBox.Size = new Size(200, 100); // Đặt kích thước của ListBox
+            listBox.Visible = false; // Ẩn ListBox
+            this.Controls.Add(listBox); // Thêm ListBox vào form
+        }
+
+        
+
+        // Hàm vẽ từng mục với padding và màu nền khi chọn
+        private void ListBox_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+
+            if (e.Index >= 0)
+            {
+                // Chọn màu nền khi chọn và không chọn
+                Color backgroundColor = (e.State & DrawItemState.Selected) == DrawItemState.Selected
+                    ? Color.LightBlue : Color.White;
+
+                using (Brush brush = new SolidBrush(backgroundColor))
+                {
+                    e.Graphics.FillRectangle(brush, e.Bounds);
+                }
+
+                // Chọn màu và vẽ văn bản
+                e.Graphics.DrawString(listBox.Items[e.Index].ToString(),
+                    e.Font, Brushes.Black, e.Bounds.Left + 5, e.Bounds.Top + 2);
+            }
+
+            e.DrawFocusRectangle();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -181,6 +225,8 @@ namespace Client
         private void TxtIP_MouseHover(object sender, EventArgs e)
         {
             listBox.Items.Clear();
+            listBox.BringToFront();
+
             foreach (var connection in savedConnections)
             {
                 listBox.Items.Add($"{connection.ip}:{connection.port}");
@@ -189,6 +235,8 @@ namespace Client
             if (listBox.Items.Count > 0)
             {
                 listBox.Visible = true;
+                listBox.MouseClick += listBox_MouseClick_1;
+
             }
             else
             {
