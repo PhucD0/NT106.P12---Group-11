@@ -23,19 +23,19 @@ namespace Server
     public partial class Server : Form
     {
         // KHAI BAO HERE
-        private TcpListener server;
-        private TcpClient client;
-        private Thread listeningThread;
-        private Thread sendingThread;
-        private Thread controlThread;
+        private TcpListener? server;
+        private TcpClient? client;
+        private Thread? listeningThread;
+        private Thread? sendingThread;
+        private Thread? controlThread;
         private int port;
         private int pictureBoxWidth;
         private int pictureBoxHeight;
         private bool isConnected = false;
-        private SqlConnection sqlConnection;
-        private System.Timers.Timer timer;
+        private SqlConnection? sqlConnection;
+        private System.Timers.Timer? timer;
         private bool isListening = false;
-        private CancellationTokenSource cancellationTokenSource;
+        private CancellationTokenSource? cancellationTokenSource;
         // Chuỗi kết nối đến cơ sở dữ liệu
         //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
         private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
@@ -96,6 +96,8 @@ namespace Server
                     {
                         client = await server.AcceptTcpClientAsync(); // Lắng nghe không đồng bộ
                         UpdateStatus("Client đã kết nối.");
+
+                        LogConnection1(((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
 
                         // Khởi động các luồng gửi và nhận không đồng bộ
                         sendingThread = new Thread(() => SendDesktopImages(token)) { IsBackground = true };

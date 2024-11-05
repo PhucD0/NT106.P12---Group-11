@@ -127,8 +127,12 @@ namespace Client
                     int bytesRead = stream.Read(buffer, 0, buffer.Length);
                     string logs = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
-                    // Hiển thị log cho người dùng
-                    MessageBox.Show("Connection Logs:\n" + logs);
+                    // Lưu log vào một tệp tạm thời
+                    string tempFilePath = Path.Combine(Path.GetTempPath(), "ConnectionLogs.txt");
+                    File.WriteAllText(tempFilePath, logs);
+
+                    // Mở tệp log bằng Notepad
+                    System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
                 }
                 catch (Exception ex)
                 {
