@@ -55,8 +55,9 @@
             startButton.BackColor = Color.FromArgb(255, 192, 128);
             startButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
             startButton.Location = new Point(0, 0);
+            startButton.Margin = new Padding(3, 4, 3, 4);
             startButton.Name = "startButton";
-            startButton.Size = new Size(151, 48);
+            startButton.Size = new Size(173, 64);
             startButton.TabIndex = 0;
             startButton.Text = "Start";
             startButton.UseVisualStyleBackColor = false;
@@ -66,9 +67,10 @@
             // 
             stopButton.BackColor = Color.FromArgb(255, 192, 128);
             stopButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            stopButton.Location = new Point(148, 0);
+            stopButton.Location = new Point(169, 0);
+            stopButton.Margin = new Padding(3, 4, 3, 4);
             stopButton.Name = "stopButton";
-            stopButton.Size = new Size(151, 48);
+            stopButton.Size = new Size(173, 64);
             stopButton.TabIndex = 1;
             stopButton.Text = "Stop";
             stopButton.UseVisualStyleBackColor = false;
@@ -78,9 +80,10 @@
             // 
             changeSaveLocButton.BackColor = Color.FromArgb(255, 192, 128);
             changeSaveLocButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            changeSaveLocButton.Location = new Point(296, 0);
+            changeSaveLocButton.Location = new Point(338, 0);
+            changeSaveLocButton.Margin = new Padding(3, 4, 3, 4);
             changeSaveLocButton.Name = "changeSaveLocButton";
-            changeSaveLocButton.Size = new Size(216, 48);
+            changeSaveLocButton.Size = new Size(247, 64);
             changeSaveLocButton.TabIndex = 2;
             changeSaveLocButton.Text = "Save Location";
             changeSaveLocButton.UseVisualStyleBackColor = false;
@@ -90,9 +93,10 @@
             // 
             exitButton.BackColor = Color.FromArgb(255, 192, 128);
             exitButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            exitButton.Location = new Point(509, 0);
+            exitButton.Location = new Point(582, 0);
+            exitButton.Margin = new Padding(3, 4, 3, 4);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(151, 48);
+            exitButton.Size = new Size(173, 64);
             exitButton.TabIndex = 3;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = false;
@@ -102,9 +106,9 @@
             // 
             notificationLabel.AutoSize = true;
             notificationLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            notificationLabel.Location = new Point(0, 51);
+            notificationLabel.Location = new Point(0, 68);
             notificationLabel.Name = "notificationLabel";
-            notificationLabel.Size = new Size(12, 16);
+            notificationLabel.Size = new Size(17, 21);
             notificationLabel.TabIndex = 4;
             notificationLabel.Text = ".";
             // 
@@ -112,9 +116,9 @@
             // 
             infoLabel.AutoSize = true;
             infoLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            infoLabel.Location = new Point(148, 51);
+            infoLabel.Location = new Point(169, 68);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(12, 16);
+            infoLabel.Size = new Size(17, 21);
             infoLabel.TabIndex = 5;
             infoLabel.Text = ".";
             // 
@@ -122,9 +126,9 @@
             // 
             savePathLabel.AutoSize = true;
             savePathLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            savePathLabel.Location = new Point(296, 51);
+            savePathLabel.Location = new Point(338, 68);
             savePathLabel.Name = "savePathLabel";
-            savePathLabel.Size = new Size(159, 17);
+            savePathLabel.Size = new Size(201, 20);
             savePathLabel.TabIndex = 6;
             savePathLabel.Text = "C:\\Users\\Public\\Downloads";
             // 
@@ -132,9 +136,10 @@
             // 
             onlinePCList.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
             onlinePCList.Font = new Font("Snap ITC", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            onlinePCList.Location = new Point(195, 89);
+            onlinePCList.Location = new Point(223, 119);
+            onlinePCList.Margin = new Padding(3, 4, 3, 4);
             onlinePCList.Name = "onlinePCList";
-            onlinePCList.Size = new Size(273, 225);
+            onlinePCList.Size = new Size(316, 299);
             onlinePCList.TabIndex = 7;
             onlinePCList.UseCompatibleStateImageBehavior = false;
             onlinePCList.View = View.Details;
@@ -153,18 +158,19 @@
             // 
             notificationPanel.BackColor = Color.FromArgb(255, 192, 128);
             notificationPanel.Controls.Add(notificationTempLabel);
-            notificationPanel.Location = new Point(67, 173);
+            notificationPanel.Location = new Point(77, 231);
+            notificationPanel.Margin = new Padding(3, 4, 3, 4);
             notificationPanel.Name = "notificationPanel";
-            notificationPanel.Size = new Size(512, 83);
+            notificationPanel.Size = new Size(585, 111);
             notificationPanel.TabIndex = 8;
             // 
             // notificationTempLabel
             // 
             notificationTempLabel.AutoSize = true;
             notificationTempLabel.Font = new Font("Comic Sans MS", 10F);
-            notificationTempLabel.Location = new Point(3, 31);
+            notificationTempLabel.Location = new Point(3, 41);
             notificationTempLabel.Name = "notificationTempLabel";
-            notificationTempLabel.Size = new Size(187, 19);
+            notificationTempLabel.Size = new Size(229, 24);
             notificationTempLabel.TabIndex = 7;
             notificationTempLabel.Text = "Please wait. File Sending to";
             // 
@@ -173,9 +179,9 @@
             fileNotificationLabel.AutoSize = true;
             fileNotificationLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             fileNotificationLabel.ForeColor = Color.FromArgb(255, 128, 0);
-            fileNotificationLabel.Location = new Point(0, 325);
+            fileNotificationLabel.Location = new Point(0, 433);
             fileNotificationLabel.Name = "fileNotificationLabel";
-            fileNotificationLabel.Size = new Size(11, 17);
+            fileNotificationLabel.Size = new Size(12, 20);
             fileNotificationLabel.TabIndex = 9;
             fileNotificationLabel.Text = ".";
             // 
@@ -184,9 +190,9 @@
             fileNameLabel.AutoSize = true;
             fileNameLabel.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             fileNameLabel.ForeColor = Color.FromArgb(192, 64, 0);
-            fileNameLabel.Location = new Point(0, 357);
+            fileNameLabel.Location = new Point(0, 476);
             fileNameLabel.Name = "fileNameLabel";
-            fileNameLabel.Size = new Size(11, 17);
+            fileNameLabel.Size = new Size(12, 20);
             fileNameLabel.TabIndex = 10;
             fileNameLabel.Text = ".";
             // 
@@ -194,9 +200,10 @@
             // 
             browseButton.BackColor = Color.FromArgb(255, 192, 128);
             browseButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            browseButton.Location = new Point(0, 380);
+            browseButton.Location = new Point(0, 507);
+            browseButton.Margin = new Padding(3, 4, 3, 4);
             browseButton.Name = "browseButton";
-            browseButton.Size = new Size(151, 48);
+            browseButton.Size = new Size(173, 64);
             browseButton.TabIndex = 11;
             browseButton.Text = "Browse";
             browseButton.UseVisualStyleBackColor = false;
@@ -206,27 +213,29 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(161, 375);
+            label1.Location = new Point(184, 500);
             label1.Name = "label1";
-            label1.Size = new Size(123, 17);
+            label1.Size = new Size(148, 20);
             label1.TabIndex = 12;
             label1.Text = "Insert receiver's IP";
             // 
             // ipBox
             // 
-            ipBox.Location = new Point(151, 395);
+            ipBox.Location = new Point(173, 527);
+            ipBox.Margin = new Padding(3, 4, 3, 4);
             ipBox.Multiline = true;
             ipBox.Name = "ipBox";
-            ipBox.Size = new Size(148, 30);
+            ipBox.Size = new Size(169, 39);
             ipBox.TabIndex = 13;
             // 
             // sendFileButton
             // 
             sendFileButton.BackColor = Color.FromArgb(255, 192, 128);
             sendFileButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            sendFileButton.Location = new Point(296, 379);
+            sendFileButton.Location = new Point(338, 505);
+            sendFileButton.Margin = new Padding(3, 4, 3, 4);
             sendFileButton.Name = "sendFileButton";
-            sendFileButton.Size = new Size(216, 48);
+            sendFileButton.Size = new Size(247, 64);
             sendFileButton.TabIndex = 14;
             sendFileButton.Text = "Send File";
             sendFileButton.UseVisualStyleBackColor = false;
@@ -236,9 +245,10 @@
             // 
             clearButton.BackColor = Color.FromArgb(255, 192, 128);
             clearButton.Font = new Font("Snap ITC", 12F, FontStyle.Bold | FontStyle.Italic);
-            clearButton.Location = new Point(509, 379);
+            clearButton.Location = new Point(582, 505);
+            clearButton.Margin = new Padding(3, 4, 3, 4);
             clearButton.Name = "clearButton";
-            clearButton.Size = new Size(151, 48);
+            clearButton.Size = new Size(173, 64);
             clearButton.TabIndex = 15;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = false;
@@ -246,9 +256,9 @@
             // 
             // mainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(660, 435);
+            ClientSize = new Size(754, 580);
             Controls.Add(clearButton);
             Controls.Add(sendFileButton);
             Controls.Add(ipBox);
@@ -265,6 +275,7 @@
             Controls.Add(changeSaveLocButton);
             Controls.Add(stopButton);
             Controls.Add(startButton);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "mainForm";
             Text = "File Transfer";
             FormClosing += mainForm_FormClosing;

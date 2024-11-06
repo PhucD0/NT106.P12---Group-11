@@ -89,3 +89,28 @@ D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Form1.resources
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.Up2Date
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.deps.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.runtimeconfig.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.exe
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.exe
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.deps.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.runtimeconfig.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\Client.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\bin\Debug\net8.0-windows\FileTransfer.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Client.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.Form1.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.GenerateResource.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfoInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.AssemblyInfo.cs
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.CoreCompileInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.sourcelink.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.csproj.Up2Date
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\refint\Client.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\Client.genruntimeconfig.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\DieuKhienMay\Client\obj\Debug\net8.0-windows\ref\Client.dll
