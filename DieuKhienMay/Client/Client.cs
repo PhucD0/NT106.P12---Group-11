@@ -21,8 +21,8 @@ namespace Client
     public partial class Client : Form
     {
         // KHAI BAO HERE
-        private NetworkStream stream;
-        private TcpClient client;
+        private NetworkStream? stream;
+        private TcpClient? client;
         private int port;
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;

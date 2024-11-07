@@ -17,26 +17,80 @@ namespace Client
         private NetworkStream stream;
         private Thread receivingThread;
         private CancellationTokenSource cts = new CancellationTokenSource();
+        private Image receivedImage;
+        private Size originalImageSize;
+
+        //public Form1(TcpClient client)
+        //{
+        //    InitializeComponent();
+        //    this.client = client;
+        //    stream = client.GetStream();
+
+        //    // Gửi kích thước của PictureBox cho server
+        //    SendPictureBoxSize();
+
+        //    // Bắt đầu nhận hình ảnh từ server
+        //    receivingThread = new Thread(() => ReceiveDesktopImages(cts.Token));
+        //    receivingThread.Start();
+
+        //    // Gán sự kiện chuột và bàn phím
+        //    pictureBox1.MouseDown += pictureBox1_MouseDown;
+        //    pictureBox1.MouseUp += pictureBox1_MouseUp;
+        //    pictureBox1.MouseMove += pictureBox1_MouseMove;
+        //    this.KeyDown += Form1_KeyDown;
+        //    this.KeyUp += Form1_KeyUp;
+        //    this.KeyPreview = true; // Đảm bảo Form nhận sự kiện KeyDown
+
+        //    // Handle form resizing to refresh the PictureBox
+        //    this.Resize += Form1_Resize;
+        //}
+
+        // Refresh PictureBox on form resize
         public Form1(TcpClient client)
         {
             InitializeComponent();
             this.client = client;
             stream = client.GetStream();
 
-            // Gửi kích thước của PictureBox cho server
-            SendPictureBoxSize();
-
             // Bắt đầu nhận hình ảnh từ server
             receivingThread = new Thread(() => ReceiveDesktopImages(cts.Token));
             receivingThread.Start();
 
-            // Gán sự kiện chuột và bàn phím
-            pictureBox1.MouseDown += pictureBox1_MouseDown;
-            pictureBox1.MouseUp += pictureBox1_MouseUp;
-            pictureBox1.MouseMove += pictureBox1_MouseMove;
-            this.KeyDown += Form1_KeyDown;
-            this.KeyUp += Form1_KeyUp;
-            this.KeyPreview = true; // Đảm bảo Form nhận sự kiện KeyDown
+            // Bật Double Buffering cho Form để hạn chế nhấp nháy
+            this.DoubleBuffered = true;
+
+            // Xử lý sự kiện thay đổi kích thước Form
+            this.Resize += (sender, e) => this.Invalidate();
+            this.Paint += Form1_Paint;
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            if (receivedImage != null)
+            {
+                // Tính toán kích thước và vị trí hình ảnh để duy trì tỷ lệ
+                double formRatio = (double)this.ClientSize.Width / this.ClientSize.Height;
+                double imageRatio = (double)originalImageSize.Width / originalImageSize.Height;
+
+                int newWidth, newHeight;
+
+                if (formRatio > imageRatio)
+                {
+                    newHeight = this.ClientSize.Height;
+                    newWidth = (int)(newHeight * imageRatio);
+                }
+                else
+                {
+                    newWidth = this.ClientSize.Width;
+                    newHeight = (int)(newWidth / imageRatio);
+                }
+
+                int x = (this.ClientSize.Width - newWidth) / 2;
+                int y = (this.ClientSize.Height - newHeight) / 2;
+
+                // Vẽ hình ảnh đã nhận vào form tại vị trí và kích thước được tính toán
+                e.Graphics.DrawImage(receivedImage, new Rectangle(x, y, newWidth, newHeight));
+            }
         }
 
         private void ReceiveDesktopImages(CancellationToken token)
@@ -45,47 +99,29 @@ namespace Client
             {
                 while (client.Connected && !token.IsCancellationRequested)
                 {
-                    // Nhận kích thước của ảnh từ server
                     byte[] sizeBytes = new byte[4];
                     int bytesRead = stream.Read(sizeBytes, 0, sizeBytes.Length);
-                    if (bytesRead == 0 || token.IsCancellationRequested) break; // Ngắt kết nối
+                    if (bytesRead == 0 || token.IsCancellationRequested) break;
 
                     int imageSize = BitConverter.ToInt32(sizeBytes, 0);
-
-                    // Nhận dữ liệu ảnh dựa vào kích thước đã nhận
                     byte[] imageBytes = new byte[imageSize];
                     int totalBytesRead = 0;
                     while (totalBytesRead < imageSize && !token.IsCancellationRequested)
                     {
                         bytesRead = stream.Read(imageBytes, totalBytesRead, imageSize - totalBytesRead);
-                        if (bytesRead == 0) break; // Ngắt kết nối
+                        if (bytesRead == 0) break;
                         totalBytesRead += bytesRead;
                     }
 
-                    // Chuyển đổi byte[] thành đối tượng Image
                     using (MemoryStream ms = new MemoryStream(imageBytes))
                     {
-                        Image receivedImage = Image.FromStream(ms);
+                        Image newImage = Image.FromStream(ms);
+                        originalImageSize = newImage.Size;
 
-                        // Hiển thị ảnh và điều chỉnh kích thước Form2 và pictureBox1 để phù hợp
-                        pictureBox1.Invoke((MethodInvoker)(() =>
-                        {
-                            // Đặt kích thước của pictureBox1 để khớp với kích thước hình ảnh
-                            pictureBox1.Size = new Size(receivedImage.Width, receivedImage.Height);
-
-                            // Tạo một khoảng đệm (ví dụ 20px) để form lớn hơn pictureBox1
-                            int padding = 20;
-
-                            // Đặt kích thước của form lớn hơn kích thước của pictureBox1 với khoảng đệm
-                            this.Size = new Size(receivedImage.Width + padding * 2, receivedImage.Height + padding * 2);
-
-                            // Căn giữa pictureBox1 trong Form2 (nếu cần)
-                            pictureBox1.Location = new Point(padding, padding);
-
-                            // Đảm bảo ảnh thu phóng để hiển thị đầy đủ
-                            //pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                            pictureBox1.Image = receivedImage;
-                        }));
+                        // Cập nhật hình ảnh mới và yêu cầu Form vẽ lại
+                        receivedImage?.Dispose(); // Giải phóng hình ảnh cũ nếu có
+                        receivedImage = newImage;
+                        this.Invoke((MethodInvoker)(() => this.Invalidate()));
                     }
                 }
             }
@@ -96,7 +132,6 @@ namespace Client
                     MessageBox.Show("Error receiving image: " + ex.Message);
                 }
             }
-
         }
 
         // Sự kiện khi nhấn chuột
@@ -124,19 +159,19 @@ namespace Client
             SendKeyboardEvent("keyup", e.KeyCode.ToString());
         }
 
-        private void SendPictureBoxSize()
-        {
-            try
-            {
-                string message = $"size:{pictureBox1.Width}:{pictureBox1.Height}";
-                byte[] data = Encoding.ASCII.GetBytes(message);
-                stream.Write(data, 0, data.Length);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error sending PictureBox size: " + ex.Message);
-            }
-        }
+        //private void SendPictureBoxSize()
+        //{
+        //    try
+        //    {
+        //        string message = $"size:{pictureBox1.Width}:{pictureBox1.Height}";
+        //        byte[] data = Encoding.ASCII.GetBytes(message);
+        //        stream.Write(data, 0, data.Length);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error sending PictureBox size: " + ex.Message);
+        //    }
+        //}
         // Phương thức gửi sự kiện chuột đến server
         private void SendMouseEvent(string action, int x, int y, string button)
         {

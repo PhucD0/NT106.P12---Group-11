@@ -38,7 +38,6 @@ namespace Server
         private CancellationTokenSource? cancellationTokenSource;
         // Chuỗi kết nối đến cơ sở dữ liệu
         private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
-        //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
 
         // Khai báo các hằng số cho hành động chuột và bàn phím
         private const int MOUSEEVENTF_LEFTDOWN = 0x02;
@@ -320,20 +319,32 @@ namespace Server
             {
                 try
                 {
+                    // Chụp và nén ảnh desktop
                     Image desktopImage = CaptureDesktop();
 
                     using (MemoryStream ms = new MemoryStream())
                     {
-                        desktopImage.Save(ms, ImageFormat.Png);
+                        // Nén ảnh với chất lượng JPEG (giá trị chất lượng từ 0 đến 100)
+                        ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
+                        //Encoder qualityEncoder = Encoder.Quality;
+                        System.Drawing.Imaging.Encoder qualityEncoder = System.Drawing.Imaging.Encoder.Quality;
+
+                        EncoderParameters encoderParams = new EncoderParameters(1);
+
+                        // Đặt chất lượng nén thành 50 để giảm dung lượng (có thể điều chỉnh)
+                        encoderParams.Param[0] = new EncoderParameter(qualityEncoder, 50L);
+                        desktopImage.Save(ms, jpgEncoder, encoderParams);
+
                         byte[] imageBytes = ms.ToArray();
                         byte[] sizeBytes = BitConverter.GetBytes(imageBytes.Length);
 
+                        // Gửi kích thước và dữ liệu ảnh tới client
                         stream.Write(sizeBytes, 0, sizeBytes.Length);
                         stream.Write(imageBytes, 0, imageBytes.Length);
                     }
 
                     desktopImage.Dispose();
-                    Thread.Sleep(100);
+                    Thread.Sleep(100); // Tùy chỉnh thời gian chờ để kiểm soát tần suất gửi ảnh
                 }
                 catch (Exception ex)
                 {
@@ -343,19 +354,15 @@ namespace Server
             }
         }
 
-        // Hàm chụp ảnh với độ phân giải thấp và chất lượng JPEG giảm
+        // Hàm chụp ảnh màn hình
         private Image CaptureDesktop()
         {
-            // Lấy độ rộng và chiều cao tối đa bao gồm tất cả các màn hình
             int totalWidth = Screen.AllScreens.Sum(screen => screen.Bounds.Width);
             int maxHeight = Screen.AllScreens.Max(screen => screen.Bounds.Height);
 
-            // Tạo bitmap với kích thước tổng hợp của tất cả các màn hình
-            Bitmap screenshot = new Bitmap(totalWidth, maxHeight, PixelFormat.Format32bppArgb);
+            Bitmap screenshot = new Bitmap(totalWidth, maxHeight, PixelFormat.Format24bppRgb);
             Graphics graphics = Graphics.FromImage(screenshot);
 
-
-            // Vẽ nội dung của từng màn hình lên bitmap
             int offsetX = 0;
             foreach (Screen screen in Screen.AllScreens)
             {
@@ -367,21 +374,19 @@ namespace Server
             return screenshot;
         }
 
-        // Hàm nén ảnh bằng cách giảm chất lượng JPEG
-        /*private Bitmap CompressImage(Bitmap bmp, long quality)
+        // Hàm lấy bộ mã hóa cho định dạng ảnh
+        private ImageCodecInfo GetEncoder(ImageFormat format)
         {
-            ImageCodecInfo jpegCodec = ImageCodecInfo.GetImageDecoders()
-                                                     .First(codec => codec.FormatID == ImageFormat.Jpeg.Guid);
-            EncoderParameters encoderParams = new EncoderParameters(1);
-            encoderParams.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
-
-            using (MemoryStream ms = new MemoryStream())
+            ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
+            foreach (ImageCodecInfo codec in codecs)
             {
-                bmp.Save(ms, jpegCodec, encoderParams);
-                return new Bitmap(ms);
+                if (codec.FormatID == format.Guid)
+                {
+                    return codec;
+                }
             }
-        }*/
-
+            return null;
+        }
 
         /// <summary>
         /// Cap nhat trang thai, được gọi bởi StartListening(), StopListening(),...
