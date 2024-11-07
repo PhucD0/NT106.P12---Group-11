@@ -23,8 +23,8 @@ namespace FileTransfer
         }
         private string IP = "127.0.0.1";
         TcpListener listener;
-        TcpClient client;
-        Socket socketForClient;
+        TcpClient? client;
+        Socket? socketForClient;
         private CancellationTokenSource serverCancellationTokenSource;
         private Thread findPC;
         private Thread notification;

@@ -37,8 +37,8 @@ namespace Server
         private bool isListening = false;
         private CancellationTokenSource? cancellationTokenSource;
         // Chuỗi kết nối đến cơ sở dữ liệu
-        //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
-        private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
+        private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
+        //private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB1;Integrated Security=true;";       //RemoteDesktopDB1 chưa có status   
 
         // Khai báo các hằng số cho hành động chuột và bàn phím
         private const int MOUSEEVENTF_LEFTDOWN = 0x02;
@@ -79,16 +79,31 @@ namespace Server
             btnStop.Enabled = true;
         }
 
+
+        TcpListener? logListener;
+        bool isTemporaryRequest;
         /// <summary>
         /// Xu li ket noi
         /// </summary>
         // Bắt đầu lắng nghe từ client (sd bat dong bo)
         private async void StartListening(CancellationToken token)
         {
+
             try
             {
-                server.Start();
+                server?.Start();
                 UpdateStatus("Server đang lắng nghe...");
+
+                // Cổng 5001 dành riêng cho logs
+                logListener = new TcpListener(IPAddress.Any, 5001);
+                logListener.Start();
+
+                // Cổng 5002 dành cho kết nối thất bại
+                TcpListener failedConnectionListener = new TcpListener(IPAddress.Any, 5002);
+                failedConnectionListener.Start();
+
+                // Khởi động lắng nghe logs tạm thời trên một luồng riêng
+                Task logListeningTask = Task.Run(() => ListenForLogs(token), token);
 
                 while (!token.IsCancellationRequested)
                 {
@@ -97,7 +112,11 @@ namespace Server
                         client = await server.AcceptTcpClientAsync(); // Lắng nghe không đồng bộ
                         UpdateStatus("Client đã kết nối.");
 
-                        LogConnection1(((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
+                        // Ghi log khi kết nối thành công
+                        LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
+
+                        // Reset cờ và các bộ đếm
+                        //isTemporaryRequest = false;
 
                         // Khởi động các luồng gửi và nhận không đồng bộ
                         sendingThread = new Thread(() => SendDesktopImages(token)) { IsBackground = true };
@@ -106,21 +125,82 @@ namespace Server
                         controlThread = new Thread(() => ReceiveControlEvents(token)) { IsBackground = true };
                         controlThread.Start();
                     }
+
+                    else if (failedConnectionListener.Pending())  // Kiểm tra tín hiệu thất bại từ client
+                    {
+                        using (TcpClient tempClient = await failedConnectionListener.AcceptTcpClientAsync())
+                        using (NetworkStream stream = tempClient.GetStream())
+                        {
+                            byte[] buffer = new byte[4096];
+                            int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, token);
+                            string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+
+                            // Nếu nhận được tín hiệu "FAILED_CONNECTION" từ client
+                            if (message == "FAILED_CONNECTION")
+                            {
+                                // Ghi log "Connection Failed" khi nhận tín hiệu thất bại
+                                LogConnection1("Unknown", "Connection Failed");
+
+                                // Cập nhật trạng thái trên UI
+                                UpdateStatus("Connection Failed from client.");
+                                //btnListen.Enabled = true;
+                                btnStop.Enabled = true;
+                            }
+                        }
+                    }
                     await Task.Delay(100); // Giảm tải CPU với delay không đồng bộ
                 }
             }
             catch (Exception ex)
             {
                 HandleError("Error in StartListening", ex);
+
             }
             finally
             {
+                // Dừng cả cổng chính và cổng phụ
                 server.Stop();
+                logListener.Stop();
                 UpdateStatus("Server đã dừng lắng nghe.");
             }
         }
 
+        private async void ListenForLogs(CancellationToken token)
+        {
+            while (!token.IsCancellationRequested)
+            {
+                try
+                {
+                    if (logListener.Pending())
+                    {
+                        using (TcpClient tempClient = await logListener.AcceptTcpClientAsync())
+                        using (NetworkStream stream = tempClient.GetStream())
+                        {
+                            byte[] buffer = new byte[4096];
+                            int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, token);
+                            string request = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
+                            if (request == "GETLOGS") // Chỉ ghi log một lần cho các kết nối tạm thời
+                            {
+                                LogConnection1(((IPEndPoint?)tempClient.Client.RemoteEndPoint).Address.ToString(), "Temporary Connection");
+                                //isTemporaryRequest = true; // Đặt cờ để tránh ghi log trùng lặp
+                            }
+
+                            // Gọi hàm SendLogs để gửi log cho client
+                            SendLogs(stream);
+
+                            // Reset cờ sau khi hoàn thành việc gửi logs
+                            //isTemporaryRequest = false;
+                        }
+                    }
+                    Thread.Sleep(10); // Nghỉ ngắn để giảm tải CPU
+                }
+                catch (Exception ex)
+                {
+                    HandleError("Error in ListenForLogs", ex);
+                }
+            }
+        }
 
         // Ket thuc ket noi
         private void StopListening()
@@ -157,10 +237,6 @@ namespace Server
             }
         }
 
-
-
-
-
         /// <summary>
         /// Nhận thông tin điều khiển từ client
         /// </summary>
@@ -180,15 +256,9 @@ namespace Server
                         {
                             string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
-                            // Kiểm tra lệnh GETLOGS từ client
-                            if (message == "GETLOGS")
-                            {
-                                SendLogs(stream);
-                            }
-                            else
-                            {
-                                ProcessControlEvent(message);
-                            }
+
+                            ProcessControlEvent(message);
+
                         }
                     }
                     Thread.Sleep(10); // Nghỉ ngắn để giảm tải CPU khi không có dữ liệu
@@ -221,7 +291,6 @@ namespace Server
             }
         }
 
-
         private void PerformMouseAction(string action, int x, int y, string button)
         {
             Cursor.Position = new Point(x, y);
@@ -233,8 +302,6 @@ namespace Server
             else if (action == "up") mouse_event(upEvent, x, y, 0, 0);
         }
 
-
-
         private void PerformKeyboardAction(string action, string key)
         {
             Keys keyValue = (Keys)Enum.Parse(typeof(Keys), key, true);
@@ -242,7 +309,6 @@ namespace Server
             if (action == "keydown") keybd_event((byte)keyValue, 0, 0, 0);
             else if (action == "keyup") keybd_event((byte)keyValue, 0, KEYEVENTF_KEYUP, 0);
         }
-
 
         /// <summary>
         /// Gui anh
@@ -276,7 +342,6 @@ namespace Server
                 }
             }
         }
-
 
         // Hàm chụp ảnh với độ phân giải thấp và chất lượng JPEG giảm
         private Image CaptureDesktop()
@@ -334,27 +399,20 @@ namespace Server
             }
         }
 
-
         /// <summary>
         /// View logs
         /// </summary>
-        // Hàm khởi tạo kết nối csdl
-        private SqlConnection InitializeDatabase()
-        {
-            SqlConnection connection = new SqlConnection(databaseConnectionString);
-            connection.Open();
-            return connection;
-        }
-
         // ghi lại thông tin kết nối bản 1
-        private void LogConnection1(string ip)
+        private void LogConnection1(string ip, string status)
         {
             using (SqlConnection connection = new SqlConnection(databaseConnectionString))
             {
-                string query = "INSERT INTO ConnectionLogs (IPAddress, AccessTime) VALUES (@IPAddress, @AccessTime)";
+                string query = "INSERT INTO ConnectionLogs (IPAddress, AccessTime, [Status]) VALUES (@IPAddress, @AccessTime, @Status)";
                 SqlCommand command = new SqlCommand(query, connection);
+
                 command.Parameters.AddWithValue("@IPAddress", ip);
                 command.Parameters.AddWithValue("@AccessTime", DateTime.Now);
+                command.Parameters.AddWithValue("@Status", status);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -362,7 +420,7 @@ namespace Server
         }
 
         // ghi lại thông tin kết nối bản 2
-        //private void LogConnection1(string status, string ip)
+        //private void LogConnection1(string ip, string status)
         //{
         //    using (SqlConnection connection = InitializeDatabase())
         //    {
@@ -384,7 +442,7 @@ namespace Server
         {
             using (SqlConnection connection = new SqlConnection(databaseConnectionString))
             {
-                string query = "SELECT IPAddress, AccessTime FROM ConnectionLogs";
+                string query = "SELECT IPAddress, AccessTime, Status FROM ConnectionLogs";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 connection.Open();
@@ -393,7 +451,7 @@ namespace Server
 
                 while (reader.Read())
                 {
-                    logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]}");
+                    logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]} - {reader["Status"]}");
                 }
 
                 byte[] logsBytes = Encoding.ASCII.GetBytes(logs.ToString());

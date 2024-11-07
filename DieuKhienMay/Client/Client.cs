@@ -57,7 +57,7 @@ namespace Client
             this.Controls.Add(listBox); // Thêm ListBox vào form
         }
 
-        
+
 
         // Hàm vẽ từng mục với padding và màu nền khi chọn
         private void ListBox_DrawItem(object sender, DrawItemEventArgs e)
@@ -109,7 +109,33 @@ namespace Client
             }
             catch (Exception ex)
             {
+                // Khi kết nối không thành công, gửi tín hiệu thất bại đến server
+                SendFailedConnectionSignal();
+
                 MessageBox.Show("Failed to connect: " + ex.Message);
+            }
+        }
+
+        private void SendFailedConnectionSignal()
+        {
+            try
+            {
+                // Sử dụng một cổng tạm thời để gửi tín hiệu "Failed Connection" đến server
+                using (TcpClient tempClient = new TcpClient())
+                {
+                    tempClient.Connect(txbIP.Text, 5002); // Kết nối đến cổng logs của server
+                    using (NetworkStream stream = tempClient.GetStream())
+                    {
+                        // Gửi tín hiệu "FAILED_CONNECTION" qua stream
+                        byte[] signal = Encoding.ASCII.GetBytes("FAILED_CONNECTION");
+                        stream.Write(signal, 0, signal.Length);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu không thể kết nối với server qua cổng 5001
+                MessageBox.Show("Unable to send failed connection signal: " + ex.Message);
             }
         }
 
@@ -152,14 +178,16 @@ namespace Client
             RequestLogs();
         }
 
+        //bản 1
         private void RequestLogs()
         {
             using (TcpClient tempClient = new TcpClient())
             {
                 try
                 {
-                    // Kết nối tạm thời đến server
-                    tempClient.Connect(txbIP.Text, int.Parse(txbPort.Text));
+                    // Sử dụng cổng logs phụ để tránh ghi nhận là kết nối chính thức
+                    int logPort = 5001; // Cổng logs phụ, thêm một TextBox cho port này nếu cần
+                    tempClient.Connect(txbIP.Text, logPort); // Kết nối tạm thời đến cổng logs phụ của server
                     NetworkStream stream = tempClient.GetStream();
 
                     // Gửi yêu cầu "GETLOGS"
@@ -185,21 +213,7 @@ namespace Client
             }
         }
 
-        //private void ReceiveLogsFromServer()
-        //{
-        //    byte[] header = BitConverter.GetBytes((ushort)2); // 2 là yêu cầu logs
-        //    stream.Write(header, 0, header.Length);
 
-        //    byte[] logsBytes = new byte[2048];
-        //    int bytesRead = stream.Read(logsBytes, 0, logsBytes.Length);
-
-        //    string logs = Encoding.ASCII.GetString(logsBytes, 0, bytesRead);
-
-        //    // Ghi logs vào một file tạm thời và mở Notepad
-        //    string tempFilePath = Path.GetTempPath() + "connection_logs.txt";
-        //    File.WriteAllText(tempFilePath, logs);
-        //    System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
-        //}
 
         /// <summary>
         /// Luu dia chi IP và port
