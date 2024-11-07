@@ -17,11 +17,67 @@ using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
 using FileTransfer;
+using RemoteControlServer;
+using Newtonsoft.Json;
 
 namespace Server
 {
     public partial class Server : Form
     {
+        [DllImport("user32.dll")]
+        static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint dwData, UIntPtr dwExtraInfo);
+        [DllImport("user32.dll")]
+        static extern uint SendInput(uint nInputs, [MarshalAs(UnmanagedType.LPArray), In] Input[] pInputs, int cbSize);
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr GetMessageExtraInfo();
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct Input
+        {
+            public int type;
+            public InputUnion U;
+        }
+
+        [StructLayout(LayoutKind.Explicit)]
+        public struct InputUnion
+        {
+            [FieldOffset(0)]
+            public MouseInput mi;
+            [FieldOffset(0)]
+            public KeyboardInput ki;
+            [FieldOffset(0)]
+            public HardwareInput hi;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct MouseInput
+        {
+            public int dx;
+            public int dy;
+            public uint mouseData;
+            public uint dwFlags;
+            public uint time;
+            public IntPtr dwExtraInfo;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct KeyboardInput
+        {
+            public ushort wVk;
+            public ushort wScan;
+            public uint dwFlags;
+            public uint time;
+            public IntPtr dwExtraInfo;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct HardwareInput
+        {
+            public uint uMsg;
+            public ushort wParamL;
+            public ushort wParamH;
+        }
+
         // KHAI BAO HERE
         private TcpListener? server;
         private TcpClient? client;
@@ -39,20 +95,6 @@ namespace Server
         // Chuỗi kết nối đến cơ sở dữ liệu
         private string databaseConnectionString = @"Data Source=localhost;Initial Catalog=RemoteDesktopDB;Integrated Security=true;";     //RemoteDesktopDB có cả status
 
-        // Khai báo các hằng số cho hành động chuột và bàn phím
-        private const int MOUSEEVENTF_LEFTDOWN = 0x02;
-        private const int MOUSEEVENTF_LEFTUP = 0x04;
-        private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
-        private const int MOUSEEVENTF_RIGHTUP = 0x10;
-
-        [DllImport("user32.dll")]
-        public static extern void mouse_event(uint dwFlags, int dx, int dy, uint cButtons, uint dwExtraInfo);
-
-        [DllImport("user32.dll")]
-        public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
-
-        private const uint KEYEVENTF_KEYDOWN = 0x0000;
-        private const uint KEYEVENTF_KEYUP = 0x0002;
 
         public Server()
         {
@@ -112,7 +154,7 @@ namespace Server
                         UpdateStatus("Client đã kết nối.");
 
                         // Ghi log khi kết nối thành công
-                        LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
+                        //LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
 
                         // Reset cờ và các bộ đếm
                         //isTemporaryRequest = false;
@@ -125,7 +167,7 @@ namespace Server
                         controlThread.Start();
                     }
 
-                    else if (failedConnectionListener.Pending())  // Kiểm tra tín hiệu thất bại từ client
+                    /*else if (failedConnectionListener.Pending())  // Kiểm tra tín hiệu thất bại từ client
                     {
                         using (TcpClient tempClient = await failedConnectionListener.AcceptTcpClientAsync())
                         using (NetworkStream stream = tempClient.GetStream())
@@ -146,7 +188,7 @@ namespace Server
                                 btnStop.Enabled = true;
                             }
                         }
-                    }
+                    }*/
                     await Task.Delay(100); // Giảm tải CPU với delay không đồng bộ
                 }
             }
@@ -239,75 +281,127 @@ namespace Server
         /// <summary>
         /// Nhận thông tin điều khiển từ client
         /// </summary>
-        private void ReceiveControlEvents(CancellationToken token)
+        private async void ReceiveControlEvents(CancellationToken token)
         {
+            NetworkStream stream = client.GetStream();
+
             try
             {
-                NetworkStream stream = client.GetStream();
-                byte[] buffer = new byte[1024];
+                byte[] buffer = new byte[24];
 
-                while (client.Connected && !token.IsCancellationRequested)
+                while (client.Connected)
                 {
-                    if (stream.DataAvailable)
+                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                    if (bytesRead == 0) break;
+
+                    var inputEvent = new InputEvent
                     {
-                        int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                        if (bytesRead > 0)
-                        {
-                            string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                        EventType = BitConverter.ToInt32(buffer, 0),
+                        Button = BitConverter.ToInt32(buffer, 4),
+                        X = BitConverter.ToInt32(buffer, 8),
+                        Y = BitConverter.ToInt32(buffer, 12),
+                        Delta = BitConverter.ToInt32(buffer, 16),
+                        Key = BitConverter.ToInt32(buffer, 20)
+                    };
 
-
-                            ProcessControlEvent(message);
-
-                        }
-                    }
-                    Thread.Sleep(10); // Nghỉ ngắn để giảm tải CPU khi không có dữ liệu
+                    ProcessInputEvent(inputEvent);
                 }
             }
             catch (Exception ex)
             {
-                HandleError("Error in ReceiveControlEvents", ex);
+                Console.WriteLine($"Exception: {ex.Message}");
             }
+
         }
 
 
-        private void ProcessControlEvent(string message)
+
+        private void ProcessInputEvent(InputEvent inputEvent)
         {
-            // Phân tách thông điệp để xác định loại sự kiện và chi tiết
-            string[] parts = message.Split(':');
-            if (parts.Length < 2)
-                return;
-
-            string actionType = parts[0];
-
-            // Kiểm tra xem đó là sự kiện chuột hay bàn phím
-            if (actionType == "mouse" && parts.Length >= 5)
+            switch (inputEvent.EventType)
             {
-                PerformMouseAction(parts[1], int.Parse(parts[2]), int.Parse(parts[3]), parts[4]);
+                case 1: // MouseMove
+                    SetCursorPosition(inputEvent.X, inputEvent.Y);
+                    break;
+                case 2: // MouseDown
+                    SimulateMouseEvent(inputEvent.Button, inputEvent.X, inputEvent.Y, true);
+                    break;
+                case 3: // MouseUp
+                    SimulateMouseEvent(inputEvent.Button, inputEvent.X, inputEvent.Y, false);
+                    break;
+                case 4: // KeyDown
+                    SimulateKeyPress(inputEvent.Key);
+                    break;
+                default:
+                    Console.WriteLine("Unknown event type");
+                    break;
             }
-            else if (actionType == "keyboard" && parts.Length >= 3)
+
+        }
+
+        private void SimulateMouseEvent(int button, int x, int y, bool isDown)
+        {
+            uint flag = 0;
+            switch (button)
             {
-                PerformKeyboardAction(parts[1], parts[2]);
+                case (int)MouseButtons.Left:
+                    flag = isDown ? 0x0002u : 0x0004u; // MOUSEEVENTF_LEFTDOWN : MOUSEEVENTF_LEFTUP
+                    break;
+                case (int)MouseButtons.Right:
+                    flag = isDown ? 0x0008u : 0x0010u; // MOUSEEVENTF_RIGHTDOWN : MOUSEEVENTF_RIGHTUP
+                    break;
+                case (int)MouseButtons.Middle:
+                    flag = isDown ? 0x0020u : 0x0040u; // MOUSEEVENTF_MIDDLEDOWN : MOUSEEVENTF_MIDDLEUP
+                    break;
             }
+            mouse_event(flag, (uint)x, (uint)y, 0, UIntPtr.Zero);
         }
 
-        private void PerformMouseAction(string action, int x, int y, string button)
+
+
+        private void SetCursorPosition(int x, int y)
         {
-            Cursor.Position = new Point(x, y);
-            uint downEvent = (button == "left") ? (uint)MOUSEEVENTF_LEFTDOWN : (uint)MOUSEEVENTF_RIGHTDOWN;
-            uint upEvent = (button == "left") ? (uint)MOUSEEVENTF_LEFTUP : (uint)MOUSEEVENTF_RIGHTUP;
-
-
-            if (action == "down") mouse_event(downEvent, x, y, 0, 0);
-            else if (action == "up") mouse_event(upEvent, x, y, 0, 0);
+            Cursor.Position = new System.Drawing.Point(x, y);
         }
 
-        private void PerformKeyboardAction(string action, string key)
+
+        private void SimulateKeyPress(int key)
         {
-            Keys keyValue = (Keys)Enum.Parse(typeof(Keys), key, true);
+            Input[] inputs = new Input[2];
 
-            if (action == "keydown") keybd_event((byte)keyValue, 0, 0, 0);
-            else if (action == "keyup") keybd_event((byte)keyValue, 0, KEYEVENTF_KEYUP, 0);
+            inputs[0] = new Input
+            {
+                type = 1, // Keyboard event
+                U = new InputUnion
+                {
+                    ki = new KeyboardInput
+                    {
+                        wVk = (ushort)key,
+                        dwFlags = 0,
+                        dwExtraInfo = GetMessageExtraInfo()
+                    }
+                }
+            };
+
+            inputs[1] = new Input
+            {
+                type = 1, // Keyboard event
+                U = new InputUnion
+                {
+                    ki = new KeyboardInput
+                    {
+                        wVk = (ushort)key,
+                        dwFlags = 2, // Key up
+                        dwExtraInfo = GetMessageExtraInfo()
+                    }
+                }
+            };
+
+            SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
         }
+
+
+
 
         /// <summary>
         /// Gui anh

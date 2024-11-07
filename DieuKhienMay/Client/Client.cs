@@ -14,10 +14,13 @@ using System.Net;
 using static System.Windows.Forms.DataFormats;
 //using Client.Properties;
 using FileTransfer;
+using static Client.Form1;
+using Newtonsoft.Json;
 
 
 namespace Client
 {
+    
     public partial class Client : Form
     {
         // KHAI BAO HERE
@@ -29,9 +32,11 @@ namespace Client
 
         private ListBox listBox;
 
+        
 
         public Client()
         {
+
             InitializeComponent();
 
             // Gọi sự kiện khi mouse hover vào textbox IP
@@ -41,6 +46,8 @@ namespace Client
 
 
             this.Click += (s, e) => HideValidIPs();
+
+
 
 
         }

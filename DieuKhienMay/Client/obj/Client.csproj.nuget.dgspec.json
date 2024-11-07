@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {}
+    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj": {
+    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
+        "projectUniqueName": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\obj\\",
+        "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+        "outputPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj": {
-                "projectPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj"
+              "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj": {
+                "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj"
               }
             }
           }
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -67,21 +73,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj": {
+    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
+        "projectUniqueName": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
         "projectName": "FileTransfer",
-        "projectPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\obj\\",
+        "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
+        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
+        "outputPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,6 +117,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -130,7 +142,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -32,12 +32,16 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(936, 452);
-            Margin = new Padding(2, 3, 2, 3);
+            ClientSize = new Size(819, 339);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
+            KeyDown += Form1_KeyDown;
+            MouseDown += Form1_MouseDown;
+            MouseMove += Form1_MouseMove;
+            MouseUp += Form1_MouseUp;
             ResumeLayout(false);
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Net.Sockets;
@@ -6,6 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using static Client.Client;
 
 
 
@@ -13,12 +15,37 @@ namespace Client
 {
     public partial class Form1 : Form
     {
+        public class InputEvent
+        {
+            public int EventType { get; set; }
+            public int Button { get; set; }
+            public int X { get; set; }
+            public int Y { get; set; }
+            public int Delta { get; set; }
+            public int Key { get; set; }
+        }
+
+
         private TcpClient client;
         private NetworkStream stream;
         private Thread receivingThread;
         private CancellationTokenSource cts = new CancellationTokenSource();
         private Image receivedImage;
         private Size originalImageSize;
+
+        public async Task SendEvent(InputEvent inputEvent)
+        {
+            byte[] data = new byte[24];
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.EventType), 0, data, 0, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Button), 0, data, 4, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.X), 0, data, 8, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Y), 0, data, 12, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Delta), 0, data, 16, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Key), 0, data, 20, 4);
+
+            await stream.WriteAsync(data, 0, data.Length);
+        }
+
 
         //public Form1(TcpClient client)
         //{
@@ -134,30 +161,63 @@ namespace Client
             }
         }
 
-        // Sự kiện khi nhấn chuột
-        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            string button = e.Button.ToString();
-            SendMouseEvent("click", e.X, e.Y, button);
+            var inputEvent = new InputEvent
+            {
+                EventType = 2, // 2 cho MouseDown
+                Button = (int)e.Button,
+                X = e.X,
+                Y = e.Y
+            };
+            SendEvent(inputEvent).Wait();
+
+
         }
 
-        // Sự kiện khi di chuyển chuột
-        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-            SendMouseEvent("move", e.X, e.Y, "none");
+            var inputEvent = new InputEvent
+            {
+                EventType = 3, // 3 cho MouseUp
+                Button = (int)e.Button,
+                X = e.X,
+                Y = e.Y
+            };
+            SendEvent(inputEvent).Wait();
+
         }
 
-        // Sự kiện khi nhấn phím
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // Tính toán tỉ lệ kích thước màn hình giữa client và server
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            int adjustedX = e.X * 1920 / screenWidth; // Thay 1920 bằng độ phân giải màn hình server của bạn
+            int adjustedY = e.Y * 1200 / screenHeight; // Thay 1080 bằng độ phân giải màn hình server của bạn
+
+            var inputEvent = new InputEvent
+            {
+                EventType = 1, // 1 cho MouseMove
+                X = adjustedX,
+                Y = adjustedY
+            };
+            SendEvent(inputEvent).Wait();
+
+        }
+
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            SendKeyboardEvent("keydown", e.KeyCode.ToString());
+            var inputEvent = new InputEvent
+            {
+                EventType = 4, // 4 cho KeyDown
+                Key = (int)e.KeyCode
+            };
+            SendEvent(inputEvent).Wait();
         }
 
-        // Sự kiện khi thả phím
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            SendKeyboardEvent("keyup", e.KeyCode.ToString());
-        }
+
+
 
         //private void SendPictureBoxSize()
         //{
@@ -173,47 +233,6 @@ namespace Client
         //    }
         //}
         // Phương thức gửi sự kiện chuột đến server
-        private void SendMouseEvent(string action, int x, int y, string button)
-        {
-            try
-            {
-                string message = $"mouse:{action}:{x}:{y}:{button}";
-                byte[] data = Encoding.ASCII.GetBytes(message);
-                stream.Write(data, 0, data.Length);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error sending mouse event: " + ex.Message);
-            }
-        }
 
-        // Gửi sự kiện bàn phím
-        private void SendKeyboardEvent(string action, string key)
-        {
-            try
-            {
-                string message = $"keyboard:{action}:{key}";
-                byte[] data = Encoding.ASCII.GetBytes(message);
-                stream.Write(data, 0, data.Length);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error sending keyboard event: " + ex.Message);
-            }
-        }
-
-        // Gửi sự kiện khi thả chuột ra
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-            string button = e.Button.ToString();
-            SendMouseEvent("mouseup", e.X, e.Y, button);
-        }
-
-        // Gửi sự kiện khi nhấn chuột xuống
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            string button = e.Button.ToString();
-            SendMouseEvent("mousedown", e.X, e.Y, button);
-        }
     }
 }
