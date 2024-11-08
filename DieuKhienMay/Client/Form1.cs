@@ -115,7 +115,9 @@ namespace Client
                 int x = (this.ClientSize.Width - newWidth) / 2;
                 int y = (this.ClientSize.Height - newHeight) / 2;
 
-                // Vẽ hình ảnh đã nhận vào form tại vị trí và kích thước được tính toán
+                // Lấp đầy vùng form bằng hình ảnh đã được co giãn và giữ chất lượng
+                e.Graphics.Clear(this.BackColor); // Đặt nền cho form
+                e.Graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                 e.Graphics.DrawImage(receivedImage, new Rectangle(x, y, newWidth, newHeight));
             }
         }
@@ -190,11 +192,33 @@ namespace Client
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
-            // Tính toán tỉ lệ kích thước màn hình giữa client và server
-            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
-            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-            int adjustedX = e.X * 1920 / screenWidth; // Thay 1920 bằng độ phân giải màn hình server của bạn
-            int adjustedY = e.Y * 1200 / screenHeight; // Thay 1080 bằng độ phân giải màn hình server của bạn
+            if (receivedImage == null) return;
+
+            // Kích thước và vị trí của hình ảnh trên form
+            double formRatio = (double)this.ClientSize.Width / this.ClientSize.Height;
+            double imageRatio = (double)originalImageSize.Width / originalImageSize.Height;
+
+            int newWidth, newHeight;
+            int xOffset, yOffset;
+
+            if (formRatio > imageRatio)
+            {
+                newHeight = this.ClientSize.Height;
+                newWidth = (int)(newHeight * imageRatio);
+            }
+            else
+            {
+                newWidth = this.ClientSize.Width;
+                newHeight = (int)(newWidth / imageRatio);
+            }
+
+            xOffset = (this.ClientSize.Width - newWidth) / 2;
+            yOffset = (this.ClientSize.Height - newHeight) / 2;
+
+            // Tính toán tọa độ chuột dựa trên vị trí và kích thước của hình ảnh
+            int adjustedX = (e.X - xOffset) * originalImageSize.Width / newWidth;
+            int adjustedY = (e.Y - yOffset) * originalImageSize.Height / newHeight;
+
 
             var inputEvent = new InputEvent
             {
@@ -214,6 +238,11 @@ namespace Client
                 Key = (int)e.KeyCode
             };
             SendEvent(inputEvent).Wait();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
 
