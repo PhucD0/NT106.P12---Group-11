@@ -109,7 +109,11 @@ namespace Server
         private void btnListen_Click(object sender, EventArgs e)
         {
             port = int.Parse(txbPort.Text);
-            server = new TcpListener(IPAddress.Parse(txbIP.Text), port);
+
+            // Tự động lấy địa chỉ IP của máy chủ
+            string localIP = GetLocalIPAddress();
+
+            server = new TcpListener(IPAddress.Parse(localIP), port);
             cancellationTokenSource = new CancellationTokenSource();
             var token = cancellationTokenSource.Token;
 
@@ -118,7 +122,22 @@ namespace Server
             listeningThread.Start();
             btnListen.Enabled = false;
             btnStop.Enabled = true;
+
         }
+
+        private string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
+
 
 
         TcpListener? logListener;
@@ -145,6 +164,7 @@ namespace Server
 
                 // Khởi động lắng nghe logs tạm thời trên một luồng riêng
                 Task logListeningTask = Task.Run(() => ListenForLogs(token), token);
+
 
                 while (!token.IsCancellationRequested)
                 {
