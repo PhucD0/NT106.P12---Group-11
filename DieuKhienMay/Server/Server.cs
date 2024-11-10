@@ -109,12 +109,12 @@ namespace Server
 
         private void btnListen_Click(object sender, EventArgs e)
         {
-            port = int.Parse(txbPort.Text);
+            port = int.Parse(txbIP.Text);
 
             // Tự động lấy địa chỉ IP của máy chủ
-            string localIP = GetLocalIPAddress();
+            //string localIP = GetLocalIPAddress();
 
-            server = new TcpListener(IPAddress.Parse(localIP), port);
+            server = new TcpListener(IPAddress.Any, port);
             cancellationTokenSource = new CancellationTokenSource();
             var token = cancellationTokenSource.Token;
 
@@ -138,11 +138,6 @@ namespace Server
             }
             throw new Exception("No network adapters with an IPv4 address in the system!");
         }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> ebd68ea04e1e056b296def6393c3ca8ffa16a2eb
 
         TcpListener? logListener;
         bool isTemporaryRequest;
