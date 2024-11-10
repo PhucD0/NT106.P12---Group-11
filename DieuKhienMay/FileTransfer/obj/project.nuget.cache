@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V4AcY2L4JTo=",
+  "dgSpecHash": "+Ke9XoSkpeJcPlcKIpiNjxpkG2lrmATIt1QGiqVx4Ef64W/nQCyOESwMyWleoe8NULGm+UsYDSnC3IpSV+m4Vw==",
   "success": true,
-  "projectFilePath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
+  "projectFilePath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\Project\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
