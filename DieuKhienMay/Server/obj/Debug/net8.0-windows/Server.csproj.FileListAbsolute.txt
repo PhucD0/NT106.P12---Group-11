@@ -164,3 +164,4 @@ D:\kudo\NT106\DoAnCuoiKi\TestDoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\S
 D:\kudo\NT106\DoAnCuoiKi\TestDoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
 D:\kudo\NT106\DoAnCuoiKi\TestDoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Server\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Newtonsoft.Json.dll

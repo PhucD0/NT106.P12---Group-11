@@ -99,6 +99,7 @@ namespace Server
         public Server()
         {
             InitializeComponent();
+            txbIP.Text = GetLocalIPAddress();  // Lấy và hiển thị IP của máy server
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -120,6 +121,18 @@ namespace Server
             btnStop.Enabled = true;
         }
 
+        private string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
 
         TcpListener? logListener;
         bool isTemporaryRequest;
@@ -154,7 +167,7 @@ namespace Server
                         UpdateStatus("Client đã kết nối.");
 
                         // Ghi log khi kết nối thành công
-                        //LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
+                        LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
 
                         // Reset cờ và các bộ đếm
                         //isTemporaryRequest = false;
