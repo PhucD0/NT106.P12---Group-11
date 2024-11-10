@@ -109,7 +109,7 @@ namespace Server
 
         private void btnListen_Click(object sender, EventArgs e)
         {
-            port = int.Parse(txbIP.Text);
+            port = int.Parse(txbPort.Text);
 
             // Tự động lấy địa chỉ IP của máy chủ
             //string localIP = GetLocalIPAddress();

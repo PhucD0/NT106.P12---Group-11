@@ -38,7 +38,7 @@
             sendFileToolStripMenuItem = new ToolStripMenuItem();
             requestLogsToolStripMenuItem = new ToolStripMenuItem();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txbPort = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -143,15 +143,15 @@
             label2.Text = "Port:";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txbPort
             // 
-            textBox1.Font = new Font("Segoe UI", 15F);
-            textBox1.Location = new Point(120, 150);
-            textBox1.Margin = new Padding(4, 3, 4, 3);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(181, 31);
-            textBox1.TabIndex = 9;
+            txbPort.Font = new Font("Segoe UI", 15F);
+            txbPort.Location = new Point(120, 150);
+            txbPort.Margin = new Padding(4, 3, 4, 3);
+            txbPort.Multiline = true;
+            txbPort.Name = "txbPort";
+            txbPort.Size = new Size(181, 31);
+            txbPort.TabIndex = 9;
             // 
             // Server
             // 
@@ -164,7 +164,7 @@
             Controls.Add(label1);
             Controls.Add(btnListen);
             Controls.Add(btnStop);
-            Controls.Add(textBox1);
+            Controls.Add(txbPort);
             Controls.Add(label2);
             Controls.Add(txbIP);
             Controls.Add(label_password);
@@ -190,6 +190,6 @@
         private ToolStripMenuItem sendFileToolStripMenuItem;
         private ToolStripMenuItem requestLogsToolStripMenuItem;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txbPort;
     }
 }
