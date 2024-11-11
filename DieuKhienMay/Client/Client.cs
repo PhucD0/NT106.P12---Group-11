@@ -32,7 +32,6 @@ namespace Client
 
         private ListBox listBox;
 
-        
 
         public Client()
         {
@@ -47,9 +46,6 @@ namespace Client
 
             this.Click += (s, e) => HideValidIPs();
 
-
-
-
         }
 
         private void CreateListBox()
@@ -63,7 +59,6 @@ namespace Client
             listBox.Visible = false; // Ẩn ListBox
             this.Controls.Add(listBox); // Thêm ListBox vào form
         }
-
 
 
         // Hàm vẽ từng mục với padding và màu nền khi chọn
@@ -116,36 +111,12 @@ namespace Client
             }
             catch (Exception ex)
             {
-                // Khi kết nối không thành công, gửi tín hiệu thất bại đến server
-                SendFailedConnectionSignal();
-
+                
                 MessageBox.Show("Failed to connect: " + ex.Message);
             }
         }
 
-        private void SendFailedConnectionSignal()
-        {
-            try
-            {
-                // Sử dụng một cổng tạm thời để gửi tín hiệu "Failed Connection" đến server
-                using (TcpClient tempClient = new TcpClient())
-                {
-                    tempClient.Connect(txbIP.Text, 5002); // Kết nối đến cổng logs của server
-                    using (NetworkStream stream = tempClient.GetStream())
-                    {
-                        // Gửi tín hiệu "FAILED_CONNECTION" qua stream
-                        byte[] signal = Encoding.ASCII.GetBytes("FAILED_CONNECTION");
-                        stream.Write(signal, 0, signal.Length);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Xử lý lỗi nếu không thể kết nối với server qua cổng 5001
-                MessageBox.Show("Unable to send failed connection signal: " + ex.Message);
-            }
-        }
-
+       
         /// <summary>
         /// Xử lí ảnh
         /// </summary>
@@ -156,11 +127,7 @@ namespace Client
         /// Xu li input va gui toi server
         /// </summary>
         /// <param name="inputData"></param>
-        private void SendInputData(byte[] inputData)
-        {
-            // code something here
-        }
-        // Ham SendInputDat duoc goi qua cac su kien cua chuot va ban phim
+
 
         /// <summary>
         /// Gui file qua server
@@ -172,56 +139,7 @@ namespace Client
             mainForm main = new mainForm();
             main.Show();
         }
-
-        /// <summary>
-        /// View logs
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-        // Yeu cau lich su ket noi tu server
-        private void requestLogsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RequestLogs();
-        }
-
-        //bản 1
-        private void RequestLogs()
-        {
-            using (TcpClient tempClient = new TcpClient())
-            {
-                try
-                {
-                    // Sử dụng cổng logs phụ để tránh ghi nhận là kết nối chính thức
-                    int logPort = 5001; // Cổng logs phụ, thêm một TextBox cho port này nếu cần
-                    tempClient.Connect(txbIP.Text, logPort); // Kết nối tạm thời đến cổng logs phụ của server
-                    NetworkStream stream = tempClient.GetStream();
-
-                    // Gửi yêu cầu "GETLOGS"
-                    byte[] requestBytes = Encoding.ASCII.GetBytes("GETLOGS");
-                    stream.Write(requestBytes, 0, requestBytes.Length);
-
-                    // Đọc phản hồi chứa log
-                    byte[] buffer = new byte[4096];
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    string logs = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-
-                    // Lưu log vào một tệp tạm thời
-                    string tempFilePath = Path.Combine(Path.GetTempPath(), "ConnectionLogs.txt");
-                    File.WriteAllText(tempFilePath, logs);
-
-                    // Mở tệp log bằng Notepad
-                    System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Không thể lấy log: " + ex.Message);
-                }
-            }
-        }
-
-
-
+        
         /// <summary>
         /// Luu dia chi IP và port
         /// </summary>

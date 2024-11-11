@@ -45,11 +45,11 @@
             // txbIP
             // 
             txbIP.Font = new Font("Segoe UI", 15F);
-            txbIP.Location = new Point(125, 94);
+            txbIP.Location = new Point(120, 94);
             txbIP.Margin = new Padding(4, 3, 4, 3);
             txbIP.Multiline = true;
             txbIP.Name = "txbIP";
-            txbIP.Size = new Size(181, 31);
+            txbIP.Size = new Size(264, 31);
             txbIP.TabIndex = 9;
             // 
             // label_password
@@ -69,7 +69,7 @@
             // 
             btnStop.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnStop.ForeColor = Color.Coral;
-            btnStop.Location = new Point(512, 131);
+            btnStop.Location = new Point(567, 131);
             btnStop.Margin = new Padding(4, 3, 4, 3);
             btnStop.Name = "btnStop";
             btnStop.Size = new Size(130, 82);
@@ -82,7 +82,7 @@
             // 
             btnListen.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnListen.ForeColor = Color.Coral;
-            btnListen.Location = new Point(350, 131);
+            btnListen.Location = new Point(405, 131);
             btnListen.Margin = new Padding(4, 3, 4, 3);
             btnListen.Name = "btnListen";
             btnListen.Size = new Size(130, 82);
@@ -129,6 +129,7 @@
             requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
             requestLogsToolStripMenuItem.Size = new Size(111, 24);
             requestLogsToolStripMenuItem.Text = "Request Logs";
+            requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click_1;
             // 
             // label2
             // 
@@ -150,7 +151,7 @@
             txbPort.Margin = new Padding(4, 3, 4, 3);
             txbPort.Multiline = true;
             txbPort.Name = "txbPort";
-            txbPort.Size = new Size(181, 31);
+            txbPort.Size = new Size(264, 31);
             txbPort.TabIndex = 9;
             // 
             // Server
@@ -188,8 +189,8 @@
         private TextBox txbStatus;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sendFileToolStripMenuItem;
-        private ToolStripMenuItem requestLogsToolStripMenuItem;
         private Label label2;
         private TextBox txbPort;
+        private ToolStripMenuItem requestLogsToolStripMenuItem;
     }
 }

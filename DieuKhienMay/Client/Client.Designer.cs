@@ -36,7 +36,6 @@
             btnConnect = new Button();
             menuStrip1 = new MenuStrip();
             sendFileToolStripMenuItem = new ToolStripMenuItem();
-            requestLogsToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,7 +115,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(884, 28);
@@ -129,13 +128,6 @@
             sendFileToolStripMenuItem.Size = new Size(83, 24);
             sendFileToolStripMenuItem.Text = "Send File";
             sendFileToolStripMenuItem.Click += sendFileToolStripMenuItem_Click;
-            // 
-            // requestLogsToolStripMenuItem
-            // 
-            requestLogsToolStripMenuItem.Name = "requestLogsToolStripMenuItem";
-            requestLogsToolStripMenuItem.Size = new Size(111, 24);
-            requestLogsToolStripMenuItem.Text = "Request Logs";
-            requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click;
             // 
             // Client
             // 
@@ -172,6 +164,5 @@
         private Button btnConnect;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sendFileToolStripMenuItem;
-        private ToolStripMenuItem requestLogsToolStripMenuItem;
     }
 }

@@ -19,6 +19,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using FileTransfer;
 using RemoteControlServer;
 using Newtonsoft.Json;
+using Microsoft.VisualBasic.Logging;
 
 namespace Server
 {
@@ -139,8 +140,6 @@ namespace Server
             throw new Exception("No network adapters with an IPv4 address in the system!");
         }
 
-        TcpListener? logListener;
-        bool isTemporaryRequest;
         /// <summary>
         /// Xu li ket noi
         /// </summary>
@@ -153,17 +152,6 @@ namespace Server
                 server?.Start();
                 UpdateStatus("Server đang lắng nghe...");
 
-                // Cổng 5001 dành riêng cho logs
-                logListener = new TcpListener(IPAddress.Any, 5001);
-                logListener.Start();
-
-                // Cổng 5002 dành cho kết nối thất bại
-                TcpListener failedConnectionListener = new TcpListener(IPAddress.Any, 5002);
-                failedConnectionListener.Start();
-
-                // Khởi động lắng nghe logs tạm thời trên một luồng riêng
-                Task logListeningTask = Task.Run(() => ListenForLogs(token), token);
-
 
                 while (!token.IsCancellationRequested)
                 {
@@ -174,10 +162,7 @@ namespace Server
 
                         // Ghi log khi kết nối thành công
                         LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
-
-                        // Reset cờ và các bộ đếm
-                        //isTemporaryRequest = false;
-
+                                               
                         // Khởi động các luồng gửi và nhận không đồng bộ
                         sendingThread = new Thread(() => SendDesktopImages(token)) { IsBackground = true };
                         sendingThread.Start();
@@ -186,28 +171,6 @@ namespace Server
                         controlThread.Start();
                     }
 
-                    /*else if (failedConnectionListener.Pending())  // Kiểm tra tín hiệu thất bại từ client
-                    {
-                        using (TcpClient tempClient = await failedConnectionListener.AcceptTcpClientAsync())
-                        using (NetworkStream stream = tempClient.GetStream())
-                        {
-                            byte[] buffer = new byte[4096];
-                            int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, token);
-                            string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-
-                            // Nếu nhận được tín hiệu "FAILED_CONNECTION" từ client
-                            if (message == "FAILED_CONNECTION")
-                            {
-                                // Ghi log "Connection Failed" khi nhận tín hiệu thất bại
-                                LogConnection1("Unknown", "Connection Failed");
-
-                                // Cập nhật trạng thái trên UI
-                                UpdateStatus("Connection Failed from client.");
-                                //btnListen.Enabled = true;
-                                btnStop.Enabled = true;
-                            }
-                        }
-                    }*/
                     await Task.Delay(100); // Giảm tải CPU với delay không đồng bộ
                 }
             }
@@ -220,45 +183,7 @@ namespace Server
             {
                 // Dừng cả cổng chính và cổng phụ
                 server.Stop();
-                logListener.Stop();
                 UpdateStatus("Server đã dừng lắng nghe.");
-            }
-        }
-
-        private async void ListenForLogs(CancellationToken token)
-        {
-            while (!token.IsCancellationRequested)
-            {
-                try
-                {
-                    if (logListener.Pending())
-                    {
-                        using (TcpClient tempClient = await logListener.AcceptTcpClientAsync())
-                        using (NetworkStream stream = tempClient.GetStream())
-                        {
-                            byte[] buffer = new byte[4096];
-                            int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, token);
-                            string request = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-
-                            if (request == "GETLOGS") // Chỉ ghi log một lần cho các kết nối tạm thời
-                            {
-                                LogConnection1(((IPEndPoint?)tempClient.Client.RemoteEndPoint).Address.ToString(), "Temporary Connection");
-                                //isTemporaryRequest = true; // Đặt cờ để tránh ghi log trùng lặp
-                            }
-
-                            // Gọi hàm SendLogs để gửi log cho client
-                            SendLogs(stream);
-
-                            // Reset cờ sau khi hoàn thành việc gửi logs
-                            //isTemporaryRequest = false;
-                        }
-                    }
-                    Thread.Sleep(10); // Nghỉ ngắn để giảm tải CPU
-                }
-                catch (Exception ex)
-                {
-                    HandleError("Error in ListenForLogs", ex);
-                }
             }
         }
 
@@ -334,7 +259,6 @@ namespace Server
         }
 
 
-
         private void ProcessInputEvent(InputEvent inputEvent)
         {
             switch (inputEvent.EventType)
@@ -375,7 +299,6 @@ namespace Server
             }
             mouse_event(flag, (uint)x, (uint)y, 0, UIntPtr.Zero);
         }
-
 
 
         private void SetCursorPosition(int x, int y)
@@ -537,46 +460,6 @@ namespace Server
             }
         }
 
-        // ghi lại thông tin kết nối bản 2
-        //private void LogConnection1(string ip, string status)
-        //{
-        //    using (SqlConnection connection = InitializeDatabase())
-        //    {
-        //        string query = "INSERT INTO LogConnection (IPAddress, ConnectionTime, SessionStatus) VALUES (@IPAddress, @ConnectionTime, @SessionStatus)";
-        //        using (SqlCommand command = new SqlCommand(query, connection))
-        //        {
-        //            command.Parameters.AddWithValue("@SessionStatus", status);
-        //            command.Parameters.AddWithValue("@IPAddress", ip);
-        //            //command.Parameters.AddWithValue("@Port", port);
-        //            command.Parameters.AddWithValue("@ConnectionTime", DateTime.Now);
-        //            command.ExecuteNonQuery();
-        //        }
-        //    }
-        //}
-
-
-        // Gui logs cho client
-        private void SendLogs(NetworkStream stream)
-        {
-            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
-            {
-                string query = "SELECT IPAddress, AccessTime, Status FROM ConnectionLogs";
-                SqlCommand command = new SqlCommand(query, connection);
-
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                StringBuilder logs = new StringBuilder();
-
-                while (reader.Read())
-                {
-                    logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]} - {reader["Status"]}");
-                }
-
-                byte[] logsBytes = Encoding.ASCII.GetBytes(logs.ToString());
-                stream.Write(logsBytes, 0, logsBytes.Length);
-            }
-        }
-
         /// <summary>
         /// gui file
         /// </summary>
@@ -625,6 +508,37 @@ namespace Server
 
             // Hủy token để dừng các thao tác không cần thiết
             cancellationTokenSource?.Cancel();
+        }
+
+        private void RequestLogs()
+        {
+            StringBuilder logs = new StringBuilder();
+            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
+            {
+                string query = "SELECT IPAddress, AccessTime, Status FROM ConnectionLogs";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                
+                while (reader.Read())
+                {
+                    logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]} - {reader["Status"]}");
+                }
+
+            }
+
+            // Lưu log vào một tệp tạm thời
+            string tempFilePath = Path.Combine(Path.GetTempPath(), "ConnectionLogs.txt");
+            File.WriteAllText(tempFilePath, logs.ToString());
+
+            // Mở tệp log bằng Notepad
+            System.Diagnostics.Process.Start("notepad.exe", tempFilePath);
+        }
+
+        private void requestLogsToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            RequestLogs();
         }
     }
 }
