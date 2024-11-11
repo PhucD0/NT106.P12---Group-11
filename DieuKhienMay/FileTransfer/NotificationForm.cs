@@ -12,9 +12,9 @@ namespace FileTransfer
 {
     public partial class NotificationForm : Form
     {
-        string name;
-        string IP;
-        public NotificationForm(string name, string iP)
+        string? name;
+        string? IP;
+        public NotificationForm(string? name, string? iP)
         {
             InitializeComponent();
             this.name = name;

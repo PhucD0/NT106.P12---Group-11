@@ -38,7 +38,7 @@
             Margin = new Padding(2, 3, 2, 3);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
+            //Load += Form1_Load;
             KeyDown += Form1_KeyDown;
             MouseDown += Form1_MouseDown;
             MouseMove += Form1_MouseMove;

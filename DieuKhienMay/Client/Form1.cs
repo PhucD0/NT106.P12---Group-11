@@ -30,7 +30,7 @@ namespace Client
         private NetworkStream stream;
         private Thread receivingThread;
         private CancellationTokenSource cts = new CancellationTokenSource();
-        private Image receivedImage;
+        private Image? receivedImage;
         private Size originalImageSize;
 
         public async Task SendEvent(InputEvent inputEvent)
@@ -45,32 +45,6 @@ namespace Client
 
             await stream.WriteAsync(data, 0, data.Length);
         }
-
-
-        //public Form1(TcpClient client)
-        //{
-        //    InitializeComponent();
-        //    this.client = client;
-        //    stream = client.GetStream();
-
-        //    // Gửi kích thước của PictureBox cho server
-        //    SendPictureBoxSize();
-
-        //    // Bắt đầu nhận hình ảnh từ server
-        //    receivingThread = new Thread(() => ReceiveDesktopImages(cts.Token));
-        //    receivingThread.Start();
-
-        //    // Gán sự kiện chuột và bàn phím
-        //    pictureBox1.MouseDown += pictureBox1_MouseDown;
-        //    pictureBox1.MouseUp += pictureBox1_MouseUp;
-        //    pictureBox1.MouseMove += pictureBox1_MouseMove;
-        //    this.KeyDown += Form1_KeyDown;
-        //    this.KeyUp += Form1_KeyUp;
-        //    this.KeyPreview = true; // Đảm bảo Form nhận sự kiện KeyDown
-
-        //    // Handle form resizing to refresh the PictureBox
-        //    this.Resize += Form1_Resize;
-        //}
 
         // Refresh PictureBox on form resize
         public Form1(TcpClient client)
@@ -91,7 +65,8 @@ namespace Client
             this.Paint += Form1_Paint;
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        // Vẽ hình ảnh lên form và giữ đúng tỉ lệ
+        private void Form1_Paint(object? sender, PaintEventArgs e)
         {
             if (receivedImage != null)
             {
@@ -122,6 +97,7 @@ namespace Client
             }
         }
 
+        // Nhận ảnh từ server
         private void ReceiveDesktopImages(CancellationToken token)
         {
             try
@@ -163,6 +139,11 @@ namespace Client
             }
         }
 
+        /// <summary>
+        /// Gửi các sự kiện chuột và bàn phím
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             var inputEvent = new InputEvent
@@ -173,8 +154,6 @@ namespace Client
                 Y = e.Y
             };
             SendEvent(inputEvent).Wait();
-
-
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
@@ -187,7 +166,6 @@ namespace Client
                 Y = e.Y
             };
             SendEvent(inputEvent).Wait();
-
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -227,7 +205,6 @@ namespace Client
                 Y = adjustedY
             };
             SendEvent(inputEvent).Wait();
-
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -239,29 +216,5 @@ namespace Client
             };
             SendEvent(inputEvent).Wait();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-        //private void SendPictureBoxSize()
-        //{
-        //    try
-        //    {
-        //        string message = $"size:{pictureBox1.Width}:{pictureBox1.Height}";
-        //        byte[] data = Encoding.ASCII.GetBytes(message);
-        //        stream.Write(data, 0, data.Length);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error sending PictureBox size: " + ex.Message);
-        //    }
-        //}
-        // Phương thức gửi sự kiện chuột đến server
-
     }
 }

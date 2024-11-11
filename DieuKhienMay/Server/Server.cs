@@ -112,9 +112,6 @@ namespace Server
         {
             port = int.Parse(txbPort.Text);
 
-            // Tự động lấy địa chỉ IP của máy chủ
-            //string localIP = GetLocalIPAddress();
-
             server = new TcpListener(IPAddress.Any, port);
             cancellationTokenSource = new CancellationTokenSource();
             var token = cancellationTokenSource.Token;
@@ -127,6 +124,7 @@ namespace Server
 
         }
 
+        // Lấy địa chỉ IP từ máy server
         private string GetLocalIPAddress()
         {
             var host = Dns.GetHostEntry(Dns.GetHostName());
@@ -160,9 +158,17 @@ namespace Server
                         client = await server.AcceptTcpClientAsync(); // Lắng nghe không đồng bộ
                         UpdateStatus("Client đã kết nối.");
 
-                        // Ghi log khi kết nối thành công
-                        LogConnection1(((IPEndPoint?)client.Client.RemoteEndPoint).Address.ToString(), "Connected");
-                                               
+                        IPEndPoint? remoteEndPoint = client.Client.RemoteEndPoint as IPEndPoint;
+                        if (remoteEndPoint?.Address != null)
+                        {
+                            LogConnection1(remoteEndPoint.Address.ToString(), "Connected");
+                        }
+                        else
+                        {
+                            // Handle the case where RemoteEndPoint or Address is null
+                            Console.WriteLine("Remote endpoint or address is null.");
+                        }
+
                         // Khởi động các luồng gửi và nhận không đồng bộ
                         sendingThread = new Thread(() => SendDesktopImages(token)) { IsBackground = true };
                         sendingThread.Start();
@@ -181,8 +187,7 @@ namespace Server
             }
             finally
             {
-                // Dừng cả cổng chính và cổng phụ
-                server.Stop();
+                server?.Stop();
                 UpdateStatus("Server đã dừng lắng nghe.");
             }
         }
@@ -227,38 +232,45 @@ namespace Server
         /// </summary>
         private async void ReceiveControlEvents(CancellationToken token)
         {
-            NetworkStream stream = client.GetStream();
-
-            try
+            if (client != null)
             {
-                byte[] buffer = new byte[24];
+                NetworkStream? stream = client.GetStream();
 
-                while (client.Connected)
+                try
                 {
-                    int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) break;
+                    byte[] buffer = new byte[24];
 
-                    var inputEvent = new InputEvent
+                    while (client.Connected)
                     {
-                        EventType = BitConverter.ToInt32(buffer, 0),
-                        Button = BitConverter.ToInt32(buffer, 4),
-                        X = BitConverter.ToInt32(buffer, 8),
-                        Y = BitConverter.ToInt32(buffer, 12),
-                        Delta = BitConverter.ToInt32(buffer, 16),
-                        Key = BitConverter.ToInt32(buffer, 20)
-                    };
+                        int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                        if (bytesRead == 0) break;
 
-                    ProcessInputEvent(inputEvent);
+                        var inputEvent = new InputEvent
+                        {
+                            EventType = BitConverter.ToInt32(buffer, 0),
+                            Button = BitConverter.ToInt32(buffer, 4),
+                            X = BitConverter.ToInt32(buffer, 8),
+                            Y = BitConverter.ToInt32(buffer, 12),
+                            Delta = BitConverter.ToInt32(buffer, 16),
+                            Key = BitConverter.ToInt32(buffer, 20)
+                        };
+
+                        ProcessInputEvent(inputEvent);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Exception: {ex.Message}");
                 }
             }
-            catch (Exception ex)
+            else
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                Console.WriteLine("Client is not available.");
             }
-
         }
 
 
+        // Xử lí tín hiệu điều khiển nhận được
         private void ProcessInputEvent(InputEvent inputEvent)
         {
             switch (inputEvent.EventType)
@@ -343,50 +355,55 @@ namespace Server
         }
 
 
-
-
         /// <summary>
         /// Gui anh
         /// </summary>
         private void SendDesktopImages(CancellationToken token)
         {
-            NetworkStream stream = client.GetStream();
-            while (client.Connected && !token.IsCancellationRequested)
-            {
-                try
+            if(client != null)
+            { 
+                NetworkStream? stream = client.GetStream();
+                while (client.Connected && !token.IsCancellationRequested)
                 {
-                    // Chụp và nén ảnh desktop
-                    Image desktopImage = CaptureDesktop();
-
-                    using (MemoryStream ms = new MemoryStream())
+                    try
                     {
-                        // Nén ảnh với chất lượng JPEG (giá trị chất lượng từ 0 đến 100)
-                        ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
-                        //Encoder qualityEncoder = Encoder.Quality;
-                        System.Drawing.Imaging.Encoder qualityEncoder = System.Drawing.Imaging.Encoder.Quality;
+                        // Chụp và nén ảnh desktop
+                        Image desktopImage = CaptureDesktop();
 
-                        EncoderParameters encoderParams = new EncoderParameters(1);
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            // Nén ảnh với chất lượng JPEG (giá trị chất lượng từ 0 đến 100)
+                            ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg)!;
+                            //Encoder qualityEncoder = Encoder.Quality;
+                            System.Drawing.Imaging.Encoder qualityEncoder = System.Drawing.Imaging.Encoder.Quality;
 
-                        // Đặt chất lượng nén thành 50 để giảm dung lượng (có thể điều chỉnh)
-                        encoderParams.Param[0] = new EncoderParameter(qualityEncoder, 50L);
-                        desktopImage.Save(ms, jpgEncoder, encoderParams);
+                            EncoderParameters encoderParams = new EncoderParameters(1);
 
-                        byte[] imageBytes = ms.ToArray();
-                        byte[] sizeBytes = BitConverter.GetBytes(imageBytes.Length);
+                            // Đặt chất lượng nén thành 50 để giảm dung lượng (có thể điều chỉnh)
+                            encoderParams.Param[0] = new EncoderParameter(qualityEncoder, 50L);
+                            desktopImage.Save(ms, jpgEncoder, encoderParams);
 
-                        // Gửi kích thước và dữ liệu ảnh tới client
-                        stream.Write(sizeBytes, 0, sizeBytes.Length);
-                        stream.Write(imageBytes, 0, imageBytes.Length);
+                            byte[] imageBytes = ms.ToArray();
+                            byte[] sizeBytes = BitConverter.GetBytes(imageBytes.Length);
+
+                            // Gửi kích thước và dữ liệu ảnh tới client
+                            stream.Write(sizeBytes, 0, sizeBytes.Length);
+                            stream.Write(imageBytes, 0, imageBytes.Length);
+                        }
+
+                        desktopImage.Dispose();
+                        Thread.Sleep(100); // Tùy chỉnh thời gian chờ để kiểm soát tần suất gửi ảnh
                     }
-
-                    desktopImage.Dispose();
-                    Thread.Sleep(100); // Tùy chỉnh thời gian chờ để kiểm soát tần suất gửi ảnh
+                    catch (Exception ex)
+                    {
+                        HandleError("Error sending image", ex);
+                        break;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    HandleError("Error sending image", ex);
-                    break;
-                }
+            }
+            else
+            {
+                Console.WriteLine("Client is not available.");
             }
         }
 
@@ -411,7 +428,7 @@ namespace Server
         }
 
         // Hàm lấy bộ mã hóa cho định dạng ảnh
-        private ImageCodecInfo GetEncoder(ImageFormat format)
+        private ImageCodecInfo? GetEncoder(ImageFormat format)
         {
             ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
             foreach (ImageCodecInfo codec in codecs)
@@ -437,26 +454,6 @@ namespace Server
             else
             {
                 txbStatus.Text = message;
-            }
-        }
-
-        /// <summary>
-        /// View logs
-        /// </summary>
-        // ghi lại thông tin kết nối bản 1
-        private void LogConnection1(string ip, string status)
-        {
-            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
-            {
-                string query = "INSERT INTO ConnectionLogs (IPAddress, AccessTime, [Status]) VALUES (@IPAddress, @AccessTime, @Status)";
-                SqlCommand command = new SqlCommand(query, connection);
-
-                command.Parameters.AddWithValue("@IPAddress", ip);
-                command.Parameters.AddWithValue("@AccessTime", DateTime.Now);
-                command.Parameters.AddWithValue("@Status", status);
-
-                connection.Open();
-                command.ExecuteNonQuery();
             }
         }
 
@@ -510,6 +507,12 @@ namespace Server
             cancellationTokenSource?.Cancel();
         }
 
+
+        /// <summary>
+        /// Request logs
+        /// </summary>
+        
+        // Yêu cầu xem logs
         private void RequestLogs()
         {
             StringBuilder logs = new StringBuilder();
@@ -539,6 +542,23 @@ namespace Server
         private void requestLogsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             RequestLogs();
+        }
+
+        // ghi lại thông tin kết nối 
+        private void LogConnection1(string ip, string status)
+        {
+            using (SqlConnection connection = new SqlConnection(databaseConnectionString))
+            {
+                string query = "INSERT INTO ConnectionLogs (IPAddress, AccessTime, [Status]) VALUES (@IPAddress, @AccessTime, @Status)";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                command.Parameters.AddWithValue("@IPAddress", ip);
+                command.Parameters.AddWithValue("@AccessTime", DateTime.Now);
+                command.Parameters.AddWithValue("@Status", status);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
         }
     }
 }

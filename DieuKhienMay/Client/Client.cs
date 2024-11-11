@@ -12,11 +12,9 @@ using System.Text;
 using System.Configuration;
 using System.Net;
 using static System.Windows.Forms.DataFormats;
-//using Client.Properties;
 using FileTransfer;
 using static Client.Form1;
 using Newtonsoft.Json;
-
 
 namespace Client
 {
@@ -24,18 +22,16 @@ namespace Client
     public partial class Client : Form
     {
         // KHAI BAO HERE
-        private NetworkStream? stream;
         private TcpClient? client;
         private int port;
         private List<(string ip, int port)> savedConnections = new List<(string, int)>();
         private const int maxConnectionAttempts = 5;
 
-        private ListBox listBox;
+        private ListBox? listBox;
 
 
         public Client()
         {
-
             InitializeComponent();
 
             // Gọi sự kiện khi mouse hover vào textbox IP
@@ -43,11 +39,10 @@ namespace Client
 
             CreateListBox();
 
-
             this.Click += (s, e) => HideValidIPs();
-
         }
 
+        // Tạo listbox khi form được khởi tạo, và listbox bị ẩn
         private void CreateListBox()
         {
             listBox = new ListBox();
@@ -62,7 +57,7 @@ namespace Client
 
 
         // Hàm vẽ từng mục với padding và màu nền khi chọn
-        private void ListBox_DrawItem(object sender, DrawItemEventArgs e)
+        private void ListBox_DrawItem(object? sender, DrawItemEventArgs e)
         {
             e.DrawBackground();
 
@@ -78,8 +73,8 @@ namespace Client
                 }
 
                 // Chọn màu và vẽ văn bản
-                e.Graphics.DrawString(listBox.Items[e.Index].ToString(),
-                    e.Font, Brushes.Black, e.Bounds.Left + 5, e.Bounds.Top + 2);
+                e.Graphics.DrawString(listBox?.Items[e.Index].ToString(),
+                    e.Font!, Brushes.Black, e.Bounds.Left + 5, e.Bounds.Top + 2);
             }
 
             e.DrawFocusRectangle();
@@ -116,21 +111,8 @@ namespace Client
             }
         }
 
-       
         /// <summary>
-        /// Xử lí ảnh
-        /// </summary>
-        // Lang nghe và hien thi du lieu hình anh bên phía server
-
-
-        /// <summary>
-        /// Xu li input va gui toi server
-        /// </summary>
-        /// <param name="inputData"></param>
-
-
-        /// <summary>
-        /// Gui file qua server
+        /// Gui file 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -161,17 +143,18 @@ namespace Client
             }
         }
 
-        private void TxtIP_MouseHover(object sender, EventArgs e)
+        // Sự kiện rê chuột vào textbox IP
+        private void TxtIP_MouseHover(object? sender, EventArgs e)
         {
-            listBox.Items.Clear();
-            listBox.BringToFront();
+            listBox?.Items.Clear();
+            listBox?.BringToFront();
 
             foreach (var connection in savedConnections)
             {
-                listBox.Items.Add($"{connection.ip}:{connection.port}");
+                listBox?.Items.Add($"{connection.ip}:{connection.port}");
             }
 
-            if (listBox.Items.Count > 0)
+            if (listBox?.Items.Count > 0)
             {
                 listBox.Visible = true;
                 listBox.MouseClick += listBox_MouseClick_1;
@@ -179,10 +162,11 @@ namespace Client
             }
             else
             {
-                listBox.Visible = false;
+                HideValidIPs();
             }
         }
 
+        // Kiểm tra tính hợp lệ của IP và port
         private bool IsValidIP(string ip)
         {
             return IPAddress.TryParse(ip, out _);
@@ -193,21 +177,44 @@ namespace Client
             return port > 0 && port <= 65535;
         }
 
-        private void listBox_MouseClick_1(object sender, MouseEventArgs e)
+        // Sự kiện click vào listbox để chọn IP và port
+        private void listBox_MouseClick_1(object? sender, MouseEventArgs e)
         {
-            if (listBox.SelectedItem != null)
+            if (listBox?.SelectedItem != null)
             {
-                string selected = listBox.SelectedItem.ToString();
-                var parts = selected.Split(':');
-                txbIP.Text = parts[0];
-                txbPort.Text = parts[1];
-                listBox.Visible = false;
+                string? selected = listBox.SelectedItem.ToString();
+                
+                if (!string.IsNullOrEmpty(selected))
+                {
+                    var parts = selected.Split(':');
+
+                    if (parts.Length == 2)
+                    {
+                        string ip = parts[0];
+                        string port = parts[1];
+
+                        listBox.Visible = false;
+                    }
+                    else
+                    {
+                        // Handle the case where the format is not as expected (e.g., missing port or IP)
+                        Console.WriteLine("Invalid format. Expected 'IP:port'.");
+                    }
+                }
+                else
+                {
+                    // Handle the case where 'selected' is null or empty
+                    Console.WriteLine("Input string is null or empty.");
+                }
             }
         }
 
         private void HideValidIPs()
         {
-            listBox.Visible = false;
+            if (listBox != null)
+            {
+                listBox.Visible = false;
+            }
         }
     }
 }

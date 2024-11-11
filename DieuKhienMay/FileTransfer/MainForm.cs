@@ -22,23 +22,22 @@ namespace FileTransfer
             InitializeComponent();
         }
         private string IP = "127.0.0.1";
-        TcpListener listener;
+        TcpListener? listener;
         TcpClient? client;
-        Socket? socketForClient;
-        private CancellationTokenSource serverCancellationTokenSource;
-        private Thread findPC;
-        private Thread notification;
+        private CancellationTokenSource? serverCancellationTokenSource;
+        private Thread? findPC;
+        private Thread? notification;
         int flag = 0;
         string fileName = "";
         private bool serverRunning = false;
-        private bool isConnected = false;
+        private bool isConnected;
         int fileReceived = 0;
-        string savePath;
-        string senderIP;
-        string senderMachineName;
-        string targetIP;
-        string targetName;
-        NotificationForm f2;
+        string savePath = "";
+        string? senderIP;
+        string? senderMachineName;
+        string? targetIP;
+        string? targetName;
+        NotificationForm? f2;
 
         private void mainForm_Load(object sender, EventArgs e)
         {
@@ -284,23 +283,31 @@ namespace FileTransfer
         {
             // UserState được truyền khi gọi ping.SendAsync (chứa địa chỉ IP cần kiểm tra)
             // Lấy IP từ UserState để xác định IP đang được xử lý trong lần gọi sự kiện hiện tại
-            string ip = (string)e.UserState;
+            string? ip = (string?)e.UserState;
 
             // Kiểm tra trạng thái phản hồi
-            if (e.Reply.Status == IPStatus.Success)
+            if (e.Reply?.Status == IPStatus.Success)
             {
                 string name;
                 try
                 {
-                    // Lấy thông tin máy từ địa chỉ IP
-                    IPHostEntry hostEntry = Dns.GetHostEntry(ip);
+                    // Kiểm tra nếu ip không null và không rỗng trước khi gọi Dns.GetHostEntry
+                    if (!string.IsNullOrEmpty(ip))
+                    {
+                        // Lấy thông tin máy từ địa chỉ IP
+                        IPHostEntry hostEntry = Dns.GetHostEntry(ip);
 
-                    // Lấy tên máy
-                    name = hostEntry.HostName ?? "Unknown Host";
+                        // Lấy tên máy
+                        name = hostEntry.HostName ?? "Unknown Host";
+                    }
+                    else
+                    {
+                        name = "Unknown Host"; // fallback if ip is null or empty
+                    }
                 }
 
                 // Xử lý ngoại lệ không lấy được tên máy
-                catch (SocketException ex)
+                catch (SocketException)
                 {
                     name = "Unknown Host";
                 }
@@ -386,7 +393,7 @@ namespace FileTransfer
                         socketForClient.Connect(new IPEndPoint(IPAddress.Parse(targetIP), 11000));
 
                         // Lấy tên file
-                        string fileName = fileNameLabel.Tag.ToString();
+                        string? fileName = fileNameLabel.Tag?.ToString();
 
                         // Thông tin về file được gửi được chia làm 3 phần: fileName, IP máy gửi và tên máy gửi (nếu có)
                         byte[] fileNameData = Encoding.Default.GetBytes($"{fileName}@{this.IP}@{Environment.MachineName}");
