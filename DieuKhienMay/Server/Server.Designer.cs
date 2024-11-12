@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txbIP = new TextBox();
-            label_password = new Label();
             btnStop = new Button();
             btnListen = new Button();
             label1 = new Label();
@@ -37,39 +35,18 @@
             menuStrip1 = new MenuStrip();
             sendFileToolStripMenuItem = new ToolStripMenuItem();
             requestLogsToolStripMenuItem = new ToolStripMenuItem();
-            label2 = new Label();
             txbPort = new TextBox();
+            txbIP = new TextBox();
+            label_port = new Label();
+            label_IP = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // txbIP
-            // 
-            txbIP.Font = new Font("Segoe UI", 15F);
-            txbIP.Location = new Point(120, 94);
-            txbIP.Margin = new Padding(4, 3, 4, 3);
-            txbIP.Multiline = true;
-            txbIP.Name = "txbIP";
-            txbIP.Size = new Size(357, 31);
-            txbIP.TabIndex = 9;
-            // 
-            // label_password
-            // 
-            label_password.AutoSize = true;
-            label_password.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label_password.ForeColor = Color.Coral;
-            label_password.Location = new Point(18, 94);
-            label_password.Margin = new Padding(4, 0, 4, 0);
-            label_password.Name = "label_password";
-            label_password.Size = new Size(47, 27);
-            label_password.TabIndex = 7;
-            label_password.Text = "IP:";
-            label_password.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnStop
             // 
             btnStop.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnStop.ForeColor = Color.Coral;
-            btnStop.Location = new Point(661, 94);
+            btnStop.Location = new Point(697, 94);
             btnStop.Margin = new Padding(4, 3, 4, 3);
             btnStop.Name = "btnStop";
             btnStop.Size = new Size(130, 87);
@@ -82,7 +59,7 @@
             // 
             btnListen.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnListen.ForeColor = Color.Coral;
-            btnListen.Location = new Point(499, 94);
+            btnListen.Location = new Point(537, 94);
             btnListen.Margin = new Padding(4, 3, 4, 3);
             btnListen.Name = "btnListen";
             btnListen.Size = new Size(130, 87);
@@ -102,9 +79,9 @@
             // 
             // txbStatus
             // 
-            txbStatus.Location = new Point(129, 40);
+            txbStatus.Location = new Point(160, 40);
             txbStatus.Name = "txbStatus";
-            txbStatus.Size = new Size(662, 28);
+            txbStatus.Size = new Size(667, 28);
             txbStatus.TabIndex = 14;
             // 
             // menuStrip1
@@ -113,7 +90,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(835, 28);
+            menuStrip1.Size = new Size(873, 28);
             menuStrip1.TabIndex = 15;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -131,44 +108,67 @@
             requestLogsToolStripMenuItem.Text = "Request Logs";
             requestLogsToolStripMenuItem.Click += requestLogsToolStripMenuItem_Click_1;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Snap ITC", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Coral;
-            label2.Location = new Point(9, 150);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 27);
-            label2.TabIndex = 7;
-            label2.Text = "Port:";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // txbPort
             // 
+            txbPort.BackColor = Color.White;
             txbPort.Font = new Font("Segoe UI", 15F);
-            txbPort.Location = new Point(120, 150);
+            txbPort.Location = new Point(160, 140);
             txbPort.Margin = new Padding(4, 3, 4, 3);
             txbPort.Multiline = true;
             txbPort.Name = "txbPort";
-            txbPort.Size = new Size(357, 31);
-            txbPort.TabIndex = 9;
+            txbPort.Size = new Size(346, 41);
+            txbPort.TabIndex = 19;
+            // 
+            // txbIP
+            // 
+            txbIP.Font = new Font("Segoe UI", 15F);
+            txbIP.Location = new Point(160, 85);
+            txbIP.Margin = new Padding(4, 3, 4, 3);
+            txbIP.Multiline = true;
+            txbIP.Name = "txbIP";
+            txbIP.Size = new Size(346, 41);
+            txbIP.TabIndex = 18;
+            // 
+            // label_port
+            // 
+            label_port.AutoSize = true;
+            label_port.BackColor = Color.FromArgb(255, 224, 192);
+            label_port.Font = new Font("Snap ITC", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_port.ForeColor = Color.FromArgb(255, 128, 0);
+            label_port.Location = new Point(9, 148);
+            label_port.Margin = new Padding(4, 0, 4, 0);
+            label_port.Name = "label_port";
+            label_port.Size = new Size(127, 44);
+            label_port.TabIndex = 17;
+            label_port.Text = "Port:";
+            // 
+            // label_IP
+            // 
+            label_IP.AutoSize = true;
+            label_IP.Font = new Font("Snap ITC", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label_IP.ForeColor = Color.FromArgb(255, 128, 0);
+            label_IP.Location = new Point(9, 85);
+            label_IP.Margin = new Padding(4, 0, 4, 0);
+            label_IP.Name = "label_IP";
+            label_IP.Size = new Size(82, 44);
+            label_IP.TabIndex = 16;
+            label_IP.Text = "IP:";
             // 
             // Server
             // 
             AutoScaleDimensions = new SizeF(12F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
-            ClientSize = new Size(835, 253);
+            ClientSize = new Size(873, 253);
+            Controls.Add(txbPort);
+            Controls.Add(txbIP);
+            Controls.Add(label_port);
+            Controls.Add(label_IP);
             Controls.Add(menuStrip1);
             Controls.Add(txbStatus);
             Controls.Add(label1);
             Controls.Add(btnListen);
             Controls.Add(btnStop);
-            Controls.Add(txbPort);
-            Controls.Add(label2);
-            Controls.Add(txbIP);
-            Controls.Add(label_password);
             Font = new Font("Snap ITC", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
             Name = "Server";
@@ -180,17 +180,16 @@
         }
 
         #endregion
-
-        private TextBox txbIP;
-        private Label label_password;
         private Button btnStop;
         private Button btnListen;
         private Label label1;
         private TextBox txbStatus;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sendFileToolStripMenuItem;
-        private Label label2;
-        private TextBox txbPort;
         private ToolStripMenuItem requestLogsToolStripMenuItem;
+        private TextBox txbPort;
+        private TextBox txbIP;
+        private Label label_port;
+        private Label label_IP;
     }
 }
