@@ -71,7 +71,6 @@
             txbIP.Margin = new Padding(4, 3, 4, 3);
             txbIP.Multiline = true;
             txbIP.Name = "txbIP";
-            txbIP.ScrollBars = ScrollBars.Both;
             txbIP.Size = new Size(493, 41);
             txbIP.TabIndex = 3;
             // 

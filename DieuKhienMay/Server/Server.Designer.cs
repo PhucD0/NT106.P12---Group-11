@@ -49,7 +49,7 @@
             txbIP.Margin = new Padding(4, 3, 4, 3);
             txbIP.Multiline = true;
             txbIP.Name = "txbIP";
-            txbIP.Size = new Size(264, 31);
+            txbIP.Size = new Size(357, 31);
             txbIP.TabIndex = 9;
             // 
             // label_password
@@ -69,10 +69,10 @@
             // 
             btnStop.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnStop.ForeColor = Color.Coral;
-            btnStop.Location = new Point(567, 131);
+            btnStop.Location = new Point(661, 94);
             btnStop.Margin = new Padding(4, 3, 4, 3);
             btnStop.Name = "btnStop";
-            btnStop.Size = new Size(130, 82);
+            btnStop.Size = new Size(130, 87);
             btnStop.TabIndex = 11;
             btnStop.Text = "Stop ";
             btnStop.UseVisualStyleBackColor = true;
@@ -82,10 +82,10 @@
             // 
             btnListen.Font = new Font("Snap ITC", 13F, FontStyle.Bold);
             btnListen.ForeColor = Color.Coral;
-            btnListen.Location = new Point(405, 131);
+            btnListen.Location = new Point(499, 94);
             btnListen.Margin = new Padding(4, 3, 4, 3);
             btnListen.Name = "btnListen";
-            btnListen.Size = new Size(130, 82);
+            btnListen.Size = new Size(130, 87);
             btnListen.TabIndex = 12;
             btnListen.Text = "Listen";
             btnListen.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             // 
             txbStatus.Location = new Point(129, 40);
             txbStatus.Name = "txbStatus";
-            txbStatus.Size = new Size(579, 28);
+            txbStatus.Size = new Size(662, 28);
             txbStatus.TabIndex = 14;
             // 
             // menuStrip1
@@ -113,7 +113,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { sendFileToolStripMenuItem, requestLogsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(744, 28);
+            menuStrip1.Size = new Size(835, 28);
             menuStrip1.TabIndex = 15;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -151,7 +151,7 @@
             txbPort.Margin = new Padding(4, 3, 4, 3);
             txbPort.Multiline = true;
             txbPort.Name = "txbPort";
-            txbPort.Size = new Size(264, 31);
+            txbPort.Size = new Size(357, 31);
             txbPort.TabIndex = 9;
             // 
             // Server
@@ -159,7 +159,7 @@
             AutoScaleDimensions = new SizeF(12F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 224, 192);
-            ClientSize = new Size(744, 362);
+            ClientSize = new Size(835, 253);
             Controls.Add(menuStrip1);
             Controls.Add(txbStatus);
             Controls.Add(label1);

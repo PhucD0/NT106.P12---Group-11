@@ -50,7 +50,7 @@ namespace Client
             listBox.DrawMode = DrawMode.OwnerDrawFixed;
             listBox.DrawItem += ListBox_DrawItem;
             listBox.Location = new Point(txbIP.Left, txbIP.Bottom + 5); // Đặt ListBox dưới TextBox txpIP
-            listBox.Size = new Size(200, 100); // Đặt kích thước của ListBox
+            listBox.Size = new Size(230, 100); // Đặt kích thước của ListBox
             listBox.Visible = false; // Ẩn ListBox
             this.Controls.Add(listBox); // Thêm ListBox vào form
         }
