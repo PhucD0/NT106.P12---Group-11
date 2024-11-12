@@ -165,3 +165,34 @@ D:\kudo\NT106\DoAnCuoiKi\TestDoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\S
 D:\kudo\NT106\DoAnCuoiKi\TestDoAn\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll
 D:\Hoc Tap\bai tap\Laptrinhmnag\Project\DieuKhienMay\Server\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\kudo\NT106\DoAnCuoiKi\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Server.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\bin\Debug\net8.0-windows\FileTransfer.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.AssemblyReference.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.Server.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.csproj.Up2Date
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\refint\Server.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\Server.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\DieuKhienMay\Server\obj\Debug\net8.0-windows\ref\Server.dll

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7Erc6P7uIkU=",
+  "dgSpecHash": "1L8c8LXwLxUNknAWbeMMMzxS3rt5/RoB6ZY+u1JnpNYRdFe6M5PMqXN39wozm0d3Y+daFvcNqWUj3F9YtvSZpw==",
   "success": true,
-  "projectFilePath": "D:\\kudo\\NT106\\DoAnCuoiKi\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
+  "projectFilePath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\DieuKhienMay\\Client\\Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

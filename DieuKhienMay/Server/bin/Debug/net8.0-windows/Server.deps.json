@@ -104,10 +104,7 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "FileTransfer.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "FileTransfer.dll": {}
         }
       }
     }
