@@ -86,11 +86,6 @@ namespace Server
         private Thread? sendingThread;
         private Thread? controlThread;
         private int port;
-        private int pictureBoxWidth;
-        private int pictureBoxHeight;
-        private bool isConnected = false;
-        private SqlConnection? sqlConnection;
-        private System.Timers.Timer? timer;
         private bool isListening = false;
         private CancellationTokenSource? cancellationTokenSource;
         // Chuỗi kết nối đến cơ sở dữ liệu
