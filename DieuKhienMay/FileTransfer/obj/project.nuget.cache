@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zbUQUMCcoDg=",
+  "dgSpecHash": "lmx9TP10HXP9DmDhJfyLInp0A8EHoYpcnRrDPadxvGLGKKaK3+xQOlsSOk6F05ljrIovqpA/NTVwpEieQ7XvvQ==",
   "success": true,
-  "projectFilePath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
+  "projectFilePath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\DieuKhienMay\\FileTransfer\\FileTransfer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\npphu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

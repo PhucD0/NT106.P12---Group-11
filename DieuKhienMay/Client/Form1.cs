@@ -147,7 +147,7 @@ namespace Client
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private async void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             var inputEvent = new InputEvent
             {
@@ -156,10 +156,10 @@ namespace Client
                 X = e.X,
                 Y = e.Y
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        private async void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             var inputEvent = new InputEvent
             {
@@ -168,10 +168,10 @@ namespace Client
                 X = e.X,
                 Y = e.Y
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private async void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if (receivedImage == null) return;
 
@@ -200,17 +200,16 @@ namespace Client
             int adjustedX = (e.X - xOffset) * originalImageSize.Width / newWidth;
             int adjustedY = (e.Y - yOffset) * originalImageSize.Height / newHeight;
 
-
             var inputEvent = new InputEvent
             {
                 EventType = 1, // 1 cho MouseMove
                 X = adjustedX,
                 Y = adjustedY
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private async void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             var inputEvent = new InputEvent
             {
@@ -218,7 +217,7 @@ namespace Client
                 Key = (int)e.KeyCode,
                 ModifierKeys = (int)Control.ModifierKeys // Lưu trạng thái các phím tổ hợp
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
     }
