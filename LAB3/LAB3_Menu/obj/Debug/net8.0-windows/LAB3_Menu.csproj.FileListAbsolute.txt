@@ -15,3 +15,20 @@ D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\L
 D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.pdb
 D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.genruntimeconfig.cache
 D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\ref\LAB3_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\refint\LAB3_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\ref\LAB3_Menu.dll

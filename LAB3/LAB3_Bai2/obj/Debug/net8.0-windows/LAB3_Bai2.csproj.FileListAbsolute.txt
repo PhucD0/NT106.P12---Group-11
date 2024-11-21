@@ -1,0 +1,17 @@
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\bin\Debug\net8.0-windows\LAB3_Bai2.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\bin\Debug\net8.0-windows\LAB3_Bai2.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\bin\Debug\net8.0-windows\LAB3_Bai2.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\bin\Debug\net8.0-windows\LAB3_Bai2.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\bin\Debug\net8.0-windows\LAB3_Bai2.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.Server.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\refint\LAB3_Bai2.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\LAB3_Bai2.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB3_Bai2\obj\Debug\net8.0-windows\ref\LAB3_Bai2.dll

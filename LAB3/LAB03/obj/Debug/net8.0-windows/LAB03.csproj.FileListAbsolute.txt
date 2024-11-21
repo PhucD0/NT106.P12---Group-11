@@ -1,0 +1,17 @@
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\bin\Debug\net8.0-windows\LAB03.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\bin\Debug\net8.0-windows\LAB03.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\bin\Debug\net8.0-windows\LAB03.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\bin\Debug\net8.0-windows\LAB03.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\bin\Debug\net8.0-windows\LAB03.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\refint\LAB03.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\LAB03.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB3\LAB03\obj\Debug\net8.0-windows\ref\LAB03.dll
