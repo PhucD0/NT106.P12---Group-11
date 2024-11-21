@@ -1,0 +1,17 @@
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.exe
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.deps.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.runtimeconfig.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\bin\Debug\net8.0-windows\LAB3_Menu.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.Form1.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.csproj.GenerateResource.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.AssemblyInfoInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.AssemblyInfo.cs
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.csproj.CoreCompileInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.sourcelink.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\refint\LAB3_Menu.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\LAB3_Menu.genruntimeconfig.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\00. Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Menu\obj\Debug\net8.0-windows\ref\LAB3_Menu.dll

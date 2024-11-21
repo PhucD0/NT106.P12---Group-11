@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\00. Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {}
+  },
+  "projects": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\00. Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\00. Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
+        "projectName": "LAB3_Bai3",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\00. Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\00. Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
