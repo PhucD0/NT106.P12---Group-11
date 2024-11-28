@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {}
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {}
   },
   "projects": {
-    "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
         "projectName": "LAB3_Menu",
-        "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
-        "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-        "outputPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
