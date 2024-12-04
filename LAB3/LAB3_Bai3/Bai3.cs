@@ -2,9 +2,9 @@
 
 namespace LAB3_Bai3
 {
-    public partial class Form1 : Form
+    public partial class Bai3 : Form
     {
-        public Form1()
+        public Bai3()
         {
             InitializeComponent();
         }
@@ -19,6 +19,11 @@ namespace LAB3_Bai3
         {
             Client clientForm = new Client();
             clientForm.Show();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

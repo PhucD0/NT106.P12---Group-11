@@ -1,6 +1,6 @@
 ﻿namespace LAB3_Bai3
 {
-    partial class Form1
+    partial class Bai3
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,9 +34,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(213, 124);
+            button1.Location = new Point(149, 74);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(343, 62);
+            button1.Size = new Size(240, 37);
             button1.TabIndex = 0;
             button1.Text = " Open TCP Server";
             button1.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(213, 265);
+            button2.Location = new Point(149, 159);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(343, 58);
+            button2.Size = new Size(240, 35);
             button2.TabIndex = 1;
             button2.Text = "Open New TCP Client";
             button2.UseVisualStyleBackColor = true;
@@ -54,13 +56,15 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ResumeLayout(false);
         }
 

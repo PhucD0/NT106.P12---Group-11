@@ -12,11 +12,11 @@ using System.Net;
 
 namespace LAB3_Bai2
 {
-    public partial class Server : Form
+    public partial class Bai2 : Form
     {
         private Socket listenerSocket;
         private Thread listeningThread;
-        public Server()
+        public Bai2()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
@@ -105,5 +105,9 @@ namespace LAB3_Bai2
             }
         }
 
+        private void Server_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

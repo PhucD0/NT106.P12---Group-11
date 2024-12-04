@@ -8,4 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LAB3_Bai1\LAB3_Bai1.csproj" />
+    <ProjectReference Include="..\LAB3_Bai2\LAB3_Bai2.csproj" />
+    <ProjectReference Include="..\LAB3_Bai3\LAB3_Bai3.csproj" />
+    <ProjectReference Include="..\LAB3_Bai4\LAB3_Bai4.csproj" />
+    <ProjectReference Include="..\LAB3_Bai5\LAB3_Bai5.csproj" />
+  </ItemGroup>
+
 </Project>

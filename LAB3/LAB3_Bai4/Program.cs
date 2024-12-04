@@ -16,32 +16,33 @@ namespace LAB3_Bai4
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
-            Server serverForm = new Server();
-            Client clientForm = new Client();
-            Application.Run(new MultiFormContext(serverForm, clientForm));
+            Application.Run(new Bai4());
+            //Server serverForm = new Server();
+            //Client clientForm = new Client();
+            //Application.Run(new MultiFormContext(serverForm, clientForm));
             //Application.Run(new Server());
             //Application.Run(new Client());
         }
 
-        public class MultiFormContext : ApplicationContext
-        {
-            private int openForms;
+        //public class MultiFormContext : ApplicationContext
+        //{
+        //    private int openForms;
 
-            public MultiFormContext(params Form[] forms)
-            {
-                openForms = forms.Length;
+        //    public MultiFormContext(params Form[] forms)
+        //    {
+        //        openForms = forms.Length;
 
-                foreach (var form in forms)
-                {
-                    form.FormClosed += (s, args) =>
-                    {
-                        if (Interlocked.Decrement(ref openForms) == 0)
-                            ExitThread();
-                    };
+        //        foreach (var form in forms)
+        //        {
+        //            form.FormClosed += (s, args) =>
+        //            {
+        //                if (Interlocked.Decrement(ref openForms) == 0)
+        //                    ExitThread();
+        //            };
 
-                    form.Show();
-                }
-            }
-        }
+        //            form.Show();
+        //        }
+        //    }
+        //}
     }
 }
