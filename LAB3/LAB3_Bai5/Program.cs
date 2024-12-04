@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace LAB3_Bai5
 {
     internal static class Program
@@ -8,10 +11,20 @@ namespace LAB3_Bai5
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // Kh?i ch?y form Server trên m?t lu?ng riêng
+            Thread serverThread = new Thread(() =>
+            {
+                Application.Run(new Server.Server());
+            });
+            serverThread.SetApartmentState(ApartmentState.STA); // C?n thi?t cho các ?i?u khi?n WinForms
+            serverThread.Start();
+
+            // Kh?i ch?y form Client trên lu?ng chính
+            Application.Run(new Client.Client());
         }
+
     }
 }

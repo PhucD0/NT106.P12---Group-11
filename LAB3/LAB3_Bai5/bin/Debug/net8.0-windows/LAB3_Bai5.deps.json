@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LAB3_Bai5/1.0.0": {
+        "runtime": {
+          "LAB3_Bai5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LAB3_Bai5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
