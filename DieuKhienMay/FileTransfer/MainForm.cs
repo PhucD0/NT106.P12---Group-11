@@ -107,7 +107,6 @@ namespace FileTransfer
                     using (var client = await listener.AcceptTcpClientAsync())
                     {
                         // Đánh dấu có kết nối đang hoạt động
-
                         isConnected = true;
 
                         // Luồng nhận dữ liệu từ client và lấy NetworkStream từ client để thực thi
@@ -120,7 +119,7 @@ namespace FileTransfer
                             int metadataLength = await stream.ReadAsync(metadataBuffer, 0, metadataBuffer.Length, token);
 
                             // Chuyển đổi buffer metadata sang chuỗi ký tự
-                            string metadata = Encoding.ASCII.GetString(metadataBuffer, 0, metadataLength);
+                            string metadata = Encoding.Default.GetString(metadataBuffer, 0, metadataLength);
 
                             // Tách metadata thành các thành phần dựa trên ký tự @
                             string[] msg = metadata.Split('@');
@@ -142,14 +141,12 @@ namespace FileTransfer
                                 while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, token)) > 0)
                                 {
                                     // Ghi dữ liệu từ buffer vào file
-                                    output.Write(buffer, 0, bytesRead);
+                                    await output.WriteAsync(buffer, 0, bytesRead);
                                 }
                             }
 
-                            // Cập nhật lại trạng thái sau khi nhận file thành công
+                            // Cập nhật lại trạng thái và biến fileReceived sau khi nhận file thành công
                             isConnected = false;
-
-                            // Cập nhật lại biến khi đã nhận file thành công
                             fileReceived = 1;
 
                             // Cập nhật lại giao diện khi hoàn tất truyền file
@@ -395,27 +392,38 @@ namespace FileTransfer
                         // Lấy tên file
                         string? fileName = fileNameLabel.Tag?.ToString();
 
-                        // Thông tin về file được gửi được chia làm 3 phần: fileName, IP máy gửi và tên máy gửi (nếu có)
-                        byte[] fileNameData = Encoding.Default.GetBytes($"{fileName}@{this.IP}@{Environment.MachineName}");
+                        // Chuỗi metadata (thông tin dữ liệu) gồm 3 thành phần: tên file, IP máy gửi và tên máy gửi (nếu có)
+                        string metadata = $"{fileName}@{this.IP}@{Environment.MachineName}";
 
-                        // Thông tin về file được gửi đến máy đích trước khi gửi file thực tế để máy đích chuẩn bị lưu file
-                        socketForClient.Send(fileNameData);
+                        // Chuyển metadata thành mảng byte
+                        byte[] metadataBytes = Encoding.Default.GetBytes(metadata);
 
-                        // Gửi dữ liệu của file
-                        socketForClient.SendFile(fileNameLabel.Text);
+                        // Gửi metadata đến máy đích
+                        socketForClient.Send(metadataBytes);
+
+                        // Mở file để gửi dữ liệu
+                        using (var fileStream = new FileStream(fileNameLabel.Text, FileMode.Open, FileAccess.Read))
+                        {
+
+                            byte[] buffer = new byte[1024];
+                            int bytesRead;
+                            while ((bytesRead = fileStream.Read(buffer, 0, buffer.Length)) > 0)
+                            {
+                                socketForClient.Send(buffer, 0, bytesRead, SocketFlags.None);
+                            }
+                        }
                     }
 
-                    // Cập nhật lại giao diện và thông báo nếu file được gửi thành công
+                    // Đóng form thông báo sau khi gửi file thành công
                     Invoke((MethodInvoker)delegate { f2.Dispose(); });
                     MessageBox.Show($"File sent to {targetIP} {targetName}", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                // Xử lý ngoại lệ nếu có lỗi
+                // Xử lý ngoại lệ
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
 
                 finally
                 {

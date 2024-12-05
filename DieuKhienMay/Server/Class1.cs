@@ -14,6 +14,8 @@ namespace RemoteControlServer
         public int Y { get; set; }
         public int Delta { get; set; }
         public int Key { get; set; }
+        public int ModifierKeys { get; set; } // Thêm trường để lưu trạng thái các phím tổ hợp
     }
+
 }
 

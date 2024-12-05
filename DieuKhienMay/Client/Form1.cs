@@ -23,6 +23,7 @@ namespace Client
             public int Y { get; set; }
             public int Delta { get; set; }
             public int Key { get; set; }
+            public int ModifierKeys { get; set; } // Thêm trường để lưu trạng thái các phím tổ hợp
         }
 
 
@@ -35,16 +36,18 @@ namespace Client
 
         public async Task SendEvent(InputEvent inputEvent)
         {
-            byte[] data = new byte[24];
+            byte[] data = new byte[28];
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.EventType), 0, data, 0, 4);
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Button), 0, data, 4, 4);
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.X), 0, data, 8, 4);
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Y), 0, data, 12, 4);
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Delta), 0, data, 16, 4);
             Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.Key), 0, data, 20, 4);
+            Buffer.BlockCopy(BitConverter.GetBytes(inputEvent.ModifierKeys), 0, data, 24, 4);
 
             await stream.WriteAsync(data, 0, data.Length);
         }
+
 
         // Refresh PictureBox on form resize
         public Form1(TcpClient client)
@@ -144,7 +147,7 @@ namespace Client
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private async void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             var inputEvent = new InputEvent
             {
@@ -153,10 +156,10 @@ namespace Client
                 X = e.X,
                 Y = e.Y
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        private async void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             var inputEvent = new InputEvent
             {
@@ -165,10 +168,10 @@ namespace Client
                 X = e.X,
                 Y = e.Y
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        private async void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if (receivedImage == null) return;
 
@@ -197,24 +200,25 @@ namespace Client
             int adjustedX = (e.X - xOffset) * originalImageSize.Width / newWidth;
             int adjustedY = (e.Y - yOffset) * originalImageSize.Height / newHeight;
 
-
             var inputEvent = new InputEvent
             {
                 EventType = 1, // 1 cho MouseMove
                 X = adjustedX,
                 Y = adjustedY
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private async void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             var inputEvent = new InputEvent
             {
                 EventType = 4, // 4 cho KeyDown
-                Key = (int)e.KeyCode
+                Key = (int)e.KeyCode,
+                ModifierKeys = (int)Control.ModifierKeys // Lưu trạng thái các phím tổ hợp
             };
-            SendEvent(inputEvent).Wait();
+            await SendEvent(inputEvent);
         }
+
     }
 }

@@ -233,7 +233,7 @@ namespace Server
 
                 try
                 {
-                    byte[] buffer = new byte[24];
+                    byte[] buffer = new byte[28];
 
                     while (client.Connected)
                     {
@@ -247,7 +247,8 @@ namespace Server
                             X = BitConverter.ToInt32(buffer, 8),
                             Y = BitConverter.ToInt32(buffer, 12),
                             Delta = BitConverter.ToInt32(buffer, 16),
-                            Key = BitConverter.ToInt32(buffer, 20)
+                            Key = BitConverter.ToInt32(buffer, 20),
+                            ModifierKeys = BitConverter.ToInt32(buffer, 24)
                         };
 
                         ProcessInputEvent(inputEvent);
@@ -265,6 +266,7 @@ namespace Server
         }
 
 
+
         // Xử lí tín hiệu điều khiển nhận được
         private void ProcessInputEvent(InputEvent inputEvent)
         {
@@ -280,14 +282,14 @@ namespace Server
                     SimulateMouseEvent(inputEvent.Button, inputEvent.X, inputEvent.Y, false);
                     break;
                 case 4: // KeyDown
-                    SimulateKeyPress(inputEvent.Key);
+                    SimulateKeyPress(inputEvent.Key, inputEvent.ModifierKeys);
                     break;
                 default:
                     Console.WriteLine("Unknown event type");
                     break;
             }
-
         }
+
 
         private void SimulateMouseEvent(int button, int x, int y, bool isDown)
         {
@@ -314,40 +316,62 @@ namespace Server
         }
 
 
-        private void SimulateKeyPress(int key)
+        private void SimulateKeyPress(int key, int modifierKeys)
         {
-            Input[] inputs = new Input[2];
+            List<Input> inputs = new List<Input>();
 
-            inputs[0] = new Input
+            // Thêm các phím tổ hợp
+            if ((modifierKeys & (int)Keys.Control) == (int)Keys.Control)
             {
-                type = 1, // Keyboard event
-                U = new InputUnion
-                {
-                    ki = new KeyboardInput
-                    {
-                        wVk = (ushort)key,
-                        dwFlags = 0,
-                        dwExtraInfo = GetMessageExtraInfo()
-                    }
-                }
-            };
-
-            inputs[1] = new Input
+                inputs.Add(CreateKeyInput((ushort)Keys.ControlKey, 0)); // Key down
+            }
+            if ((modifierKeys & (int)Keys.Shift) == (int)Keys.Shift)
             {
-                type = 1, // Keyboard event
-                U = new InputUnion
-                {
-                    ki = new KeyboardInput
-                    {
-                        wVk = (ushort)key,
-                        dwFlags = 2, // Key up
-                        dwExtraInfo = GetMessageExtraInfo()
-                    }
-                }
-            };
+                inputs.Add(CreateKeyInput((ushort)Keys.ShiftKey, 0)); // Key down
+            }
+            if ((modifierKeys & (int)Keys.Alt) == (int)Keys.Alt)
+            {
+                inputs.Add(CreateKeyInput((ushort)Keys.Menu, 0)); // Key down
+            }
 
-            SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+            // Thêm phím chính
+            inputs.Add(CreateKeyInput((ushort)key, 0)); // Key down
+            inputs.Add(CreateKeyInput((ushort)key, 2)); // Key up
+
+            // Thả các phím tổ hợp
+            if ((modifierKeys & (int)Keys.Control) == (int)Keys.Control)
+            {
+                inputs.Add(CreateKeyInput((ushort)Keys.ControlKey, 2)); // Key up
+            }
+            if ((modifierKeys & (int)Keys.Shift) == (int)Keys.Shift)
+            {
+                inputs.Add(CreateKeyInput((ushort)Keys.ShiftKey, 2)); // Key up
+            }
+            if ((modifierKeys & (int)Keys.Alt) == (int)Keys.Alt)
+            {
+                inputs.Add(CreateKeyInput((ushort)Keys.Menu, 2)); // Key up
+            }
+
+            SendInput((uint)inputs.Count, inputs.ToArray(), Marshal.SizeOf(typeof(Input)));
         }
+
+        private Input CreateKeyInput(ushort key, uint flag)
+        {
+            return new Input
+            {
+                type = 1, // Keyboard event
+                U = new InputUnion
+                {
+                    ki = new KeyboardInput
+                    {
+                        wVk = key,
+                        dwFlags = flag,
+                        dwExtraInfo = GetMessageExtraInfo()
+                    }
+                }
+            };
+        }
+
 
 
         /// <summary>
