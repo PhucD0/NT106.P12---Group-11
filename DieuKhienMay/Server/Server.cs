@@ -355,8 +355,8 @@ namespace Server
         /// </summary>
         private void SendDesktopImages(CancellationToken token)
         {
-            if(client != null)
-            { 
+            if (client != null)
+            {
                 NetworkStream? stream = client.GetStream();
                 while (client.Connected && !token.IsCancellationRequested)
                 {
@@ -506,7 +506,7 @@ namespace Server
         /// <summary>
         /// Request logs
         /// </summary>
-        
+
         // Yêu cầu xem logs
         private void RequestLogs()
         {
@@ -518,7 +518,7 @@ namespace Server
 
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
-                
+
                 while (reader.Read())
                 {
                     logs.AppendLine($"{reader["IPAddress"]} - {reader["AccessTime"]} - {reader["Status"]}");
@@ -555,5 +555,6 @@ namespace Server
                 command.ExecuteNonQuery();
             }
         }
+
     }
 }

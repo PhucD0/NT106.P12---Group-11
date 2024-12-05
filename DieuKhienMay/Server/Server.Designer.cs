@@ -173,6 +173,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Server";
             Text = "Server";
+            FormClosing += Server_FormClosing;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
