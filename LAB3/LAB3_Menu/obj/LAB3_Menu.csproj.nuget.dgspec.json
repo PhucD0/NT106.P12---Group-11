@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {}
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {}
   },
   "projects": {
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj",
         "projectName": "LAB3_Bai1",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -68,25 +63,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj",
         "projectName": "LAB3_Bai2",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,8 +102,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -136,25 +126,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
         "projectName": "LAB3_Bai3",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -179,8 +165,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -204,25 +189,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj",
         "projectName": "LAB3_Bai4",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -247,8 +228,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -272,25 +252,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj",
         "projectName": "LAB3_Bai5",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -315,8 +291,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -340,25 +315,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
         "projectName": "LAB3_Menu",
-        "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\obj\\",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\LAB3_Menu.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Menu\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -372,20 +343,20 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj": {
-                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj"
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai1\\LAB3_Bai1.csproj"
               },
-              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj": {
-                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj"
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai2\\LAB3_Bai2.csproj"
               },
-              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {
-                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj"
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai3\\LAB3_Bai3.csproj"
               },
-              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj": {
-                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj"
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai4\\LAB3_Bai4.csproj"
               },
-              "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj": {
-                "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj"
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB3\\LAB3_Bai5\\LAB3_Bai5.csproj"
               }
             }
           }
@@ -399,8 +370,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -424,7 +394,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

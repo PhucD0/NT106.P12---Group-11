@@ -219,7 +219,7 @@ namespace LAB3_Bai4
             }
         }
 
-        private void buttonSendFile_Click_1(object sender, EventArgs e)
+        private void buttonSendFile_Click(object sender, EventArgs e)
         {
             try
             {
@@ -229,29 +229,15 @@ namespace LAB3_Bai4
                     return;
                 }
 
-                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                using (OpenFileDialog fileOpen = new OpenFileDialog())
                 {
-                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    if (fileOpen.ShowDialog() == DialogResult.OK)
                     {
-                        string filePath = openFileDialog.FileName;
-                        string fileName = Path.GetFileName(filePath);
-                        string recipient = textboxRecipient.Text.Trim();
-
-                        // Send file request to the server
-                        string fileRequest = checkboxPrivate.Checked ? $"/file {recipient} {fileName}" : $"/file {fileName}";
-                        byte[] requestData = Encoding.UTF8.GetBytes(fileRequest);
-                        stream.Write(requestData, 0, requestData.Length);
-
-                        // Send file data to the server
-                        using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
-                        {
-                            byte[] buffer = new byte[1024];
-                            int bytesRead;
-                            while ((bytesRead = fs.Read(buffer, 0, buffer.Length)) > 0)
-                            {
-                                stream.Write(buffer, 0, bytesRead);
-                            }
-                        }
+                        string filePath = fileOpen.FileName;
+                        string fileContent = File.ReadAllText(filePath);
+                        string fullMessage = $"/textFile {fileContent}";
+                        byte[] data = Encoding.UTF8.GetBytes(fullMessage);
+                        stream.Write(data, 0, data.Length);
                     }
                 }
             }
@@ -259,6 +245,7 @@ namespace LAB3_Bai4
             {
                 MessageBox.Show($"Error sending file: {ex.Message}");
             }
+
         }
     }
 }

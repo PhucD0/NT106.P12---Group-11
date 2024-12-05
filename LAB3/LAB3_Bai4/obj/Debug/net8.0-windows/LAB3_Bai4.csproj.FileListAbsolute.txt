@@ -52,3 +52,22 @@ D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\L
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.genruntimeconfig.cache
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\ref\LAB3_Bai4.dll
 D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.Bai4.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\bin\Debug\net8.0-windows\LAB3_Bai4.exe
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\bin\Debug\net8.0-windows\LAB3_Bai4.deps.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\bin\Debug\net8.0-windows\LAB3_Bai4.runtimeconfig.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\bin\Debug\net8.0-windows\LAB3_Bai4.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\bin\Debug\net8.0-windows\LAB3_Bai4.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.Bai4.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.Client.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.Server.resources
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.csproj.GenerateResource.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.GeneratedMSBuildEditorConfig.editorconfig
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.AssemblyInfoInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.AssemblyInfo.cs
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.csproj.CoreCompileInputs.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.sourcelink.json
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\refint\LAB3_Bai4.dll
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.pdb
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\LAB3_Bai4.genruntimeconfig.cache
+D:\BruhBruhLmao\UIT\HK3\Lập trình mạng\Đồ Án\NT106.P12---Group-11\LAB3\LAB3_Bai4\obj\Debug\net8.0-windows\ref\LAB3_Bai4.dll
