@@ -171,7 +171,15 @@ namespace LAB3_Bai4
         // Broadcast messages to all connected clients
         private void BroadcastMessage(string message, string sender)
         {
-            string fullMessage = $"{sender}: {message}";
+            string fullMessage;
+            if (message.StartsWith("/textFile"))
+            {
+                fullMessage = $"{sender} has sent a text file:\n{message.Substring(9)}";
+            }
+            else
+            {
+                fullMessage = $"{sender}: {message}";
+            }
             byte[] data = Encoding.UTF8.GetBytes(fullMessage);
 
             foreach (var client in clients.Values)
