@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="vi" xml:lang="vi">
+<head>
+    <title>IT003.P12: Link tài liệu môn học | COURSES</title>
+    <link rel="shortcut icon" href="https://courses.uit.edu.vn/theme/image.php/classic/theme/1728025335/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, IT003.P12: Link tài liệu môn học | COURSES" />
+<link rel="stylesheet" type="text/css" href="https://courses.uit.edu.vn/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://courses.uit.edu.vn/theme/styles.php/classic/1728025335_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/courses.uit.edu.vn","homeurl":{},"sesskey":"oHh81CUjBx","sessiontimeout":"3600","sessiontimeoutwarning":1200,"themerev":"1728025335","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1728025335","admin":"admin","svgicons":true,"usertimezone":"Asia\/Ho_Chi_Minh","language":"vi","courseId":13354,"courseContextId":594169,"contextid":643404,"contextInstanceId":281324,"langrev":1733435094,"templaterev":"1728025335"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/courses.uit.edu.vn\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/courses.uit.edu.vn\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/courses.uit.edu.vn\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/courses.uit.edu.vn\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/courses.uit.edu.vn\/theme\/yui_combo.php?m\/1728025335\/","combine":true,"comboBase":"https:\/\/courses.uit.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"m\/1728025335\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/courses.uit.edu.vn\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/courses.uit.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1728025335\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/courses.uit.edu.vn\/lib\/javascript.php\/1728025335\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/courses.uit.edu.vn\/lib\/javascript.php\/1728025335\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-mod-url-view" class="format-weeks  path-mod path-mod-url chrome dir-ltr lang-vi yui-skin-sam yui3-skin-sam courses-uit-edu-vn pagelayout-incourse course-13354 context-643404 cmid-281324 cm-type-url category-439 theme ">
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Chuyển tới nội dung chính</a>
+</div><script src="https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/polyfills/polyfill.js"></script>
+<script src="https://courses.uit.edu.vn/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex">
+    
+        <a href="https://courses.uit.edu.vn/" class="navbar-brand d-flex align-items-center m-1 p-0 aabtn">
+                <img src="https://courses.uit.edu.vn/pluginfile.php/1/core_admin/logocompact/300x300/1728025335/Logo_UIT_Web-218x261.png" class="logo mr-1" alt="COURSES">
+        </a>
+    
+        <ul class="navbar-nav d-none d-md-flex">
+            <!-- custom_menu -->
+            <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-675421b052e5a675421b04a99283" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Ngôn ngữ" aria-controls="drop-down-menu-675421b052e5a675421b04a99283">
+        Vietnamese ‎(vi)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-675421b052e5a675421b04a99283" aria-labelledby="drop-down-675421b052e5a675421b04a99283">
+                <a class="dropdown-item" role="menuitem" href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=en"  lang="en" >English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=ja"  lang="ja" >English ‎(ja)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=vi"  >Vietnamese ‎(vi)‎</a>
+    </div>
+</li>
+            <!-- page_heading_menu -->
+            
+        </ul>
+        <div id="usernavigation" class="navbar-nav my-1 ml-auto">
+            <div class="divider border-left h-50 align-self-center mx-1"></div>
+            
+            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="21193"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-675421b053a07675421b04a99284"
+        aria-haspopup="true"
+        aria-label=" Show notification window with no new notifications   "
+        tabindex="0">
+                <i class="icon fa fa-bell-o fa-fw "  title="Toggle notifications menu" role="img" aria-label="Toggle notifications menu"></i>
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+            aria-hidden=true
+        >
+            0
+        </div>
+
+    </div>
+    <div 
+        id="popover-region-container-675421b053a07675421b04a99284"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Cửa sổ thông báo"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Các thông báo</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Đánh dấu tất cả đã đọc"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Đánh dấu tất cả đã đọc">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+        </a>
+            <a href="https://courses.uit.edu.vn/message/notificationpreferences.php"
+               title="Tùy chọn thông báo"
+               aria-label="Tùy chọn thông báo">
+                <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Bạn không có thông báo nào</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://courses.uit.edu.vn/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-675421b054ab3675421b04a99285" class="nav-link popover-region-toggle position-relative icon-no-margin" href="#"
+            role="button">
+        <i class="icon fa fa-comment-o fa-fw "  title="Toggle messaging drawer" role="img" aria-label="Toggle messaging drawer"></i>
+        <div
+            class="count-container hidden"
+            data-region="count-container"
+        >
+            <span aria-hidden="true">0</span>
+            <span class="sr-only">Có 0 hội thoại chưa đọc</span>
+        </div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div>
+            <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a
+                            href="#"
+                            tabindex="0"
+                            class="nav-link dropdown-toggle icon-no-margin"
+                            id="action-menu-toggle-0"
+                            aria-label="Thư mục người dùng"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="action-menu-0-menu"
+                        >
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Phạm Văn Quốc</span><span class="avatars"><span class="avatar current"><img src="https://courses.uit.edu.vn/pluginfile.php/389346/user/icon/classic/f2?rev=14842005" class="userpicture" width="35" height="35" alt="" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu menu dropdown-menu-right" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                                                <a href="https://courses.uit.edu.vn/user/profile.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Hồ sơ</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://courses.uit.edu.vn/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" tabindex="-1" >
+                                <span class="menu-action-text">Điểm</span>
+                        </a>
+                                                                <a href="https://courses.uit.edu.vn/calendar/view.php?view=month" class="dropdown-item menu-action" role="menuitem" data-title="calendar,core_calendar" tabindex="-1" >
+                                <span class="menu-action-text">Lịch</span>
+                        </a>
+                                                                <a href="https://courses.uit.edu.vn/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" tabindex="-1" >
+                                <span class="menu-action-text">Tin nhắn</span>
+                        </a>
+                                                                <a href="https://courses.uit.edu.vn/user/files.php" class="dropdown-item menu-action" role="menuitem" data-title="privatefiles,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Tập tin riêng tư</span>
+                        </a>
+                                                                <a href="https://courses.uit.edu.vn/reportbuilder/index.php" class="dropdown-item menu-action" role="menuitem" data-title="reports,core_reportbuilder" tabindex="-1" >
+                                <span class="menu-action-text">Báo cáo</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://courses.uit.edu.vn/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Tuỳ chọn</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://courses.uit.edu.vn/login/logout.php?sesskey=oHh81CUjBx" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Thoát</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                    <div class="page-context-header"><div class="page-header-headings"><h1>Cấu trúc dữ liệu và giải thuật - IT003.P12</h1></div></div>
+                    </div>
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Thanh điều hướng">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/"  >Trang chủ</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/my/courses.php"  >Các khoá học của tôi</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/course/index.php?categoryid=404"  >Học kỳ 1 (2024-2025)</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/course/index.php?categoryid=439"  >Khoa Khoa Học Máy Tính</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/course/view.php?id=13354"  title="Cấu trúc dữ liệu và giải thuật - IT003.P12">IT003.P12</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/course/view.php?id=13354#section-0"  >General</a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://courses.uit.edu.vn/mod/url/view.php?id=281324" aria-current="page" title="URL">Link tài liệu môn học</a>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row  blocks-pre   d-print-block">
+            <div id="region-main-box" class="region-main">
+                <section id="region-main" class="region-main-content" aria-label="Nội dung">
+                    <span class="notifications" id="user-notifications"></span>
+                        <span id="maincontent"></span>
+                            <h2>Link tài liệu môn học</h2>
+                        <div class="activity-header" data-for="page-activity-header">
+                                <span class="sr-only">Các yêu cầu hoàn thành</span>
+                                <div data-region="activity-information" data-activityname="Link tài liệu môn học" class="activity-information">
+
+
+</div>
+</div>
+                    <div role="main"><div class="urlworkaround">Nhấn <a href="https://drive.google.com/drive/folders/1U5N8vVlffYxbKoP0UdvxaQAlO9xRmUCR?usp=sharing">Link tài liệu môn học</a> đường dẫn để mở nguồn.</div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://courses.uit.edu.vn/mod/resource/view.php?id=281319&forceview=1" id="prev-activity-link" class="btn btn-link" >&#x25C4; Đề cương 2024</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://courses.uit.edu.vn/course/jumpto.php" class="form-inline" id="url_select_f675421b04a99295">
+        <input type="hidden" name="sesskey" value="oHh81CUjBx">
+            <label for="jump-to-activity" class="sr-only">
+                Chuyển tới...
+            </label>
+        <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
+                 >
+                    <option value="" selected>Chuyển tới...</option>
+                    <option value="/mod/forum/view.php?id=256309&amp;forceview=1" >Các thông báo</option>
+                    <option value="/mod/resource/view.php?id=281319&amp;forceview=1" >Đề cương 2024</option>
+                    <option value="/mod/url/view.php?id=281329&amp;forceview=1" >Lịch học và NỘI DUNG HỌC TỪNG BUỔI LT và TH &amp; Bảng điểm</option>
+                    <option value="/mod/url/view.php?id=281339&amp;forceview=1" >Link Wecode</option>
+                    <option value="/mod/quiz/view.php?id=281354&amp;forceview=1" >Quiz 1: Tìm kiếm Tuyến tính và Nhị phân (Buổi 1) (Số lần nộp: 2 lần)</option>
+                    <option value="/mod/quiz/view.php?id=281359&amp;forceview=1" >Quiz 2: Selection &amp; Insertion sort  (Buổi 1) (Số lần nộp: 2 lần)</option>
+                    <option value="/mod/quiz/view.php?id=281364&amp;forceview=1" >Quiz 3: Quick sort</option>
+                    <option value="/mod/quiz/view.php?id=281369&amp;forceview=1" >Quiz 4: Merge sort</option>
+                    <option value="/mod/quiz/view.php?id=281374&amp;forceview=1" >Quiz 5: Heap sort</option>
+                    <option value="/mod/quiz/view.php?id=281379&amp;forceview=1" >Quiz 6: DSLK</option>
+                    <option value="/mod/quiz/view.php?id=281384&amp;forceview=1" >Quiz 7: stack -queue</option>
+                    <option value="/mod/quiz/view.php?id=281389&amp;forceview=1" >Quiz 8: Tree</option>
+                    <option value="/mod/quiz/view.php?id=281394&amp;forceview=1" >Quiz 9: BST</option>
+                    <option value="/mod/assign/view.php?id=322580&amp;forceview=1" >Bài tập B-Tree</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Xem">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://courses.uit.edu.vn/mod/url/view.php?id=281329&forceview=1" id="next-activity-link" class="btn btn-link" >Lịch học và NỘI DUNG HỌC TỪNG BUỔI LT và TH &amp; Bảng điểm &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+                </section>
+            </div>
+            <div class="columnleft blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Các khối">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Bỏ qua Điều hướng</a>
+
+<section id="inst4"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+     data-instance-id="4"
+          aria-labelledby="instance-4-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4-header" class="card-title d-inline">Điều hướng</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a9922_group" data-collapsible="false" aria-labelledby="random675421b04a9921_label_1_1"><p class="tree_item branch navigation_node"><a tabindex="-1" id="random675421b04a9921_label_1_1" href="https://courses.uit.edu.vn/">Trang chủ</a></p><ul id="random675421b04a9922_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random675421b04a9923_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a9923_label_2_2" href="https://courses.uit.edu.vn/my/"><i class="icon fa fa-tachometer fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Bảng Điều khiển</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a9925_group" aria-labelledby="random675421b04a9923_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a9923_label_2_3" title="Trường ĐH CNTT - Website môn học">Các trang của hệ thống</span></p><ul id="random675421b04a9925_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random675421b04a9926_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a9926_label_3_5" href="https://courses.uit.edu.vn/my/courses.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Các khoá học của tôi</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random675421b04a9926_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a9926_label_3_6" href="https://courses.uit.edu.vn/tag/search.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Thẻ</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random675421b04a9926_label_3_8"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a9926_label_3_8" title="Diễn đàn" href="https://courses.uit.edu.vn/mod/forum/view.php?id=8"><img class="icon navicon" alt="Diễn đàn" title="Diễn đàn" src="https://courses.uit.edu.vn/theme/image.php/classic/forum/1728025335/monologo" /><span class="item-content-wrap">Tin tức chung</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a99210_group" aria-labelledby="random675421b04a9923_label_2_9"><p class="tree_item branch"><a tabindex="-1" id="random675421b04a9923_label_2_9" href="https://courses.uit.edu.vn/my/courses.php">Các khoá học của tôi</a></p><ul id="random675421b04a99210_group" role="group"><li class="type_unknown depth_3 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99212_group" aria-labelledby="random675421b04a99211_label_3_10"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99211_label_3_10">Cố vấn học tập</span></p><ul id="random675421b04a99212_group" role="group" aria-hidden="true"><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99214_group" aria-labelledby="random675421b04a99213_label_4_11"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99213_label_4_11">Lớp Sinh Hoạt</span></p><ul id="random675421b04a99214_group" role="group" aria-hidden="true"><li class="type_unknown depth_5 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99216_group" aria-labelledby="random675421b04a99215_label_5_12"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99215_label_5_12">Mạng Máy Tính và Truyền Thông</span></p><ul id="random675421b04a99216_group" role="group" aria-hidden="true"><li class="type_course depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11723" data-node-key="11723" data-node-type="20" aria-labelledby="random675421b04a99217_label_6_13"><p class="tree_item branch" id="expandable_branch_20_11723"><a tabindex="-1" id="random675421b04a99217_label_6_13" title="CVHT lớp MMTT2023.3" href="https://courses.uit.edu.vn/course/view.php?id=11723">MMTT2023.3</a></p></li></ul></li></ul></li></ul></li><li class="type_unknown depth_3 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a99218_group" aria-labelledby="random675421b04a99211_label_3_14"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99211_label_3_14">Học kỳ 1 (2024-2025)</span></p><ul id="random675421b04a99218_group" role="group"><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99220_group" aria-labelledby="random675421b04a99219_label_4_15"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99219_label_4_15">Môn chung</span></p><ul id="random675421b04a99220_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_12794" data-node-key="12794" data-node-type="20" aria-labelledby="random675421b04a99221_label_5_16"><p class="tree_item branch" id="expandable_branch_20_12794"><a tabindex="-1" id="random675421b04a99221_label_5_16" title="Chủ nghĩa xã hội khoa học - SS009.P16" href="https://courses.uit.edu.vn/course/view.php?id=12794">SS009.P16</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99222_group" aria-labelledby="random675421b04a99219_label_4_17"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99219_label_4_17">Bộ Môn Toán Lý</span></p><ul id="random675421b04a99222_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_15089" data-node-key="15089" data-node-type="20" aria-labelledby="random675421b04a99223_label_5_18"><p class="tree_item branch" id="expandable_branch_20_15089"><a tabindex="-1" id="random675421b04a99223_label_5_18" title="Xác suất thống kê - MA005.P12" href="https://courses.uit.edu.vn/course/view.php?id=15089">MA005.P12</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99224_group" aria-labelledby="random675421b04a99219_label_4_19"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99219_label_4_19">Khoa Hệ Thống Thông Tin</span></p><ul id="random675421b04a99224_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_14135" data-node-key="14135" data-node-type="20" aria-labelledby="random675421b04a99225_label_5_20"><p class="tree_item branch" id="expandable_branch_20_14135"><a tabindex="-1" id="random675421b04a99225_label_5_20" title="Cơ sở dữ liệu - IT004.P113" href="https://courses.uit.edu.vn/course/view.php?id=14135">IT004.P113</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a99226_group" aria-labelledby="random675421b04a99219_label_4_21"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99219_label_4_21">Khoa Khoa Học Máy Tính</span></p><ul id="random675421b04a99226_group" role="group"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a99228_group" aria-labelledby="random675421b04a99227_label_5_22"><p class="tree_item branch canexpand"><a tabindex="-1" id="random675421b04a99227_label_5_22" title="Cấu trúc dữ liệu và giải thuật - IT003.P12" href="https://courses.uit.edu.vn/course/view.php?id=13354">IT003.P12</a></p><ul id="random675421b04a99228_group" role="group"><li class="type_container depth_6 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99230_group" aria-labelledby="random675421b04a99229_label_6_23"><p class="tree_item branch"><a tabindex="-1" id="random675421b04a99229_label_6_23" href="https://courses.uit.edu.vn/user/index.php?id=13354">Danh sách thành viên</a></p><ul id="random675421b04a99230_group" role="group" aria-hidden="true"><li class="type_user depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99231_label_7_24"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99231_label_7_24" href="https://courses.uit.edu.vn/user/view.php?id=21193&amp;course=13354"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Phạm Văn Quốc</span></a></p></li></ul></li><li class="type_setting depth_6 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99229_label_6_25"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99229_label_6_25" href="https://courses.uit.edu.vn/admin/tool/lp/coursecompetencies.php?courseid=13354"><i class="icon fa fa-check-square-o fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Năng lực</span></a></p></li><li class="type_setting depth_6 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99229_label_6_26"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99229_label_6_26" href="https://courses.uit.edu.vn/grade/report/index.php?id=13354"><i class="icon fa fa-table fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Điểm số</span></a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random675421b04a99235_group" aria-labelledby="random675421b04a99229_label_6_27"><p class="tree_item branch"><a tabindex="-1" id="random675421b04a99229_label_6_27" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-0">General</a></p><ul id="random675421b04a99235_group" role="group"><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_28"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_28" title="Diễn đàn" href="https://courses.uit.edu.vn/mod/forum/view.php?id=256309"><img class="icon navicon" alt="Diễn đàn" title="Diễn đàn" src="https://courses.uit.edu.vn/theme/image.php/classic/forum/1728025335/monologo" /><span class="item-content-wrap">Các thông báo</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_29"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_29" title="File" href="https://courses.uit.edu.vn/mod/resource/view.php?id=281319"><img class="icon navicon" alt="File" title="File" src="https://courses.uit.edu.vn/theme/image.php/classic/core/1728025335/f/pdf" /><span class="item-content-wrap">Đề cương 2024</span></a></p></li><li class="type_activity depth_7 item_with_icon current_branch" role="treeitem" aria-labelledby="random675421b04a99236_label_7_30"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random675421b04a99236_label_7_30" title="URL" href="https://courses.uit.edu.vn/mod/url/view.php?id=281324"><img class="icon navicon" alt="URL" title="URL" src="https://courses.uit.edu.vn/theme/image.php/classic/url/1728025335/monologo" /><span class="item-content-wrap">Link tài liệu môn học</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_31"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_31" title="URL" href="https://courses.uit.edu.vn/mod/url/view.php?id=281329"><img class="icon navicon" alt="URL" title="URL" src="https://courses.uit.edu.vn/theme/image.php/classic/url/1728025335/monologo" /><span class="item-content-wrap">Lịch học và NỘI DUNG HỌC TỪNG BUỔI LT và TH &amp; ...</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_32"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_32" title="URL" href="https://courses.uit.edu.vn/mod/url/view.php?id=281339"><img class="icon navicon" alt="URL" title="URL" src="https://courses.uit.edu.vn/theme/image.php/classic/url/1728025335/monologo" /><span class="item-content-wrap">Link Wecode</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_35"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_35" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281354"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 1: Tìm kiếm Tuyến tính và Nhị phân (Buổi 1) (...</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_36"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_36" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281359"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 2: Selection &amp; Insertion sort  (Buổi 1) (...</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_37"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_37" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281364"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 3: Quick sort</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_38"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_38" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281369"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 4: Merge sort</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_39"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_39" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281374"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 5: Heap sort</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_40"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_40" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281379"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 6: DSLK</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_41"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_41" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281384"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 7: stack -queue</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_42"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_42" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281389"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 8: Tree</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_43"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_43" title="Trắc nghiệm" href="https://courses.uit.edu.vn/mod/quiz/view.php?id=281394"><img class="icon navicon" alt="Trắc nghiệm" title="Trắc nghiệm" src="https://courses.uit.edu.vn/theme/image.php/classic/quiz/1728025335/monologo" /><span class="item-content-wrap">Quiz 9: BST</span></a></p></li><li class="type_activity depth_7 item_with_icon" role="treeitem" aria-labelledby="random675421b04a99236_label_7_52"><p class="tree_item hasicon"><a tabindex="-1" id="random675421b04a99236_label_7_52" title="Bài tập" href="https://courses.uit.edu.vn/mod/assign/view.php?id=322580"><img class="icon navicon" alt="Bài tập" title="Bài tập" src="https://courses.uit.edu.vn/theme/image.php/classic/assign/1728025335/monologo" /><span class="item-content-wrap">Bài tập B-Tree</span></a></p></li></ul></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_140371" data-node-key="140371" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_53"><p class="tree_item branch" id="expandable_branch_30_140371"><a tabindex="-1" id="random675421b04a99229_label_6_53" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-1">2 tháng 9 - 8 tháng 9</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_140376" data-node-key="140376" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_54"><p class="tree_item branch" id="expandable_branch_30_140376"><a tabindex="-1" id="random675421b04a99229_label_6_54" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-2">9 tháng 9 - 15 tháng 9</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_146287" data-node-key="146287" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_55"><p class="tree_item branch" id="expandable_branch_30_146287"><a tabindex="-1" id="random675421b04a99229_label_6_55" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-3">16 tháng 9 - 22 tháng 9</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_146292" data-node-key="146292" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_56"><p class="tree_item branch" id="expandable_branch_30_146292"><a tabindex="-1" id="random675421b04a99229_label_6_56" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-4">23 tháng 9 - 29 tháng 9</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_146297" data-node-key="146297" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_57"><p class="tree_item branch" id="expandable_branch_30_146297"><a tabindex="-1" id="random675421b04a99229_label_6_57" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-5">30 tháng 9 - 6 tháng 10</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_146302" data-node-key="146302" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_58"><p class="tree_item branch" id="expandable_branch_30_146302"><a tabindex="-1" id="random675421b04a99229_label_6_58" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-6">7 tháng 10 - 13 tháng 10</a></p></li><li class="type_structure depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_146307" data-node-key="146307" data-node-type="30" aria-labelledby="random675421b04a99229_label_6_59"><p class="tree_item branch" id="expandable_branch_30_146307"><a tabindex="-1" id="random675421b04a99229_label_6_59" href="https://courses.uit.edu.vn/course/view.php?id=13354#section-7">14 tháng 10 - 20 tháng 10</a></p></li></ul></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99252_group" aria-labelledby="random675421b04a99219_label_4_60"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99219_label_4_60">Khoa Kỹ Thuật Máy Tính</span></p><ul id="random675421b04a99252_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_14759" data-node-key="14759" data-node-type="20" aria-labelledby="random675421b04a99253_label_5_61"><p class="tree_item branch" id="expandable_branch_20_14759"><a tabindex="-1" id="random675421b04a99253_label_5_61" title="Hệ điều hành - IT007.P13" href="https://courses.uit.edu.vn/course/view.php?id=14759">IT007.P13</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99254_group" aria-labelledby="random675421b04a99219_label_4_62"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99219_label_4_62">Khoa MMT &amp; Truyền Thông</span></p><ul id="random675421b04a99254_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_13999" data-node-key="13999" data-node-type="20" aria-labelledby="random675421b04a99255_label_5_63"><p class="tree_item branch" id="expandable_branch_20_13999"><a tabindex="-1" id="random675421b04a99255_label_5_63" title="Lập trình mạng căn bản - NT106.P12" href="https://courses.uit.edu.vn/course/view.php?id=13999">NT106.P12</a></p></li></ul></li></ul></li><li class="type_unknown depth_3 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99256_group" aria-labelledby="random675421b04a99211_label_3_64"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99211_label_3_64">Học kỳ 2 (2023-2024)</span></p><ul id="random675421b04a99256_group" role="group" aria-hidden="true"><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99258_group" aria-labelledby="random675421b04a99257_label_4_65"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99257_label_4_65">Môn chung</span></p><ul id="random675421b04a99258_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11819" data-node-key="11819" data-node-type="20" aria-labelledby="random675421b04a99259_label_5_66"><p class="tree_item branch" id="expandable_branch_20_11819"><a tabindex="-1" id="random675421b04a99259_label_5_66" title="Pháp luật đại cương - SS006.O23" href="https://courses.uit.edu.vn/course/view.php?id=11819">SS006.O23</a></p></li><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11784" data-node-key="11784" data-node-type="20" aria-labelledby="random675421b04a99259_label_5_67"><p class="tree_item branch" id="expandable_branch_20_11784"><a tabindex="-1" id="random675421b04a99259_label_5_67" title="Lịch sử Đảng Cộng sản Việt Nam - SS010.O25" href="https://courses.uit.edu.vn/course/view.php?id=11784">SS010.O25</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99260_group" aria-labelledby="random675421b04a99257_label_4_68"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99257_label_4_68">Bộ Môn Toán Lý</span></p><ul id="random675421b04a99260_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11844" data-node-key="11844" data-node-type="20" aria-labelledby="random675421b04a99261_label_5_69"><p class="tree_item branch" id="expandable_branch_20_11844"><a tabindex="-1" id="random675421b04a99261_label_5_69" title="Cấu trúc rời rạc - MA004.O221" href="https://courses.uit.edu.vn/course/view.php?id=11844">MA004.O221</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99262_group" aria-labelledby="random675421b04a99257_label_4_70"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99257_label_4_70">Khoa Công Nghệ Phần Mềm</span></p><ul id="random675421b04a99262_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_12043" data-node-key="12043" data-node-type="20" aria-labelledby="random675421b04a99263_label_5_71"><p class="tree_item branch" id="expandable_branch_20_12043"><a tabindex="-1" id="random675421b04a99263_label_5_71" title="Lập trình hướng đối tượng - IT002.O26" href="https://courses.uit.edu.vn/course/view.php?id=12043">IT002.O26</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99264_group" aria-labelledby="random675421b04a99257_label_4_72"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99257_label_4_72">Khoa Kỹ Thuật Máy Tính</span></p><ul id="random675421b04a99264_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_12295" data-node-key="12295" data-node-type="20" aria-labelledby="random675421b04a99265_label_5_73"><p class="tree_item branch" id="expandable_branch_20_12295"><a tabindex="-1" id="random675421b04a99265_label_5_73" title="Kiến trúc máy tính - IT006.O21" href="https://courses.uit.edu.vn/course/view.php?id=12295">IT006.O21</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99266_group" aria-labelledby="random675421b04a99257_label_4_74"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99257_label_4_74">Khoa MMT &amp; Truyền Thông</span></p><ul id="random675421b04a99266_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_12131" data-node-key="12131" data-node-type="20" aria-labelledby="random675421b04a99267_label_5_75"><p class="tree_item branch" id="expandable_branch_20_12131"><a tabindex="-1" id="random675421b04a99267_label_5_75" title="Nhập môn mạng máy tính - IT005.O24" href="https://courses.uit.edu.vn/course/view.php?id=12131">IT005.O24</a></p></li></ul></li></ul></li><li class="type_unknown depth_3 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99268_group" aria-labelledby="random675421b04a99211_label_3_76"><p class="tree_item branch"><span tabindex="-1" id="random675421b04a99211_label_3_76">Học kỳ 1 (2023-2024)</span></p><ul id="random675421b04a99268_group" role="group" aria-hidden="true"><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99270_group" aria-labelledby="random675421b04a99269_label_4_77"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99269_label_4_77">Trung tâm Ngoại ngữ</span></p><ul id="random675421b04a99270_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11458" data-node-key="11458" data-node-type="20" aria-labelledby="random675421b04a99271_label_5_78"><p class="tree_item branch" id="expandable_branch_20_11458"><a tabindex="-1" id="random675421b04a99271_label_5_78" title="Anh văn 2 - ENG02.O112" href="https://courses.uit.edu.vn/course/view.php?id=11458">ENG02.O112</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99272_group" aria-labelledby="random675421b04a99269_label_4_79"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99269_label_4_79">Bộ Môn Toán Lý</span></p><ul id="random675421b04a99272_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11566" data-node-key="11566" data-node-type="20" aria-labelledby="random675421b04a99273_label_5_80"><p class="tree_item branch" id="expandable_branch_20_11566"><a tabindex="-1" id="random675421b04a99273_label_5_80" title="Đại số tuyến tính - MA003.O18" href="https://courses.uit.edu.vn/course/view.php?id=11566">MA003.O18</a></p></li><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11496" data-node-key="11496" data-node-type="20" aria-labelledby="random675421b04a99273_label_5_81"><p class="tree_item branch" id="expandable_branch_20_11496"><a tabindex="-1" id="random675421b04a99273_label_5_81" title="Giải tích - MA006.O18" href="https://courses.uit.edu.vn/course/view.php?id=11496">MA006.O18</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99274_group" aria-labelledby="random675421b04a99269_label_4_82"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99269_label_4_82">Khoa Khoa Học Máy Tính</span></p><ul id="random675421b04a99274_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11225" data-node-key="11225" data-node-type="20" aria-labelledby="random675421b04a99275_label_5_83"><p class="tree_item branch" id="expandable_branch_20_11225"><a tabindex="-1" id="random675421b04a99275_label_5_83" title="Nhập môn lập trình - IT001.O18" href="https://courses.uit.edu.vn/course/view.php?id=11225">IT001.O18</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99276_group" aria-labelledby="random675421b04a99269_label_4_84"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99269_label_4_84">Khoa Kỹ Thuật Máy Tính</span></p><ul id="random675421b04a99276_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11425" data-node-key="11425" data-node-type="20" aria-labelledby="random675421b04a99277_label_5_85"><p class="tree_item branch" id="expandable_branch_20_11425"><a tabindex="-1" id="random675421b04a99277_label_5_85" title="Nhập môn mạch số - PH002.O14" href="https://courses.uit.edu.vn/course/view.php?id=11425">PH002.O14</a></p></li></ul></li><li class="type_unknown depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random675421b04a99278_group" aria-labelledby="random675421b04a99269_label_4_86"><p class="tree_item branch canexpand"><span tabindex="-1" id="random675421b04a99269_label_4_86">Khoa MMT &amp; Truyền Thông</span></p><ul id="random675421b04a99278_group" role="group" aria-hidden="true"><li class="type_course depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_11671" data-node-key="11671" data-node-type="20" aria-labelledby="random675421b04a99279_label_5_87"><p class="tree_item branch" id="expandable_branch_20_11671"><a tabindex="-1" id="random675421b04a99279_label_5_87" title="Giới thiệu ngành Mạng máy tính và Truyền thông dữ liệu - NT005.O12" href="https://courses.uit.edu.vn/course/view.php?id=11671">NT005.O12</a></p></li></ul></li></ul></li></ul></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+
+            <div class="columnright blockcolumn ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Các khối">
+                    <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div
+    id="drawer-675421b057204675421b04a99296"
+    class=" drawer bg-white hidden"
+    aria-expanded="false"
+    aria-hidden="true"
+    data-region="right-hand-drawer"
+    role="region"
+    tabindex="0"
+>
+            <div id="message-drawer-675421b057204675421b04a99296" class="message-app" data-region="message-drawer" role="region">
+            <div class="closewidget text-right pr-2">
+                <a class="text-dark btn-link" data-action="closedrawer" href="#"
+                   title="Đóng" aria-label="Đóng"
+                >
+                    <i class="icon fa fa-window-close fa-fw " aria-hidden="true"  ></i>
+                </a>
+            </div>
+            <div class="header-container position-relative" data-region="header-container">
+                <div class="hidden border-bottom p-1 px-sm-2" aria-hidden="true" data-region="view-contacts">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch">
+                            <a class="h-100 d-flex align-items-center mr-2" href="#" data-route-back role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Liên lạc
+                        </div>
+                        <div class="ml-auto">
+                            <a href="#" data-route="view-search" role="button" aria-label="Tìm kiếm">
+                                <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+                <div
+                    class="hidden bg-white position-relative border-bottom p-1 px-sm-2"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                >
+                    <div class="hidden" data-region="header-content"></div>
+                    <div class="hidden" data-region="header-edit-mode">
+                        
+                        <div class="d-flex p-2 align-items-center">
+                            Các tin nhắn được chọn
+                            <span class="ml-1" data-region="message-selected-court">1</span>
+                            <button type="button" class="ml-auto close" aria-label="Hủy chọn tin nhắn"
+                                data-action="cancel-edit-mode">
+                                    <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-region="header-placeholder">
+                        <div class="d-flex">
+                            <div
+                                class="ml-2 rounded-circle bg-pulse-grey align-self-center"
+                                style="height: 38px; width: 38px"
+                            >
+                            </div>
+                            <div class="ml-2 " style="flex: 1">
+                                <div
+                                    class="mt-1 bg-pulse-grey w-75"
+                                    style="height: 16px;"
+                                >
+                                </div>
+                            </div>
+                            <div
+                                class="ml-2 bg-pulse-grey align-self-center"
+                                style="height: 16px; width: 20px"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                <div class="border-bottom p-1 px-sm-2" aria-hidden="false"  data-region="view-overview">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group simplesearchform">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Tìm kiếm"
+                                aria-label="Tìm kiếm"
+                                data-region="view-overview-search-input"
+                            >
+                            <div class="input-group-append">
+                                <span class="icon-no-margin btn btn-submit">
+                                    <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ml-2">
+                            <a
+                                href="#"
+                                data-route="view-settings"
+                                data-route-param="21193"
+                                aria-label="Cài đặt"
+                                role="button"
+                            >
+                                <i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-right mt-sm-3">
+                        <a href="#" data-route="view-contacts" role="button">
+                            <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                            Liên lạc
+                            <span
+                                class="badge badge-primary bg-primary ml-2 hidden"
+                                data-region="contact-request-count"
+                            >
+                                <span aria-hidden="true">0</span>
+                                <span class="sr-only">Có 0 yêu cầu liên lạc với bạn</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden border-bottom p-1 px-sm-2 view-search"  aria-hidden="true" data-region="view-search">
+                    <div class="d-flex align-items-center">
+                        <a
+                            class="mr-2 align-self-stretch d-flex align-items-center"
+                            href="#"
+                            data-route-back
+                            data-action="cancel-search"
+                            role="button"
+                        >
+                            <div class="icon-back-in-drawer">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                            </div>
+                            <div class="icon-back-in-app">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                            </div>                        </a>
+                        <div class="input-group simplesearchform">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Tìm kiếm"
+                                aria-label="Tìm kiếm"
+                                data-region="search-input"
+                            >
+                            <div class="input-group-append">
+                                <button
+                                    class="btn btn-submit icon-no-margin"
+                                    type="button"
+                                    data-action="search"
+                                    aria-label="Tìm kiếm"
+                                >
+                                    <span data-region="search-icon-container">
+                                        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                    </span>
+                                    <span class="hidden" data-region="loading-icon-container">
+                                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="hidden border-bottom p-1 px-sm-2 pb-sm-3" aria-hidden="true" data-region="view-settings">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch" >
+                            <a class="h-100 d-flex mr-2 align-items-center" href="#" data-route-back role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Cài đặt
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container position-relative" data-region="body-container">
+                
+                <div
+                    class="hidden"
+                    data-region="view-contact"
+                    aria-hidden="true"
+                >
+                    <div class="p-2 pt-3" data-region="content-container"></div>
+                </div>                <div class="hidden h-100" data-region="view-contacts" aria-hidden="true" data-user-id="21193">
+                    <div class="d-flex flex-column h-100">
+                        <div class="p-3 border-bottom">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        id="contacts-tab-675421b057204675421b04a99296"
+                                        class="nav-link active"
+                                        href="#contacts-tab-panel-675421b057204675421b04a99296"
+                                        data-toggle="tab"
+                                        data-action="show-contacts-section"
+                                        role="tab"
+                                        aria-controls="contacts-tab-panel-675421b057204675421b04a99296"
+                                        aria-selected="true"
+                                    >
+                                        Liên lạc
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        id="requests-tab-675421b057204675421b04a99296"
+                                        class="nav-link"
+                                        href="#requests-tab-panel-675421b057204675421b04a99296"
+                                        data-toggle="tab"
+                                        data-action="show-requests-section"
+                                        role="tab"
+                                        aria-controls="requests-tab-panel-675421b057204675421b04a99296"
+                                        aria-selected="false"
+                                    >
+                                        Các đề nghị
+                                        <span class="badge badge-primary bg-primary ml-2 hidden"
+                                            data-region="contact-request-count"
+                                        >
+                                            <span aria-hidden="true">0</span>
+                                            <span class="sr-only">Có 0 yêu cầu liên lạc với bạn</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content d-flex flex-column h-100">
+                                            <div
+                    class="tab-pane fade show active h-100 lazy-load-list"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="21193"
+                                        id="contacts-tab-panel-675421b057204675421b04a99296"
+                    data-section="contacts"
+                    role="tabpanel"
+                    aria-labelledby="contacts-tab-675421b057204675421b04a99296"
+
+                >
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Không có liên lạc
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                    </div>
+                </div>
+                
+                                            <div
+                    class="tab-pane fade h-100 lazy-load-list"
+                    aria-live="polite"
+                    data-region="lazy-load-list"
+                    data-user-id="21193"
+                                        id="requests-tab-panel-675421b057204675421b04a99296"
+                    data-section="requests"
+                    role="tabpanel"
+                    aria-labelledby="requests-tab-675421b057204675421b04a99296"
+
+                >
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        Không có yêu câu liên lạc
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div
+                    class="view-conversation hidden h-100"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-user-id="21193"
+                    data-midnight="1733504400"
+                    data-message-poll-min="10"
+                    data-message-poll-max="120"
+                    data-message-poll-after-max="300"
+                    style="overflow-y: auto; overflow-x: hidden"
+                >
+                    <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                        <div class="content-message-container hidden h-100 px-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                            <div class="py-3 sticky-top z-index-1 border-bottom text-center hidden" data-region="contact-request-sent-message-container">
+                                <p class="m-0">Đã gửi yêu cầu liên lạc</p>
+                                <p class="font-italic font-weight-light" data-region="text"></p>
+                            </div>
+                            <div class="p-3 text-center hidden" data-region="self-conversation-message-container">
+                                <p class="m-0">Không gian riêng</p>
+                                <p class="font-italic font-weight-light" data-region="text">Lưu tin nhắn tạm thời, liên kết, ghi chú... để truy cập sau này.</p>
+                           </div>
+                            <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</div>
+                        </div>
+                        <div class="p-4 w-100 h-100 hidden position-absolute z-index-1" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                            
+                            <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                                <p class="text-muted" data-region="dialogue-text"></p>
+                                <div class="mb-2 custom-control custom-checkbox hidden" data-region="delete-messages-for-all-users-toggle-container">
+                                    <input type="checkbox" class="custom-control-input" id="delete-messages-for-all-users" data-region="delete-messages-for-all-users-toggle">
+                                    <label class="custom-control-label text-muted" for="delete-messages-for-all-users">
+                                        Xóa phía tôi và tất cả mọi người
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                                    <span data-region="dialogue-button-text">Chặn</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                                    <span data-region="dialogue-button-text">Unblock</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                                    <span data-region="dialogue-button-text">Xoá</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                                    <span data-region="dialogue-button-text">Thêm</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                                    <span data-region="dialogue-button-text">Xoá</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                                    <span data-region="dialogue-button-text">Xoá</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                                    <span data-region="dialogue-button-text">Gửi yêu cầu liên lạc</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                                    <span data-region="dialogue-button-text">Chấp nhận và thêm liên hệ</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                                    <span data-region="dialogue-button-text">Từ chối</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block" data-action="okay-confirm">Đồng ý</button>
+                                <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">Huỷ bỏ</button>
+                            </div>
+                        </div>
+                        <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                            <div class="h-100 d-flex flex-column">
+                                <div
+                                    class="px-2 pb-2 pt-0 bg-light h-100"
+                                    style="overflow-y: auto"
+                                >
+                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                </div>
+                            </div>                        </div>
+                    </div>
+                </div>
+                
+                <div
+                    class="hidden"
+                    aria-hidden="true"
+                    data-region="view-group-info"
+                >
+                    <div
+                        class="pt-3 h-100 d-flex flex-column"
+                        data-region="group-info-content-container"
+                        style="overflow-y: auto"
+                    ></div>
+                </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"  data-user-id="21193">
+                    <div id="message-drawer-view-overview-container-675421b057204675421b04a99296" class="d-flex flex-column h-100" style="overflow-y: auto">
+                            
+                            
+                            <div
+                                class="section border-0 card rounded-0"
+                                data-region="view-overview-favourites"
+                            >
+                                <div id="view-overview-favourites-toggle" class="card-header rounded-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-favourites-target-675421b057204675421b04a99296"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-favourites-target-675421b057204675421b04a99296"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Nhìn chằm chằm</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span aria-hidden="true" data-region="section-total-count"></span><span class="sr-only"> total conversations</span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                        </span>
+                                        <span
+                                            class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                            data-region="section-unread-count"
+                                        >
+                                            <span aria-hidden="true"></span>
+                                            <span class="sr-only">Có  hội thoại chưa đọc</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="21193"
+                                            id="view-overview-favourites-target-675421b057204675421b04a99296"
+            aria-labelledby="view-overview-favourites-toggle"
+            data-parent="#message-drawer-view-overview-container-675421b057204675421b04a99296"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Không có hội thoại gắn sao</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div
+                                class="section border-0 card rounded-0"
+                                data-region="view-overview-group-messages"
+                            >
+                                <div id="view-overview-group-messages-toggle" class="card-header rounded-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-group-messages-target-675421b057204675421b04a99296"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-group-messages-target-675421b057204675421b04a99296"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Nhóm</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span aria-hidden="true" data-region="section-total-count"></span><span class="sr-only"> total conversations</span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                        </span>
+                                        <span
+                                            class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                            data-region="section-unread-count"
+                                        >
+                                            <span aria-hidden="true"></span>
+                                            <span class="sr-only">Có  hội thoại chưa đọc</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="21193"
+                                            id="view-overview-group-messages-target-675421b057204675421b04a99296"
+            aria-labelledby="view-overview-group-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-675421b057204675421b04a99296"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Không có nhóm hội thoại</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div
+                                class="section border-0 card rounded-0"
+                                data-region="view-overview-messages"
+                            >
+                                <div id="view-overview-messages-toggle" class="card-header rounded-0" data-region="toggle">
+                                    <button
+                                        class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#view-overview-messages-target-675421b057204675421b04a99296"
+                                        aria-expanded="false"
+                                        aria-controls="view-overview-messages-target-675421b057204675421b04a99296"
+                                    >
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"  ></i>
+                                        </span>
+                                        <span class="font-weight-bold">Riêng tư</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container">
+                                            (<span aria-hidden="true" data-region="section-total-count"></span><span class="sr-only"> total conversations</span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                        </span>
+                                        <span
+                                            class="hidden badge badge-pill badge-primary ml-auto bg-primary"
+                                            data-region="section-unread-count"
+                                        >
+                                            <span aria-hidden="true"></span>
+                                            <span class="sr-only">Có  hội thoại chưa đọc</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div
+                                class="collapse border-bottom  lazy-load-list"
+                                aria-live="polite"
+                                data-region="lazy-load-list"
+                                data-user-id="21193"
+                                            id="view-overview-messages-target-675421b057204675421b04a99296"
+            aria-labelledby="view-overview-messages-toggle"
+            data-parent="#message-drawer-view-overview-container-675421b057204675421b04a99296"
+
+                            >
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">Không có hội thoại riêng tư</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container" >
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div
+                    data-region="view-search"
+                    aria-hidden="true"
+                    class="h-100 hidden"
+                    data-user-id="21193"
+                    data-users-offset="0"
+                    data-messages-offset="0"
+                    style="overflow-y: auto"
+                    
+                >
+                    <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                        
+                        <div class="d-flex flex-column">
+                            <div class="mb-3 bg-white" data-region="all-contacts-container">
+                                <div data-region="contacts-container"  class="pt-2">
+                                    <h4 class="h6 px-2">Liên lạc</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div data-region="non-contacts-container" class="pt-2 border-top">
+                                    <h4 class="h6 px-2">Không liên lạc</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-users">
+                                        <span data-region="button-text">Load more</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-white" data-region="messages-container">
+                                <h4 class="h6 px-2 pt-2">Tin nhắn</h4>
+                                <div class="list-group" data-region="list"></div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                        <span data-region="button-text">Load more</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="hidden p-3 text-center" data-region="no-results-container">Không có kết quả nào</p>
+                        </div>                    </div>
+                    <div class="hidden" data-region="loading-placeholder">
+                        <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</div>
+                    </div>
+                    <div class="p-3 text-center" data-region="empty-message-container">
+                        <p>Tìm người và tin nhắn</p>
+                    </div>
+                </div>                
+                <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+                    <div class="hidden" data-region="content-container">
+                        
+                        <div data-region="settings" class="p-3">
+                            <h3 class="h6 font-weight-bold">Quyền riêng tư</h3>
+                            <p>You can restrict who can message you</p>
+                            <div data-preference="blocknoncontacts" class="mb-3">
+                                <fieldset>
+                                    <legend class="sr-only">Tin nhắn chấp nhận từ:</legend>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-675421b057204675421b04a99296-1"
+                                                value="1"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-675421b057204675421b04a99296-1">
+                                                Chỉ trong Danh bạ của tôi
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input
+                                                type="radio"
+                                                name="message_blocknoncontacts"
+                                                class="custom-control-input"
+                                                id="block-noncontacts-675421b057204675421b04a99296-0"
+                                                value="0"
+                                            >
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-675421b057204675421b04a99296-0">
+                                                Những người trong liên lạc và trong khóa học của tôi
+                                            </label>
+                                        </div>
+                                </fieldset>
+                            </div>
+                        
+                            <div class="hidden" data-region="notification-preference-container">
+                                <h3 class="mb-2 mt-4 h6 font-weight-bold">Tùy chọn thông báo</h3>
+                            </div>
+                        
+                            <h3 class="mb-2 mt-4 h6 font-weight-bold">Thông tin chung</h3>
+                            <div data-preference="entertosend">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-675421b057204675421b04a99296" >
+                                    <label class="custom-control-label" for="enter-to-send-675421b057204675421b04a99296">
+                                        Dùng phím Enter để gửi
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-region="placeholder-container">
+                        
+                        <div class="d-flex flex-column p-3">
+                            <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                            <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-4">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>            </div>
+            <div class="footer-container position-relative" data-region="footer-container">
+                
+                <div
+                    class="hidden border-top bg-white position-relative"
+                    aria-hidden="true"
+                    data-region="view-conversation"
+                    data-enter-to-send="0"
+                >
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-container">
+                        
+                            <div
+                                class="emoji-auto-complete-container w-100 hidden"
+                                data-region="emoji-auto-complete-container"
+                                aria-live="polite"
+                                aria-hidden="true"
+                            >
+                            </div>
+                        <div class="d-flex mt-sm-1">
+                            <textarea
+                                dir="auto"
+                                data-region="send-message-txt"
+                                class="form-control bg-light"
+                                rows="3"
+                                data-auto-rows
+                                data-min-rows="3"
+                                data-max-rows="5"
+                                aria-label="Write a message..."
+                                placeholder="Write a message..."
+                                style="resize: none"
+                                maxlength="4096"
+                            ></textarea>
+                        
+                            <div class="position-relative d-flex flex-column">
+                                    <div
+                                        data-region="emoji-picker-container"
+                                        class="emoji-picker-container hidden"
+                                        aria-hidden="true"
+                                    >
+                                        
+                                        <div
+                                            data-region="emoji-picker"
+                                            class="card shadow emoji-picker"
+                                        >
+                                            <div class="card-header px-1 pt-1 pb-0 d-flex justify-content-between flex-shrink-0">
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0 selected"
+                                                    data-action="show-category"
+                                                    data-category="Recent"
+                                                    title="Gần đây"
+                                                >
+                                                    <i class="icon fa fa-clock-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Smileys & Emotion"
+                                                    title="Các nụ cười và biểu trạng"
+                                                >
+                                                    <i class="icon fa fa-smile-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="People & Body"
+                                                    title="Con người và cơ thể"
+                                                >
+                                                    <i class="icon fa fa-male fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Animals & Nature"
+                                                    title="Các con vật và tự nhiên"
+                                                >
+                                                    <i class="icon fa fa-leaf fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Food & Drink"
+                                                    title="Thức ăn và Đồ uống"
+                                                >
+                                                    <i class="icon fa fa-cutlery fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Travel & Places"
+                                                    title="Đi lại và các địa điểm"
+                                                >
+                                                    <i class="icon fa fa-plane fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Activities"
+                                                    title="Các hoạt động"
+                                                >
+                                                    <i class="icon fa fa-futbol-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Objects"
+                                                    title="Các đồ vật"
+                                                >
+                                                    <i class="icon fa fa-lightbulb-o fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Symbols"
+                                                    title="Các biểu tượng"
+                                                >
+                                                    <i class="icon fa fa-heart fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                                <button
+                                                    class="btn btn-outline-secondary icon-no-margin category-button rounded-0"
+                                                    data-action="show-category"
+                                                    data-category="Flags"
+                                                    title="Các lá cờ"
+                                                >
+                                                    <i class="icon fa fa-flag fa-fw " aria-hidden="true"  ></i>
+                                                </button>
+                                            </div>
+                                            <div class="card-body p-2 d-flex flex-column overflow-hidden">
+                                                <div class="input-group mb-1 flex-shrink-0">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text pr-0 bg-white text-muted">
+                                                            <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                                                        </span>
+                                                    </div>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control border-left-0"
+                                                        placeholder="Tìm kiếm"
+                                                        aria-label="Tìm kiếm"
+                                                        data-region="search-input"
+                                                    >
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto emojis-container h-100" data-region="emojis-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-auto search-results-container h-100 hidden" data-region="search-results-container">
+                                                    <div class="position-relative" data-region="row-container"></div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="card-footer d-flex flex-shrink-0"
+                                                data-region="footer"
+                                            >
+                                                <div class="emoji-preview" data-region="emoji-preview"></div>
+                                                <div data-region="emoji-short-name" class="emoji-short-name text-muted text-wrap ml-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-link btn-icon icon-size-3 ml-1"
+                                        aria-label="Chuyển đổi biểu tượng cảm xúc"
+                                        data-action="toggle-emoji-picker"
+                                    >
+                                        <i class="icon fa fa-smile-o fa-fw " aria-hidden="true"  ></i>
+                                    </button>
+                                <button
+                                    class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto"
+                                    aria-label="Gửi tin nhắn"
+                                    data-action="send-message"
+                                >
+                                    <span data-region="send-icon-container"><i class="icon fa fa-paper-plane fa-fw " aria-hidden="true"  ></i></span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-edit-mode-container">
+                        
+                        <div class="d-flex p-3 justify-content-end">
+                            <button
+                                class="btn btn-link btn-icon my-1 icon-size-4"
+                                data-action="delete-selected-messages"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Xóa những tin nhắn đã được chọn"
+                            >
+                                <span data-region="icon-container"><i class="icon fa fa-trash fa-fw " aria-hidden="true"  ></i></span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                                <span class="sr-only">Xóa những tin nhắn đã được chọn</span>
+                            </button>
+                        </div>                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-contact-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p data-region="title"></p>
+                            <p class="text-muted" data-region="text"></p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                                <span data-region="dialogue-button-text">Gửi yêu cầu liên lạc</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-unblock-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Bạn đã khóa người dùng này.</p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                                <span data-region="dialogue-button-text">Bỏ khóa người dùng</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Đang đọc" role="img" aria-label="Đang đọc"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-unable-to-message">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">Bạn không có quyền gửi tin nhắn cho người này</p>
+                        </div>
+                    </div>
+                    <div class="p-sm-2" data-region="placeholder-container">
+                        <div class="d-flex">
+                            <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                            <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                        </div>                    </div>
+                    <div
+                        class="hidden position-absolute z-index-1"
+                        data-region="confirm-dialogue-container"
+                        style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
+                    ></div>
+                </div>                    <div data-region="view-overview" class="text-center">
+                        <a href="https://courses.uit.edu.vn/message/index.php">
+                            See all
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+</div>
+    <footer id="page-footer" class="footer-dark bg-dark text-light">
+        <div class="container footer-dark-inner">
+            <div id="course-footer"></div>
+            <div class="pb-3">
+                    <div class="footer-support-link"><a href="http://bandl.uit.edu.vn/huong-dan/97-huong-dan-su-dung-website-mon-hoc-moodle.html" target="blank"><i class="icon fa fa-envelope-o fa-fw " aria-hidden="true"  ></i>Contact site support<i class="icon fa fa-external-link fa-fw ml-1" aria-hidden="true"  ></i></a></div>
+            </div>
+    
+            <div class="logininfo">Bạn đang đăng nhập với tên <a href="https://courses.uit.edu.vn/user/profile.php?id=21193" title="Xem hồ sơ">Phạm Văn Quốc</a> (<a href="https://courses.uit.edu.vn/login/logout.php?sesskey=oHh81CUjBx">Thoát</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://courses.uit.edu.vn/course/view.php?id=13354">IT003.P12</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Trình đơn tự tạo">
+                    <ul class="list-unstyled pt-3">
+                                        <li><a href="#" title="Ngôn ngữ">Vietnamese ‎(vi)‎</a></li>
+                                    <li>
+                                        <ul class="list-unstyled ml-3">
+                                                            <li><a href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=en" title="Ngôn ngữ">English ‎(en)‎</a></li>
+                                                            <li><a href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=ja" title="Ngôn ngữ">English ‎(ja)‎</a></li>
+                                                            <li><a href="https://courses.uit.edu.vn/mod/url/view.php?id=281324&amp;lang=vi" title="Ngôn ngữ">Vietnamese ‎(vi)‎</a></li>
+                                        </ul>
+                                    </li>
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://courses.uit.edu.vn/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2023100902.06&amp;lang=vi&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile&amp;siteurl=https%3A%2F%2Fcourses.uit.edu.vn">Get the mobile app</a>
+            
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://courses.uit.edu.vn/lib/requirejs.php/1728025335/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://courses.uit.edu.vn/lib/javascript.php/1728025335/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('vi');
+});;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"vi"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("4"); M.util.js_complete('block_navigation/navblock');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("5", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init(); M.util.js_complete('core_courseformat/local/content/activity_header');});;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select675421b04a99282', [CustomEvents.events.accessibleChange]);
+    $('#single_select675421b04a99282').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f675421b04a99281').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-675421b054ab3675421b04a99285');
+    Popover.init(toggle);
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if ($(this).val()) {
+                    $('#url_select_f675421b04a99295').submit();
+                }
+            });
+        });
+    ;
+
+require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
+    var root = $('#message-drawer-675421b057204675421b04a99296');
+    MessageDrawer.init(root, '675421b057204675421b04a99296', false);
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select675421b04a99298', [CustomEvents.events.accessibleChange]);
+    $('#single_select675421b04a99298').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f675421b04a99297').submit();
+        }
+    });
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(643404, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"S\u1eeda l\u1ea7n cu\u1ed1i","name":"T\u00ean","error":"L\u1ed7i","info":"Th\u00f4ng tin","yes":"C\u00f3","no":"Kh\u00f4ng","ok":"\u0110\u1ed3ng \u00fd","viewallcourses":"Xem t\u1ea5t c\u1ea3 kho\u00e1 h\u1ecdc","cancel":"Hu\u1ef7 b\u1ecf","confirm":"X\u00e1c nh\u1eadn","areyousure":"B\u1ea1n c\u00f3 ch\u1eafc kh\u00f4ng?","closebuttontitle":"\u0110\u00f3ng","unknownerror":"L\u1ed7i kh\u00f4ng r\u00f5","file":"T\u1eadp tin","url":"URL","collapseall":"Thu g\u1ecdn to\u00e0n b\u1ed9","expandall":"M\u1edf r\u1ed9ng t\u1ea5t c\u1ea3"},"repository":{"type":"Lo\u1ea1i","size":"K\u00edch th\u01b0\u1edbc","invalidjson":"Chu\u1ed7i JSON kh\u00f4ng h\u1ee3p l\u1ec7","nofilesattached":"Kh\u00f4ng c\u00f3 t\u1ec7p \u0111\u00ednh k\u00e8m","filepicker":"B\u1ed9 ch\u1ecdn t\u1ec7p","logout":"Tho\u00e1t","nofilesavailable":"Kh\u00f4ng c\u00f3 t\u1ec7p","norepositoriesavailable":"Xin l\u1ed7i, kh\u00f4ng c\u00f3 kho n\u00e0o hi\u1ec7n t\u1ea1i c\u1ee7a b\u1ea1n c\u00f3 th\u1ec3 tr\u1ea3 v\u1ec1 c\u00e1c t\u1ec7p theo \u0111\u1ecbnh d\u1ea1ng y\u00eau c\u1ea7u.","fileexistsdialogheader":"T\u1ec7p t\u1ed3n t\u1ea1i","fileexistsdialog_editor":"M\u1ed9t t\u1ec7p c\u00f3 t\u00ean \u0111\u00f3 \u0111\u00e3 \u0111\u01b0\u1ee3c \u0111\u00ednh k\u00e8m trong v\u0103n b\u1ea3n b\u1ea1n \u0111ang s\u1eeda.","fileexistsdialog_filemanager":"M\u1ed9t t\u1ec7p c\u00f3 t\u00ean \u0111\u00e3 \u0111\u01b0\u1ee3c \u0111\u00ednh k\u00e8m","renameto":"\u0110\u1eb7t t\u00ean th\u00e0nh \"{$a}\"","referencesexist":"C\u00f3 {$a} \u0111\u01b0\u1eddng li\u00ean k\u1ebft d\u1eabn t\u1edbi file n\u00e0y","select":"Ch\u1ecdn"},"admin":{"confirmdeletecomments":"B\u1ea1n \u0111\u1ecbnh x\u00f3a c\u00e1c b\u00ecnh lu\u1eadn, b\u1ea1n c\u00f3 ch\u1eafc kh\u00f4ng?","confirmation":"X\u00e1c nh\u1eadn"},"debug":{"debuginfo":"Th\u00f4ng tin g\u1ee1 l\u1ed7i","line":"D\u00f2ng","stacktrace":"Stack trace"},"langconfig":{"labelsep":":"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random675421b04a99299'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random675421b04a99299'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div>
+
+
+</body></html>
