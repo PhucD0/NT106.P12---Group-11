@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NbXUmQEh2zQ=",
+  "dgSpecHash": "pYdSaOUD0f8=",
   "success": true,
-  "projectFilePath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
+  "projectFilePath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hi\\.nuget\\packages\\htmlagilitypack\\1.11.71\\htmlagilitypack.1.11.71.nupkg.sha512",
-    "C:\\Users\\Hi\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
-    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\htmlagilitypack\\1.11.71\\htmlagilitypack.1.11.71.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
