@@ -30,3 +30,35 @@ D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\ne
 D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\ref\LAB4_Bai3.dll
 D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.Form3.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\LAB4_Bai3.exe
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\LAB4_Bai3.deps.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\LAB4_Bai3.runtimeconfig.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\LAB4_Bai3.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\LAB4_Bai3.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\HtmlAgilityPack.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.csproj.AssemblyReference.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.Form1.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.Form2.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.Form3.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.csproj.GenerateResource.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.GeneratedMSBuildEditorConfig.editorconfig
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.AssemblyInfoInputs.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.AssemblyInfo.cs
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.sourcelink.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.csproj.Up2Date
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\refint\LAB4_Bai3.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\LAB4_Bai3.genruntimeconfig.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai3\obj\Debug\net8.0-windows\ref\LAB4_Bai3.dll

@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnDownload = new Button();
+            txbUrl = new TextBox();
+            txbFileUrl = new TextBox();
+            rtbOutput = new RichTextBox();
+            SuspendLayout();
+            // 
+            // btnDownload
+            // 
+            btnDownload.Location = new Point(622, 17);
+            btnDownload.Name = "btnDownload";
+            btnDownload.Size = new Size(94, 29);
+            btnDownload.TabIndex = 0;
+            btnDownload.Text = "Download";
+            btnDownload.UseVisualStyleBackColor = true;
+            btnDownload.Click += btnDownload_Click;
+            // 
+            // txbUrl
+            // 
+            txbUrl.Location = new Point(28, 19);
+            txbUrl.Name = "txbUrl";
+            txbUrl.Size = new Size(576, 27);
+            txbUrl.TabIndex = 1;
+            txbUrl.Text = "https://uit.edu.vn/";
+            // 
+            // txbFileUrl
+            // 
+            txbFileUrl.Location = new Point(28, 70);
+            txbFileUrl.Name = "txbFileUrl";
+            txbFileUrl.Size = new Size(576, 27);
+            txbFileUrl.TabIndex = 1;
+            txbFileUrl.Text = "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\uit.html";
+            // 
+            // rtbOutput
+            // 
+            rtbOutput.Location = new Point(28, 119);
+            rtbOutput.Name = "rtbOutput";
+            rtbOutput.Size = new Size(688, 326);
+            rtbOutput.TabIndex = 2;
+            rtbOutput.Text = "";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(750, 464);
+            Controls.Add(rtbOutput);
+            Controls.Add(txbFileUrl);
+            Controls.Add(txbUrl);
+            Controls.Add(btnDownload);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnDownload;
+        private TextBox txbUrl;
+        private TextBox txbFileUrl;
+        private RichTextBox rtbOutput;
     }
 }

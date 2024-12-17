@@ -1,0 +1,17 @@
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\bin\Debug\net8.0-windows\LAB4_Bai2.exe
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\bin\Debug\net8.0-windows\LAB4_Bai2.deps.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\bin\Debug\net8.0-windows\LAB4_Bai2.runtimeconfig.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\bin\Debug\net8.0-windows\LAB4_Bai2.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\bin\Debug\net8.0-windows\LAB4_Bai2.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.Form1.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.csproj.GenerateResource.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.GeneratedMSBuildEditorConfig.editorconfig
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.AssemblyInfoInputs.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.AssemblyInfo.cs
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.sourcelink.json
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\refint\LAB4_Bai2.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\LAB4_Bai2.genruntimeconfig.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\NT106.P12---Group-11\LAB4\LAB4_Bai2\obj\Debug\net8.0-windows\ref\LAB4_Bai2.dll
