@@ -88,5 +88,10 @@ namespace LAB4_Bai4
         {
             Application.Exit();
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
