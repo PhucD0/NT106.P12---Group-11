@@ -236,19 +236,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
+    "C:\\Users\\npphu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
+      "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
       "projectName": "LAB4_Bai3",
-      "projectPath": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "D:\\kudo\\NT106\\ThucHanh\\THUCHANH\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\obj\\",
+      "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
+      "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+      "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -311,7 +311,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

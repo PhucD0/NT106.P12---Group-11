@@ -1,0 +1,429 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Menu\\LAB4_Menu.csproj": {}
+  },
+  "projects": {
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\LAB4_Bai1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\LAB4_Bai1.csproj",
+        "projectName": "LAB4_Bai1",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\LAB4_Bai1.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj",
+        "projectName": "LAB4_Bai2",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
+        "projectName": "LAB4_Bai3",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.71, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.2903.40, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj",
+        "projectName": "LAB4_Bai4",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
+        "projectName": "LAB4_Bai5",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Menu\\LAB4_Menu.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Menu\\LAB4_Menu.csproj",
+        "projectName": "LAB4_Menu",
+        "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Menu\\LAB4_Menu.csproj",
+        "packagesPath": "C:\\Users\\npphu\\.nuget\\packages\\",
+        "outputPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Menu\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\npphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\LAB4_Bai1.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai1\\LAB4_Bai1.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai2\\LAB4_Bai2.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai3\\LAB4_Bai3.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai4\\LAB4_Bai4.csproj"
+              },
+              "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj": {
+                "projectPath": "D:\\BruhBruhLmao\\UIT\\HK3\\Lập trình mạng\\Đồ Án\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
