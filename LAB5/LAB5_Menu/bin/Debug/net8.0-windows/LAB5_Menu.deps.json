@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LAB5_Menu/1.0.0": {
+        "runtime": {
+          "LAB5_Menu.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LAB5_Menu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.csproj.AssemblyReference.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.Properties.Resources.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\bin\Debug\LAB05_Bai1.exe.config
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\bin\Debug\LAB05_Bai1.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\bin\Debug\LAB05_Bai1.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB05_Bai1\obj\Debug\LAB05_Bai1.pdb

@@ -1,0 +1,17 @@
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\bin\Debug\net8.0-windows\LAB5_Menu.exe
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\bin\Debug\net8.0-windows\LAB5_Menu.deps.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\bin\Debug\net8.0-windows\LAB5_Menu.runtimeconfig.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\bin\Debug\net8.0-windows\LAB5_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\bin\Debug\net8.0-windows\LAB5_Menu.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.Form1.resources
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.csproj.GenerateResource.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.AssemblyInfoInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.AssemblyInfo.cs
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.sourcelink.json
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\refint\LAB5_Menu.dll
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.pdb
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\LAB5_Menu.genruntimeconfig.cache
+D:\Hoc Tap\bai tap\Laptrinhmnag\NT106.P12---Group-11\LAB5\LAB5_Menu\obj\Debug\net8.0-windows\ref\LAB5_Menu.dll
