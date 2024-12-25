@@ -8,23 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Hi\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
+      "projectUniqueName": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
       "projectName": "LAB4_Bai5",
-      "projectPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
-      "packagesPath": "C:\\Users\\Hi\\.nuget\\packages\\",
-      "outputPath": "D:\\Hoc Tap\\bai tap\\Laptrinhmnag\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\obj\\",
+      "projectPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\LAB4_Bai5.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Nubakachi\\UniversityStuff\\HK3\\Lập Trình Mạng\\DoAn\\NT106.P12---Group-11\\LAB4\\LAB4_Bai5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

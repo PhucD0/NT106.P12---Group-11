@@ -1,0 +1,74 @@
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\LAB05_BAI4.exe.config
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\LAB05_BAI4.exe
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\LAB05_BAI4.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.AssemblyReference.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.Form1.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.Properties.Resources.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.GenerateResource.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.CoreCompileInputs.cache
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.exe
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.CheckMail.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.ReadMail.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.SendMail.resources
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\BouncyCastle.Cryptography.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MailKit.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MimeKit.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Buffers.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Formats.Asn1.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Memory.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Numerics.Vectors.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.ValueTuple.dll
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\BouncyCastle.Cryptography.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MailKit.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MailKit.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MailKit.dll.config
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MimeKit.pdb
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\MimeKit.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Buffers.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Formats.Asn1.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Memory.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Numerics.Vectors.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\bin\Debug\System.ValueTuple.xml
+D:\kudo\NT106\ThucHanh\THUCHANH\LAB05_BAI4\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.Up2Date
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\LAB05_BAI4.exe.config
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\LAB05_BAI4.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\LAB05_BAI4.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MailKit.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MimeKit.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Buffers.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Formats.Asn1.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Memory.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Numerics.Vectors.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.ValueTuple.dll
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MailKit.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MailKit.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MailKit.dll.config
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MimeKit.pdb
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\MimeKit.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Buffers.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Formats.Asn1.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Memory.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Numerics.Vectors.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\bin\Debug\System.ValueTuple.xml
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.AssemblyReference.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.CheckMail.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.Form1.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.Properties.Resources.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.ReadMail.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.SendMail.resources
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.GenerateResource.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.CoreCompileInputs.cache
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.csproj.Up2Date
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.exe
+D:\Nubakachi\UniversityStuff\HK3\Lập Trình Mạng\DoAn\NT106.P12---Group-11\LAB5\LAB05_BAI4\obj\Debug\LAB05_BAI4.pdb
