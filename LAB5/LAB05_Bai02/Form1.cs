@@ -43,10 +43,10 @@ namespace LAB05_Bai02
 
                     listViewEmails.Items.Clear();
 
-                    int displayedEmails = Math.Min(10, inbox.Count);
-                    for (int i = 0; i < displayedEmails; i++)
+                    int displayedEmails = Math.Min(30, inbox.Count);
+                    for (int i = inbox.Count - 1; i >= inbox.Count - displayedEmails; i--)
                     {
-                        var message = inbox.GetMessage(i);
+                        var message = inbox.GetMessage(i); 
 
                         string subject = message.Subject ?? "(Không có tiêu đề)";
                         string from = message.From.ToString();
@@ -55,9 +55,6 @@ namespace LAB05_Bai02
                         ListViewItem item = new ListViewItem(new[] { subject, from, date });
                         listViewEmails.Items.Add(item);
                     }
-
-                    label6.Text = displayedEmails.ToString();
-                    label6.Visible = true;
                     client.Disconnect(true);
                 }
             }
